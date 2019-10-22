@@ -1,0 +1,48 @@
+{
+    "main-partner-0": {
+        "0": {
+            "name1": "value1",
+            "name2": "value2",
+            "name3": "value3",
+            "name4": "value4",
+            "name5": "value5"
+        },
+        "1": {
+            "name1": "value6",
+            "name2": "value7",
+            "name3": "value8",
+            "name4": "value9",
+            "name5": "value10"
+        },
+        "2": {
+            "name1": "value11",
+            "name2": "value12",
+            "name3": "value13",
+            "name4": "value14",
+            "name5": "value15"
+        }
+    },
+    "main-partner-1": {
+        "0": {
+            "name1": "value16",
+            "name2": "value17",
+            "name3": "value18",
+            "name4": "value19",
+            "name5": "value20"
+        },
+        "1": {
+            "name1": "value21",
+            "name2": "value22",
+            "name3": "value23",
+            "name4": "value24",
+            "name5": "value25"
+        },
+        "2": {
+            "name1": "value26",
+            "name2": "value27",
+            "name3": "value28",
+            "name4": "value29",
+            "name5": "value30"
+        }
+    }
+}

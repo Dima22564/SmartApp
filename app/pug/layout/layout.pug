@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+  include ../vars/vars.pug
+  include ../vars/mix.pug
+
+
+  block vars
+    -var pageTitle = 'Document';
+    -var breadCrumb = '';
+    -var breadCrumbLinks = [];
+
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="base_asset_path", content="./")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap", rel="stylesheet")
+    link(href="./libs/css/vendor.min.css", rel="stylesheet")
+    link(href="./css/style.css", rel="stylesheet")
+    title= pageTitle
+
+  body
+  
+  //- Top menu
+  include ../top-menu.pug
+  //- Top menu
+  
+
+  //- Bread crumb if necessary
+  block breadCrumb
+    if breadCrumb == true
+      include ../breadCrumd.pug
+  //- Bread crumb if necessary
+
+
+  //- Content
+  block content
+  //- Content
+
+      
+  //- Footer
+  include ../footer.pug
+  //- Footer
+
+  //- Fixed btns
+  include ../fixed-btns.pug
+  
+  
+
+  block script
+    script(src="./libs/js/vendor.min.js")
+    script(src="./js/index.js")
+    
+
+
+
