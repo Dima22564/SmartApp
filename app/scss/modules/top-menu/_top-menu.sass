@@ -1,0 +1,80 @@
+.top-menu
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06)
+  background: $white
+  padding: 12px 0
+  .content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .links
+      display: flex
+      align-items: center
+      a
+        &.emp
+          color: $d-gray
+        &:not(:last-child)
+          margin-right: 34px
+    .right-panel
+      display: flex
+      align-items: center
+      width: 67%
+      .tariff
+        max-width: 540px
+        width: 100%
+        .top
+          display: flex
+          align-items: center
+          font-size: 12px
+          line-height: 12px
+          justify-content: space-between
+          margin-bottom: 2px
+          .emp
+            font-size: 16px
+            line-height: 16px
+        .progress-1
+          position: relative
+          height: 6px
+          width: 100%
+          border-radius: 24px
+          background: #f4f5f8
+          span
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            width: 20%
+            background: $blue
+            display: block
+            border-radius: 24px
+      .notices
+        margin-left: 65px
+        .wrapper
+          position: relative
+          span
+            position: absolute
+            top: -4px
+            right: -7px
+            width: 16px
+            height: 16px
+            border-radius: 50%
+            display: inline-flex
+            justify-content: center
+            align-items: center
+            color: $white
+            background: $blue
+            font-size: 12px
+            line-height: 12px
+      .profile
+        margin-left: 24px
+        .avatar
+          display: flex
+          align-items: center
+          cursor: pointer
+          .icon
+            width: 48px
+            height: 48px
+            border-radius: 50%
+          .arrow
+            transition: all 0.3s
+            margin-left: 14px

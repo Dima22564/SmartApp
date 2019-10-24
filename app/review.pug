@@ -1,0 +1,153 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'review';
+
+block content
+  section.top-btns
+    .container
+      .content
+        .title
+          p.emp Мультиссылка
+          span Конструктор мини-сайта
+        .btns
+          a(href="").examine Просмотр
+          a(href="").examine Редактировать
+          a(href="").save Сохранить
+
+  .wrapper-for-bg
+    section.main-review-header
+      .container
+        .nav
+          .nav-links
+            a(href="").nav-link Главная
+            .nav-drop-link
+              .wrapper
+                span Товары
+                img(src="./img/arrow-down.svg", alt="").arrow
+              .drop-menu
+            a(href="").nav-link Отзывы
+            a(href="").nav-link Фотогаллерея
+            a(href="").nav-link Контакты
+        .profile-sec
+          img(src="./img/profile.jpg", alt="").profile-sec-icon
+        p.text.
+          Компания "Цветы Мира" занимается доставкой экзатических цветов и авторских букетов по всей Москве и Московской области. Мы можем привезти цветы в точно указанное время и предложим варианты оригинального поздравления или предложения руки и сердца
+
+    //- Contact us  adapted = 
+    section.main-review-contact 
+      .container
+        h2 Свяжитесь с нами 
+        .social-icons
+          -var i = 1;
+          while i < 7
+            a(href="").social-link
+              img(src=`./img/social-${i}.svg`, alt="")
+            -i++
+
+        .separator
+            
+          
+    //- Slider  adapted = 
+    section.main-review-slider
+      .container
+        .row.justify-content-center
+          .col-xl-6
+            .slider.js-slider
+              .slide
+                img(src="./img/slider.jpg", alt="")
+              .slide
+                img(src="./img/slider.jpg", alt="")
+              .slide
+                img(src="./img/slider.jpg", alt="")
+              .slide
+                img(src="./img/slider.jpg", alt="")
+              .slide
+                img(src="./img/slider.jpg", alt="")
+            .controls
+              .arrows
+                button.arrow.prev.js-prev-btn
+                  img(src="./img/arrow-down.svg", alt="")
+                button.arrow.next.js-next-btn
+                  img(src="./img/arrow-down.svg", alt="")
+
+
+    //- Video  adapted = 
+    section.main-review-video
+      .container
+        .row.justify-content-center
+          .col-xl-6
+            .video.js-video
+              .bg
+                img(src="./img/play.svg", alt="").play
+              video(src="")
+
+
+    //- Sell  adapted = 
+    section.main-review-sell
+      .container
+        h2 Розница
+        .row.justify-content-center
+          .col-xl-6
+            .item
+              .img
+                img(src="./img/flower.jpg", alt="")
+              .text-block
+                p.title Доставка цветов опт
+                p.text.
+                  Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.
+                .order
+                  a(href="").btn-order Заказать
+                  .price
+                    span.old 500₽
+                    span.new 500₽
+
+
+    //- Cards  adapted = 
+    section.main-review-cards
+      .container
+        h2 Розница
+        .cards
+          .item
+            img(src="./img/small-flower.jpg", alt="")
+            p.title Доставка цветов опт
+            .price
+              span.old 500₽
+              span.new 500₽
+            a(href="").btn-order Заказать
+          .item
+            img(src="./img/small-flower.jpg", alt="")
+            p.title Доставка цветов опт
+            .price
+              span.old 500₽
+              span.new 500₽
+            a(href="").btn-order Заказать
+          .item
+            img(src="./img/small-flower.jpg", alt="")
+            p.title Доставка цветов опт
+            .price
+              span.old 500₽
+              span.new 500₽
+            a(href="").btn-order Заказать
+          .item
+            img(src="./img/small-flower.jpg", alt="")
+            p.title Доставка цветов опт
+            .price
+              span.old 500₽
+              span.new 500₽
+            a(href="").btn-order Заказать
+
+
+    //- Footer  adapted = 
+    footer.main-review-footer
+      .container
+        h2 Заказ цветов на дом
+        .row.justify-content-center
+          .col-xl-6
+            form(action="").online-order
+              input(type="text", name="")
+              button Оплатить
+        a(href="").site Наш сайт
+
+
+

@@ -1,0 +1,54 @@
+.main-review
+  .text
+    color: $d-gray
+  .profile-sec
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 40px
+    &-icon
+      width: 96px
+      height: 96px
+      border-radius: 4px
+  &-header
+    padding: 40px 0 42px
+    .nav
+      box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+      padding: 24px 0
+      background: $white
+      border-radius: 24px
+      margin-bottom: 40px 
+      &-links
+        display: flex
+        align-items: center
+        justify-content: center
+      &-link
+        padding: 12px 24px
+        box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+        background: $white
+        border-radius: 4px
+        &:not(:last-child)
+          margin-right: 24px
+      &-drop-link
+        margin-right: 24px
+        .wrapper
+          padding: 12px 24px
+          box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+          background: $white
+          border-radius: 4px
+          position: relative
+          display: flex
+          align-items: center
+          cursor: pointer
+          img
+            margin-left: 25px
+            transition: all 03s
+          &.active
+            .arrow
+              transform: rotate(180deg)
+          .drop-menu
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+

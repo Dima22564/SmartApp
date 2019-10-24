@@ -1,0 +1,51 @@
+.main-review-slider
+  padding-bottom: 40px
+  .slider
+    img
+      width: 100%
+  .controls
+    display: flex
+    align-items: center
+    margin-top: 10px
+    flex-direction: row-reverse
+    justify-content: center
+    .slick-dots
+      display: flex
+      margin: auto
+      li
+        &:not(:last-child)
+          margin-right: 8px
+        &.slick-active
+          button
+            background: $blue !important
+      button
+        font-size: 0
+        line-height: 0
+        padding: 0
+        margin: 0
+        width: 8px
+        height: 8px
+        background-color: rgba(20, 16, 41, 0.06)
+        border: none
+        border-radius: 50%
+    .arrows
+      display: flex
+      align-items: center
+      button
+        box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06)
+        cursor: pointer
+        width: 32px
+        height: 32px
+        background: $white
+        border-radius: 4px
+        border: none
+        display: flex
+        align-items: center
+        justify-content: center
+        &.prev
+          img
+            transform: rotate(90deg)
+        &.next
+          margin-left: 8px
+          img
+            transform: rotate(-90deg)

@@ -1,0 +1,30 @@
+-
+  var links = [
+    'Рабочий стол',
+    'Мультиссылка',
+    'Статистика',
+    'Контент план',
+    'Делегирование'
+  ];
+aside.aside
+  .aside-links
+    -var i = 0;
+    each item in links
+      -i++;
+      .drop-link.js-drop-link
+        .link-body
+          img(src=`./img/aside-${i}.svg`, alt="").icon
+          span= item
+          img(src="./img/arrow-down.svg", alt="").arrow
+        .drop-menu.js-drop-menu
+          a(href="") Создание мультиссылки
+          a(href="") Товары
+          a(href="") Прием платежей
+  .bottom-links
+    a(href="").link-body
+      img(src="./img/settings.svg", alt="")
+      span Настройки
+    a(href="").link-body
+      img(src="./img/exit.svg", alt="")
+      span Выход
+          
