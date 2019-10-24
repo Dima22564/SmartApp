@@ -253,7 +253,7 @@ div:active {
   color: #141029;
 }
 
-.aside .link-body span {
+.aside .link-body .text {
   margin-left: 25px;
 }
 
@@ -491,6 +491,128 @@ div:active {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   margin-left: 14px;
+}
+
+.edit-item {
+  width: 52px;
+  height: 48px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.edit-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.edit-item .icon-arrow-up {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.edit-items-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.edit-items-wrapper.left {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.edit-items-wrapper.right {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.add-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(20, 16, 41, 0.03);
+  border-radius: 24px;
+  padding: 5px 0;
+  margin: 16px 0;
+}
+
+.add-block .add {
+  border-radius: 4px;
+  width: 37px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgba(20, 16, 41, 0.2);
+}
+
+.add-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.add-item-wrapper .add-item {
+  width: 52px;
+  height: 48px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-item-wrapper .desc {
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 8px;
 }
 
 .main-review .wrapper-for-bg {
@@ -1076,4 +1198,204 @@ div:active {
   color: #ffffff;
   border-radius: 4px;
   padding: 14px;
+}
+
+.main-edit {
+  padding-bottom: 65px;
+  background: #f4f5f8;
+}
+
+.main-edit .wrapper-for-bg {
+  background: none;
+}
+
+.main-edit .edit-top-btns {
+  padding: 63px 0 32px;
+}
+
+.main-edit h2 {
+  margin: 0;
+}
+
+.main-edit .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 16px;
+}
+
+.main-edit .nav-links {
+  margin: auto;
+}
+
+.main-edit .content {
+  padding: 24px;
+  position: relative;
+}
+
+.main-edit .content .sett {
+  border: none;
+  padding: 14px 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  border-radius: 4px;
+  margin: 16px auto 0;
+  display: inherit;
+  cursor: pointer;
+}
+
+.main-edit .content.blue {
+  background: #6b75ca;
+  color: #ffffff;
+}
+
+.main-edit .content.blue .edit-item span {
+  color: #6b75ca;
+}
+
+.main-edit .content.blue .sett {
+  color: #6b75ca;
+}
+
+.main-edit .content.red {
+  background: #b01818;
+  color: #ffffff;
+}
+
+.main-edit .content.red .edit-item span {
+  color: #b01818;
+}
+
+.main-edit .content.red .sett {
+  color: #b01818;
+}
+
+.main-edit .edit-section {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  background: #ffffff;
+  border-radius: 24px;
+}
+
+.main-edit .edit-section .top-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin: 15px 0 36px 0;
+}
+
+.main-edit .edit-section .edit-text {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.main-edit-header {
+  padding-bottom: 0;
+}
+
+.main-edit-header .text-block {
+  padding: 24px;
+  position: relative;
+}
+
+.main-edit-contact {
+  padding-bottom: 0;
+}
+
+.main-edit-contact .separator-wrapper {
+  padding: 24px;
+  position: relative;
+}
+
+.main-edit-contact .separator-wrapper .separator {
+  margin-top: 0;
+}
+
+.main-edit-slider {
+  padding-bottom: 0;
+}
+
+.main-edit-video {
+  padding-bottom: 0;
+}
+
+.main-edit-sell {
+  padding-bottom: 0;
+}
+
+.main-edit-sell .edit-text {
+  margin-bottom: 16px;
+}
+
+.main-edit-cards {
+  padding-bottom: 0;
+}
+
+.main-edit-cards .edit-text {
+  margin-bottom: 16px;
+}
+
+.main-edit-footer {
+  padding-bottom: 0;
+}
+
+.main-edit-footer .edit-text {
+  margin-bottom: 16px;
+}
+
+.main-edit-site {
+  padding-bottom: 0;
+}
+
+.main-edit-site .site {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  line-height: 20px;
+  background: #6b75ca;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 14px;
+}
+
+.main-edit .add-custom-block {
+  margin-bottom: 16px;
+}
+
+.main-edit .add-custom-block .content {
+  padding: 24px 47px;
+}
+
+.main-edit .add-custom-block .add-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 15px;
 }

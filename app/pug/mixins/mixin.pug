@@ -1,0 +1,64 @@
+mixin addBlock
+  .add-block
+    .add
+      img(src="./img/plus.svg", alt="")
+
+mixin customBlock
+  section.add-custom-block
+    .container
+      .content.edit-section
+        h2 Добавить блок
+        .add-items
+          .add-item-wrapper
+            .add-item
+              img(src="./img/aside-1.svg", alt="")
+            span.desc Товары
+          .add-item-wrapper
+            .add-item
+              img(src="./img/aside-1.svg", alt="")
+            span.desc Мессенджеры
+          .add-item-wrapper
+            .add-item
+              img(src="./img/aside-1.svg", alt="")
+            span.desc Разделитель
+          .add-item-wrapper
+            .add-item
+              img(src="./img/aside-1.svg", alt="")
+            span.desc Текст
+          .add-item-wrapper
+            .add-item
+              img(src="./img/aside-1.svg", alt="")
+            span.desc Изображение
+          .add-item-wrapper
+            .add-item
+              img(src="./img/aside-1.svg", alt="")
+            span.desc Ссылка
+          .add-item-wrapper
+            .add-item
+              img(src="./img/aside-1.svg", alt="")
+            span.desc Пиксель FB
+          .add-item-wrapper
+            .add-item
+              img(src="./img/aside-1.svg", alt="")
+            span.desc Заявка
+          .add-item-wrapper
+            .add-item
+              img(src="./img/aside-1.svg", alt="")
+            span.desc Меню
+
+
+mixin editors(orientation)
+  if orientation=='left'
+    .edit-items-wrapper.left
+      .edit-item
+        span.icon-arrow-d
+      .edit-item
+        span.icon-arrow-up
+      .edit-item
+        span.icon-del  
+  else if orientation=='right'
+    .edit-items-wrapper.right
+      .edit-item
+        span.icon-settings
+      .edit-item
+        span.icon-copy

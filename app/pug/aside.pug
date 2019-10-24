@@ -14,7 +14,7 @@ aside.aside
       .drop-link.js-drop-link
         .link-body
           img(src=`./img/aside-${i}.svg`, alt="").icon
-          span= item
+          span.text= item
           img(src="./img/arrow-down.svg", alt="").arrow
         .drop-menu.js-drop-menu
           a(href="") Создание мультиссылки
@@ -22,9 +22,9 @@ aside.aside
           a(href="") Прием платежей
   .bottom-links
     a(href="").link-body
-      img(src="./img/settings.svg", alt="")
-      span Настройки
+      span.icon-settings
+      span.text Настройки
     a(href="").link-body
       img(src="./img/exit.svg", alt="")
-      span Выход
+      span.text Выход
           
