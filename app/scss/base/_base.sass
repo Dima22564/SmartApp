@@ -11,11 +11,10 @@ body
   width: 100%
 
 h1
-  font-size: 48px
-  line-height: 48px
+  font-size: 24px
+  line-height: 24px
   color: $black
-  letter-spacing: -2px
-  font-weight: bold
+  font-weight: 600
 h2
   font-size: 24px
   line-height: 24px
@@ -55,26 +54,28 @@ button, input, textarea, span, div
   &:active
     outline: none !important
 
-.btn
-  border: none
-  font-size: 14px
-  line-height: 28px
-  transition: all 0.3s
-  cursor: pointer
-  font-weight: 600
-  color: $white
-  border-radius: 4px
-  display: inline-block
-  font-family: 'Montserrat', sans-serif !important
-.btn-blue-big
-  font-size: 16px
-  padding: 10px 24px
-  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+.btn-blue
+  padding: 12px 24px
   background: $blue
-  &:hover
-    box-shadow: 0 12px 12px -4px rgba(0, 187, 255, 0.12), 0 4px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(0, 187, 255, 0.24)
-  &:active
-    box-shadow: 0 8px 8px -4px rgba(0, 187, 255, 0.12), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(0, 187, 255, 0.24)
+  border-radius: 24px
+  font-weight: 600
+  font-size: 16px
+  line-height: 24px
+  color: $white
+  border: none
+  cursor: pointer
+
+.btn-white
+  padding: 12px 24px
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+  background: $white
+  border-radius: 24px
+  font-weight: 600
+  font-size: 16px
+  line-height: 24px
+  color: $d-gray
+  border: none
+  cursor: pointer
 
 .btn-blue-small
   padding: 4px 16px
@@ -85,24 +86,6 @@ button, input, textarea, span, div
   &:active
     box-shadow: 0 8px 8px -4px rgba(0, 187, 255, 0.12), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(0, 187, 255, 0.24)
 
-.btn-transp
-  color: $blue
-  padding: 4px 16px
-  background: rgba(0, 187, 255, 0.06)
-  font-weight: 500
-  &:hover
-    rgba(0, 187, 255, 0.12)
-
-.btn-white
-  color: $black
-  padding: 4px 16px
-  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
-  background: $white
-  font-weight: 500
-  &:hover
-    box-shadow: 0 12px 12px -4px rgba(20, 16, 41, 0.06), 0 4px 4px -1px rgba(20, 16, 41, 0.06), 0 1px 1px 0 rgba(20, 16, 41, 0.12)
-  &:active
-    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 1px 4px -1px rgba(20, 16, 41, 0.06), 0 1px 1px 0 rgba(20, 16, 41, 0.12)
 
 .input
   border-radius: 4px

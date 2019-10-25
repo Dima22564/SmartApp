@@ -1,5 +1,5 @@
 .aside
-  padding: 128px 0 65px
+  padding: 17px 0 65px
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06)
   background: $white
   max-width: 310px
@@ -7,6 +7,9 @@
   display: flex
   flex-direction: column
   justify-content: space-between
+  transform-origin: 0 100%
+  transition: all 0.7s
+  transition-timing-function: ease-in-out
   .link-body
     display: flex
     align-items: center
@@ -14,16 +17,42 @@
     cursor: pointer
     width: 100%
     transition: all 0.3s
+    flex-shrink: 0
     &:hover
       color: $black
     .text
       margin-left: 25px
+      flex-shrink: 0
     .arrow
       margin-left: auto
       opacity: 0.6
       transition:  all 0.3s
     .icon
       opacity: 0.6
+  &-logo
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 74px
+    padding-left: 24px
+    flex-shrink: 0
+    .logo
+      max-width: 167px
+      width: 100%
+    .arrow
+      border-radius: 4px 0 0 4px
+      width: 24px
+      height: 24px
+      background: $blue
+      color: $white
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      span
+        transform: rotate(90deg)
+        font-size: 11px
+
   &-links
     display: flex
     flex-direction: column

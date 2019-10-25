@@ -6,8 +6,13 @@
     'Контент план',
     'Делегирование'
   ];
-aside.aside
+aside.aside.js-aside
   .aside-links
+    .aside-logo
+      a(href="")
+        img(src="./img/logo.png", alt="").logo
+      .arrow.js-aside-hide
+        span.icon-arrow-up
     -var i = 0;
     each item in links
       -i++;

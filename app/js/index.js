@@ -19,4 +19,10 @@ $(document).ready(function () {
     $('.js-video .bg').hide();
     $('.js-video video')[0].play();
   })
+
+  $('.js-aside-hide').click(function(e){
+    $('.js-aside').css({
+      width: 0
+    })
+  })
 });
