@@ -1531,3 +1531,162 @@ div:active {
   padding: 0 8px;
   margin-top: 2px;
 }
+
+.main-project-pages {
+  background: #f4f5f8;
+}
+
+.main-project-pages .top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 63px 20px;
+}
+
+.main-project-pages .top-header button:not(:last-child) {
+  margin-right: 32px;
+}
+
+.main-project-pages .custom-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main-project-pages .custom-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-project-pages .custom-link:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.main-project-pages .custom-link.sub-link {
+  margin-left: 48px;
+}
+
+.main-project-pages .custom-link .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-project-pages .custom-link .arrows .arrow {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #ffffff;
+  width: 52px;
+  height: 48px;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.main-project-pages .custom-link .arrows .arrow span {
+  color: rgba(20, 16, 41, 0.6);
+}
+
+.main-project-pages .custom-link .arrows .arrow:not(:last-child) {
+  margin-right: 8px;
+}
+
+.main-project-pages .custom-link .arrows .arrow:hover {
+  background: #6b75ca;
+}
+
+.main-project-pages .custom-link .arrows .arrow:hover span {
+  color: #ffffff;
+}
+
+.main-project-pages .custom-link .arrows .arrow.up span {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.main-project-pages .custom-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06);
+  border-radius: 4px;
+  padding: 12px 18px 12px 24px;
+  max-width: 345px;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+
+.main-project-pages .custom-body .text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.main-project-pages .custom-body .text:hover {
+  color: #141029;
+  cursor: pointer;
+}
+
+.main-project-pages .custom-body .settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-project-pages .custom-body .settings .icon {
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.main-project-pages .custom-body .settings .icon:hover {
+  color: #141029;
+}
+
+.main-project-pages .custom-body .settings .icon:not(:last-child) {
+  margin-right: 11px;
+}
