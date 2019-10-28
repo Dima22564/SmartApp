@@ -1,0 +1,65 @@
+.wrapper-function.js-wrapper-function
+  .function-body.js-function-body
+    .function-add
+      .top  
+        .text
+          span.title Добавление товара
+          span.desc Стиль блока
+        img(src="./img/close.svg", alt="").close-func
+      .inputs
+        .input-wrapper
+          span.placeholder Проект
+          select(name="").js-select-menu
+            option(value="") Розница
+            option(value="") Розница
+        .input-wrapper
+          span.placeholder Название товара
+          input(type="text").input
+        .price
+          .input-wrapper
+            span.placeholder Цена
+            input(type="text").input
+          .input-wrapper
+            span.placeholder Цена со скидкой
+            input(type="text").input
+          .input-wrapper
+            span.placeholder Валюта
+            select(name="").js-select-menu
+              option(value="") USD
+              option(value="") USD
+        .input-wrapper
+          span.placeholder Категория товара
+          select(name="").js-select-menu
+            option(value="") Введите название категории
+            option(value="") Введите название категории
+        .input-wrapper.textarea
+            span.placeholder Цена со скидкой
+            textarea(name="").input
+            span.symbols 0 / 299
+        .photos
+          .input-wrapper
+            span.placeholder Превью товара
+            .photo-big
+              span.icon-settings.icon
+              img(src="./img/photo.jpg", alt="")
+          .input-wrapper
+            span.placeholder Фотографии  товара
+            .photos-small
+              .photo-item
+                span.icon-del.icon
+                img(src="./img/photo.jpg", alt="")
+              .photo-item
+                span.icon-del.icon
+                img(src="./img/photo.jpg", alt="")
+              .photo-item
+                span.icon-del.icon
+                img(src="./img/photo.jpg", alt="")
+              .photo-item
+                span.icon-del.icon
+                img(src="./img/photo.jpg", alt="")
+        .download
+          input#download(type="file", name="")
+          label.btn-blue(for="download") Загрузить
+        .bottom-bnts
+          button.btn-white Удалить товар
+          button.btn-blue Сохранить

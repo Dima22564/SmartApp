@@ -2,6 +2,20 @@
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06)
   background: $white
   padding: 12px 0
+  z-index: 9999999999
+  display: flex
+  align-items: center
+  transition: all 0.3s
+  .func-logo
+    display: none
+  &.func-active
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    .func-logo
+      display: block
+      margin-left: 24px
   &-content
     display: flex
     align-items: center

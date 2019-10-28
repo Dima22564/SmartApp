@@ -1,0 +1,87 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'goods';
+  -var title = 'Goods';
+
+block content
+  section.main-goods-header
+    .container
+      .content
+        .text
+          p.title Товары:
+          p.desc *Не забудьте добавить товары на свою мультиссылку
+        .btns
+          button.btn-white.js-import-btn Импортировать товар
+          button.btn-blue.js-add-func Добавить товар
+  section.main-goods-items
+    .container
+      .filter-items
+        .select
+          span.subtitle Проект
+          select(name="").js-select-menu
+            option(value="") Розница
+            option(value="") Розница
+        .btns
+          button.btn-white.active Все категории
+          button.btn-white Розница
+          button.btn-white Опт
+      .row
+        .col-xl-6
+          .good-item
+            .img
+              img(src="./img/flower.jpg", alt="")
+            .text
+              .top
+                p.title Доставка цветов опт
+                .settings
+                  span.icon-copy
+                  span.icon-settings
+                  span.icon-del  
+              p.common-text.
+                Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.
+              .bottom
+                span.desc Розница
+                .price
+                  span.old 500₽
+                  span.new 500₽
+        .col-xl-6
+          .good-item
+            .img
+              img(src="./img/flower.jpg", alt="")
+            .text
+              .top
+                p.title Доставка цветов опт
+                .settings
+                  span.icon-copy
+                  span.icon-settings
+                  span.icon-del  
+              p.common-text.
+                Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.
+              .bottom
+                span.desc Розница
+                .price
+                  span.old 500₽
+                  span.new 500₽
+        .col-xl-6
+          .good-item
+            .img
+              img(src="./img/flower.jpg", alt="")
+            .text
+              .top
+                p.title Доставка цветов опт
+                .settings
+                  span.icon-copy
+                  span.icon-settings
+                  span.icon-del  
+              p.common-text.
+                Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.
+              .bottom
+                span.desc Розница
+                .price
+                  span.old 500₽
+                  span.new 500₽
+    
+  include ./pug/add-item.pug
+  include ./pug/import.pug
+  
