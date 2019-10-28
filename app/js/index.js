@@ -82,4 +82,33 @@ $(document).ready(function () {
       $('.js-wrapper-function-import').fadeIn()
     })
 
+
+    $('.js-copy').click(function (e) {
+      e.preventDefault();
+      var refLink = $(this).parent().find('.js-copy-text');
+      refLink.select();
+      document.execCommand('copy');
+      window.getSelection().empty();
+    });
+
+    $('.js-add-settings').click(function(e){
+      $('.js-function-link').addClass('active');
+      setTimeout(function(){
+        $('.js-invisible-part-wrapper').show()
+      }, 200)
+      $(this).hide();
+    })
+
+    $('.js-hide-settings').click(function(e){
+      $('.js-invisible-part-wrapper').hide(200, function(){
+        $('.js-function-link').removeClass('active');
+        $('.js-add-settings').show();
+
+      })
+    })
+
+    $('.js-close-func-multilink').click(function(e){
+      $('.js-wrapper-function-link').hide();
+    })
+
 });
