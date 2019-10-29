@@ -1,0 +1,41 @@
+.payment-item
+  background: $white
+  padding: 21px
+  border-radius: 24px
+  margin-bottom: 30px
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+  .payment-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 19px
+    .wallet
+      display: flex
+      align-items: center
+      .title
+        font-size: 18px
+        line-height: 20px
+        font-weight: 600
+        color: $black
+        margin-left: 9px
+    .settings
+      opacity: 0.7
+      span
+        transition: all 0.2s
+        cursor: pointer
+        &:hover
+          opacity: 1
+          color: $black
+        &:not(:last-child)
+          margin-right: 14px
+  .status
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 14px
+    line-height: 20px
+    .num
+      font-size: 18px
+    .status-emp
+      color: $blue
+      font-size: 16px

@@ -1,0 +1,28 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'payment';
+  -var title = 'Payment';
+
+block content
+  section.main-payment-header
+    .container
+      .content
+        p.title Товары:
+        .btns
+          button.btn-blue Добавить кошелек
+  section.payment-items
+    .container
+      .row
+        .col-xl-6
+          .payment-item
+            .payment-top
+              .wallet 
+                img(src="./img/ya.png", alt="")
+                span.title Яндекс деньги
+              .settings
+                span.icon-settings
+                span.icon-del
+            .status
+              span.num 41004415285218642
+              span.status-emp Статус: Подключен

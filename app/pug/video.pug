@@ -1,0 +1,31 @@
+.wrapper-function.js-wrapper-video-function
+  .function-body.js-function-add-body
+    .function-video
+      .top  
+        .text
+          span.title Видео
+          span.desc Стиль блока
+        img(src="./img/close.svg", alt="").close-func
+      .bg-pic
+        .background.input-wrapper
+          span.placeholder Фон проекта
+          input#color(type="color")
+          label(for="color") 
+            img(src="./img/bg.jpg", alt="")
+        .background.input-wrapper
+          span.placeholder Изображение
+          input#picture(type="file")
+          label(for="picture") 
+            img(src="./img/pic.jpg", alt="")
+      .shadow
+        input#shadow(type="checkbox", name="")
+        label(for="shadow") Тень
+      .input-wrapper
+        span.placeholder Ссылка на видео (youtube/vimeo)
+        input(type="text").input
+      .video.js-video-edit
+        .bg
+          img(src="./img/play.svg", alt="").play-2
+        video(src="")
+      .btns
+        button.btn-blue Сохранить

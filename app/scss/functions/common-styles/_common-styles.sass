@@ -5,6 +5,7 @@
     border-radius: 4px
     box-shadow: none
     padding: 14px 24px
+    color: $d-gray !important
   .input-wrapper
     width: 100%
     display: flex
@@ -12,12 +13,19 @@
     align-items: flex-start
     margin-bottom: 16px
     position: relative
+    .custom-icon
+      background-image: url('../img/arrow-down.svg') !important
+      transition: all 0.3s
+      position: absolute
+      right: 14px
+      top: 36%
+      background-position: center center
     &.link
       position: relative
       .copy
         color: $black
         position: absolute
-        top: 50%
+        top: 38%
         right: 16px
         cursor: pointer
         font-size: 20px

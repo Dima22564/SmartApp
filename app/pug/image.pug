@@ -1,0 +1,47 @@
+.wrapper-function.js-wrapper-image-function
+  .function-body.js-function-add-body
+    .function-image
+      .top  
+        .text
+          span.title Изображение
+          span.desc Стиль блока
+        img(src="./img/close.svg", alt="").close-func
+      .bg-pic
+        .background.input-wrapper
+          span.placeholder Фон проекта
+          input#color(type="color")
+          label(for="color") 
+            img(src="./img/bg.jpg", alt="")
+        .background.input-wrapper
+          span.placeholder Изображение
+          input#picture(type="file")
+          label(for="picture") 
+            img(src="./img/pic.jpg", alt="")
+      .shadow
+        input#shadow(type="checkbox", name="")
+        label(for="shadow") Тень
+      .input-download
+        .input-wrapper
+          span.placeholder Ссылка на изображение
+          select(name="").js-select-menu
+            option(value="") Введите название категории
+            option(value="") Введите название категории
+        button.btn-blue Загрузить
+      .input-download
+        .input-wrapper
+          select(name="").js-select-menu
+            option(value="") Введите название категории
+            option(value="") Введите название категории
+        button.btn-blue Загрузить
+      .photos
+        .input-wrapper
+          .photo-big
+            span.icon-settings.icon
+            img(src="./img/photo.jpg", alt="")
+        .input-wrapper
+          .photo-big
+            span.icon-settings.icon
+            img(src="./img/photo.jpg", alt="")
+      .btns
+        button.btn-white Добавить изображение
+        button.btn-blue Сохранить

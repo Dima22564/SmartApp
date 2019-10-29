@@ -19,6 +19,11 @@ $(document).ready(function () {
     $('.js-video .bg').hide();
     $('.js-video video')[0].play();
   })
+  $('.js-video-edit .play-2').click(function (e) {
+    e.preventDefault();
+    $('.js-video-edit .bg').hide();
+    $('.js-video-edit video')[0].play();
+  })
 
   $('.js-aside-hide').click(function(e){
     $('.js-aside').css({
@@ -42,23 +47,47 @@ $(document).ready(function () {
 
     .selectmenu("menuWidget")
 
-    $('.js-add-func').click(function(e){
-      $('.js-wrapper-function').show(300, function(){
-        $('.js-function-body').css({
-          transform: 'translateX(0)'
+    // $('.js-add-func').click(function(e){
+    //   $('.js-wrapper-function').show(300, function(){
+    //     $('.js-function-add-body').css({
+    //       transform: 'translateX(0)'
+    //     })
+    //     $('body').css({
+    //       overflow: 'hidden'
+    //     })
+    //     $('main').css({
+    //       paddingTop: '72px'
+    //     })
+    //     $('.js-top-menu').addClass('func-active')
+    //   })
+    // })
+
+    editFunc('.js-add-func', '.js-wrapper-function');
+    editFunc('.js-edit-text-func', '.js-wrapper-text-function');
+    editFunc('.js-edit-image-func', '.js-wrapper-image-function');
+    editFunc('.js-edit-video-func', '.js-wrapper-video-function');
+    editFunc('.js-edit-pixel-func', '.js-wrapper-pixel-function');
+
+    function editFunc(btn, el){
+      $(btn).click(function(e){
+        $(el).show(300, function(){
+          $('.js-function-add-body').css({
+            transform: 'translateX(0)'
+          })
+          $('body').css({
+            overflow: 'hidden'
+          })
+          $('main').css({
+            paddingTop: '72px'
+          })
+          $('.js-top-menu').addClass('func-active')
         })
-        $('body').css({
-          overflow: 'hidden'
-        })
-        $('main').css({
-          paddingTop: '72px'
-        })
-        $('.js-top-menu').addClass('func-active')
       })
-    })
+    }
+
 
     $('.close-func').click(function(e){
-      $('.js-function-body').css({
+      $('.js-function-add-body').css({
         transform: 'translateX(300%)'
       })
       $('body').css({
@@ -69,8 +98,7 @@ $(document).ready(function () {
       })
       $('.js-top-menu').removeClass('func-active')
       setTimeout(function(){
-        $('.js-wrapper-function').hide()
-
+        $('.close-func').parents('.wrapper-function').hide()
       }, 300)
     })
 
@@ -110,5 +138,26 @@ $(document).ready(function () {
     $('.js-close-func-multilink').click(function(e){
       $('.js-wrapper-function-link').hide();
     })
+    $('.js-close-func-multilink').click(function(e){
+      $('.js-wrapper-function-link-2').hide();
+    })
+
+    $('.js-text-align').click(function(e){
+      e.preventDefault();
+      $('.js-text-align').removeClass('active')
+      $(this).addClass('active')
+      var attr = $(this).attr('data-text')
+      $('#text-block').css({
+        textAlign: attr
+      })
+    })
+    $('.js-text-style').click(function(e){
+      e.preventDefault();
+      var attr = $(this).attr('data-style')
+      $(this).toggleClass('active')
+      $('#text-block').toggleClass(attr)
+    })
+
+
 
 });

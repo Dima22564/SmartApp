@@ -47,7 +47,7 @@ mixin customBlock
             span.desc Меню
 
 
-mixin editors(orientation)
+mixin editors(orientation, func)
   if orientation=='left'
     .edit-items-wrapper.left
       .edit-item
@@ -58,7 +58,7 @@ mixin editors(orientation)
         span.icon-del  
   else if orientation=='right'
     .edit-items-wrapper.right
-      .edit-item
+      .edit-item(class= func)
         span.icon-settings
       .edit-item
         span.icon-copy

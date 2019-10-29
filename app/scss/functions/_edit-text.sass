@@ -1,0 +1,97 @@
+.function-edit-text
+  background: $white
+  height: calc(100% - 72px)
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06)
+  padding: 38px 90px 115px 32px
+  max-width: 535px
+  width: 100%
+  overflow-y: auto
+  .bg-pic
+    display: flex
+    align-items: flex-start
+    margin-bottom: 16px
+    .background
+      width: initial
+      margin: 0
+      &:not(:last-child)
+        margin-right: 39px
+      .placeholder
+        margin-left: 0
+    .background
+      input
+        display: none
+      label
+        cursor: pointer
+  .shadow
+    font-size: 14px
+    line-height: 20px
+    margin-bottom: 36px
+    input
+      display: none
+      &:checked ~ label::before
+        background-image: url('../img/check.svg')
+        background-color: $blue
+        
+    label
+      display: flex
+      align-items: center
+      cursor: pointer
+      &::before
+        content: ''
+        width: 24px
+        height: 24px
+        background:  #f4f5f8
+        border-radius: 4px
+        background-repeat: no-repeat
+        background-position: center center
+        margin-right: 16px
+  .textarea
+    .subtitle
+      margin-bottom: 8px
+      font-size: 12px
+      line-height: 12px
+    .text-settings
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      margin-bottom: 8px
+      .item
+        box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+        width: 24px
+        height: 24px
+        border-radius: 4px
+        background: $white
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        transition: all 0.2s
+        &:hover
+          background: #f4f5f8
+        &.active
+          color: $blue
+        &:not(:last-child)
+          margin-right: 8px
+    textarea
+      width: 100%
+      background: #f4f5f8
+      border-radius: 4px
+      padding: 15px
+      min-height: 189px
+      resize: none
+      border: none
+      margin-bottom: 7px
+      &.bold
+        font-weight: bold !important
+      &.italic
+        font-style: italic
+      &.underline
+        text-decoration: underline
+    .symbols
+      text-align: right
+      font-size: 12px
+      line-height: 12px
+      margin-bottom: 13px
+    .btn-blue
+      margin-bottom: 100px
+    

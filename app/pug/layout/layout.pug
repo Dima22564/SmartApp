@@ -18,21 +18,21 @@ html(lang="ru")
 
   body
 
-  .page(class='')
-
-    //- Aside
-    include ../aside.pug
-    //- Aside
-
-
-    main.main(class= `main-${page}`)
-
-      //- Top menu
-      include ../top-menu.pug
-      //- Top menu
-
-      block content
+    .page(class='')
   
+      //- Aside
+      include ../aside.pug
+      //- Aside
+  
+  
+      main.main(class= `main-${page}`)
+  
+        //- Top menu
+        include ../top-menu.pug
+        //- Top menu
+  
+        block content
+    
 
 
 

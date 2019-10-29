@@ -15,6 +15,26 @@
     justify-content: flex-end
     transform: translateX(300%)
     transition: all 0.3s
+    .top
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      margin-bottom: 48px
+      img
+        cursor: pointer
+      .text
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        .desc
+          font-size: 12px
+          line-height: 20px
+          margin-top: 3px
+      .title
+        color: $black
+        font-size: 24px
+        line-height: 24px
+        font-weight: 600
     .function-add
       background: $white
       height: calc(100% - 72px)
@@ -23,26 +43,6 @@
       max-width: 535px
       width: 100%
       overflow-y: auto
-      .top
-        display: flex
-        align-items: flex-start
-        justify-content: space-between
-        margin-bottom: 48px
-        img
-          cursor: pointer
-        .text
-          display: flex
-          flex-direction: column
-          align-items: flex-start
-          .desc
-            font-size: 12px
-            line-height: 20px
-            margin-top: 3px
-        .title
-          color: $black
-          font-size: 24px
-          line-height: 24px
-          font-weight: 600
       .inputs
         display: flex
         flex-direction: column
@@ -65,7 +65,11 @@
           margin-bottom: 16px
           .input-wrapper
             margin: 0
-            width: 32%
+            width: 34%
+            .placeholder
+              margin-left: 13px
+            &.currency
+              width: 30%
         .photos
           display: flex
           align-items: flex-start

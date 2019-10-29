@@ -1,0 +1,35 @@
+.wrapper-function.js-wrapper-text-function
+  .function-body.js-function-add-body
+    .function-edit-text
+      .top  
+        .text
+          span.title Текстовый блок
+          span.desc Стиль блока
+        img(src="./img/close.svg", alt="").close-func
+      .bg-pic
+        .background.input-wrapper
+          span.placeholder Фон проекта
+          input#color(type="color")
+          label(for="color") 
+            img(src="./img/bg.jpg", alt="")
+        .background.input-wrapper
+          span.placeholder Изображение
+          input#picture(type="file")
+          label(for="picture") 
+            img(src="./img/pic.jpg", alt="")
+      .shadow
+        input#shadow(type="checkbox", name="")
+        label(for="shadow") Тень
+      .textarea
+        p.subtitle Контент
+        .text-settings
+          .item.js-text-style(data-style="bold")
+          .item.js-text-style(data-style="italic")
+          .item.js-text-style(data-style="underline")
+          .item.js-text-align(data-text="left")
+          .item.js-text-align(data-text="center")
+          .item.js-text-align(data-text="right")
+          .item.js-text-align(data-text="justify")
+        textarea#text-block(name="")
+        p.symbols 0 / 299
+        button.btn-blue Сохранить
