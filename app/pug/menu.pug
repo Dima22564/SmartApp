@@ -1,0 +1,38 @@
+.wrapper-function.js-wrapper-menu-function
+  .function-body.js-function-add-body
+    .function-edit-menu
+      .top  
+        .text
+          span.title Меню
+          span.desc Стиль блока
+        img(src="./img/close.svg", alt="").close-func
+      .bg-pic
+        .background.input-wrapper
+          span.placeholder Фон проекта
+          input#color-3(type="color")
+          label(for="color-3") 
+            img(src="./img/bg.jpg", alt="")
+      .shadow
+        input#shadow-3(type="checkbox", name="")
+        label(for="shadow-3") Тень
+      .input-del
+        .input-wrapper
+          span.placeholder Разделы
+          input(type="text").input
+        .del
+          span.icon-del
+      a(href="").add Добавить субменю
+      .input-del
+        .input-wrapper
+          input(type="text").input
+        .del
+          span.icon-del
+      .input-del.sub
+        .input-wrapper
+          input(type="text").input
+        .del
+          span.icon-del
+      a(href="").add.sub Добавить субменю
+      .btns
+        button.btn-white Добавить раздел
+        button.btn-blue Сохранить

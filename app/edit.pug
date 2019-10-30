@@ -34,7 +34,7 @@ block content
             a(href="").nav-link Контакты
           .edit-items-wrapper
             .edit-item
-              span.icon-settings
+              span.icon-settings.js-edit-menu-func
             .edit-item
               span.icon-copy
         .profile-sec
@@ -218,7 +218,7 @@ block content
           .top-edit
             +editors('left')
             h2 Оплата
-            +editors('right')
+            +editors('right', 'js-edit-pay-func')
           p.edit-text Заказ цветов на дом
           .row.justify-content-center
             .col-xl-6
@@ -276,7 +276,9 @@ block content
   //- include ./pug/text-block.pug
   //- include ./pug/image.pug
   //- include ./pug/video.pug
-  include ./pug/pixel.pug
+  //- include ./pug/pixel.pug
+  //- include ./pug/menu.pug
+  include ./pug/pay.pug
   
 
 

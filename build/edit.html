@@ -82,7 +82,7 @@
                                     </div><a class="nav-link" href>Отзывы</a><a class="nav-link" href>Фотогаллерея</a><a class="nav-link" href>Контакты</a>
                                 </div>
                                 <div class="edit-items-wrapper">
-                                    <div class="edit-item"><span class="icon-settings"></span></div>
+                                    <div class="edit-item"><span class="icon-settings js-edit-menu-func"></span></div>
                                     <div class="edit-item"><span class="icon-copy"></span></div>
                                 </div>
                             </div>
@@ -366,7 +366,7 @@
                                     </div>
                                     <h2>Оплата</h2>
                                     <div class="edit-items-wrapper right">
-                                        <div class="edit-item"><span class="icon-settings"></span></div>
+                                        <div class="edit-item js-edit-pay-func"><span class="icon-settings"></span></div>
                                         <div class="edit-item"><span class="icon-copy"></span></div>
                                     </div>
                                 </div>
@@ -489,17 +489,51 @@
                         </div>
                     </section>
                 </div>
-                <div class="wrapper-function js-wrapper-pixel-function">
+                <div class="wrapper-function js-wrapper-pay-function">
                     <div class="function-body js-function-add-body">
-                        <div class="function-pixel">
+                        <div class="function-edit-pay">
                             <div class="top">
-                                <div class="text"><span class="title">Пиксель Facebook</span></div><img class="close-func" src="./img/close.svg" alt>
+                                <div class="text"><span class="title">Оплата</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
                             </div>
-                            <div class="input-wrapper"><span class="placeholder">ID пикселя Facebook</span>
-                                <select class="js-select-menu" name>
-                                    <option value="">Розница</option>
-                                    <option value="">Розница</option>
-                                </select>
+                            <div class="bg-pic">
+                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                    <input id="color-4" type="color">
+                                    <label for="color-4"> <img src="./img/bg.jpg" alt></label>
+                                </div>
+                                <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                    <input id="picture-4" type="file">
+                                    <label for="picture-4"> <img src="./img/pic.jpg" alt></label>
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="shadow-4" name type="checkbox">
+                                <label for="shadow-4">Тень</label>
+                            </div>
+                            <div class="textarea">
+                                <p class="subtitle">Заголовок</p>
+                                <div class="text-settings">
+                                    <div class="item js-text-style" data-style="underline"></div>
+                                    <div class="item js-text-align" data-text="left"></div>
+                                    <div class="item js-text-align" data-text="center"></div>
+                                    <div class="item js-text-align" data-text="right"></div>
+                                    <div class="item js-text-align" data-text="justify"></div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input class="input title-input" id="text-block-2" type="text">
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">Способ оплаты</span>
+                                    <select class="js-select-menu" name>
+                                        <option value="">Яндекс деньги</option>
+                                        <option value="">Яндекс деньги</option>
+                                    </select>
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">Стоимость</span>
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="price" name type="checkbox">
+                                <label for="price">Покупатель может изменять цену</label>
                             </div>
                             <div class="btns">
                                 <button class="btn-blue">Сохранить</button>

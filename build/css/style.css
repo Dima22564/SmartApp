@@ -3231,3 +3231,305 @@ div:active {
 .function-pixel .input-wrapper .placeholder {
   margin-left: 0;
 }
+
+.function-edit-menu {
+  background: #ffffff;
+  height: calc(100% - 72px);
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
+  padding: 38px 90px 115px 32px;
+  max-width: 535px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.function-edit-menu .bg-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.function-edit-menu .bg-pic .background {
+  width: initial;
+  margin: 0;
+}
+
+.function-edit-menu .bg-pic .background:not(:last-child) {
+  margin-right: 39px;
+}
+
+.function-edit-menu .bg-pic .background .placeholder {
+  margin-left: 0;
+}
+
+.function-edit-menu .bg-pic .background input {
+  display: none;
+}
+
+.function-edit-menu .bg-pic .background label {
+  cursor: pointer;
+}
+
+.function-edit-menu .shadow {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 36px;
+}
+
+.function-edit-menu .shadow input {
+  display: none;
+}
+
+.function-edit-menu .shadow input:checked ~ label::before {
+  background-image: url("../img/check.svg");
+  background-color: #6b75ca;
+}
+
+.function-edit-menu .shadow label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.function-edit-menu .shadow label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: #f4f5f8;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 16px;
+}
+
+.function-edit-menu .input-del {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.function-edit-menu .input-del.sub {
+  margin-left: 32px;
+}
+
+.function-edit-menu .input-del .input-wrapper {
+  margin-bottom: 0;
+}
+
+.function-edit-menu .input-del .del {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  width: 52px;
+  height: 48px;
+  background: #ffffff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-left: 16px;
+}
+
+.function-edit-menu .add {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #6b75ca;
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 12px;
+  margin: 9px 0 18px;
+}
+
+.function-edit-menu .add.sub {
+  margin-left: 32px;
+}
+
+.function-edit-menu .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 16px 0 100px 0;
+}
+
+.function-edit-menu .btns button:not(:last-child) {
+  margin-right: 16px;
+}
+
+.function-edit-pay {
+  background: #ffffff;
+  height: calc(100% - 72px);
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
+  padding: 38px 90px 115px 32px;
+  max-width: 535px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.function-edit-pay .bg-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.function-edit-pay .bg-pic .background {
+  width: initial;
+  margin: 0;
+}
+
+.function-edit-pay .bg-pic .background:not(:last-child) {
+  margin-right: 39px;
+}
+
+.function-edit-pay .bg-pic .background .placeholder {
+  margin-left: 0;
+}
+
+.function-edit-pay .bg-pic .background input {
+  display: none;
+}
+
+.function-edit-pay .bg-pic .background label {
+  cursor: pointer;
+}
+
+.function-edit-pay .shadow {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 36px;
+}
+
+.function-edit-pay .shadow input {
+  display: none;
+}
+
+.function-edit-pay .shadow input:checked ~ label::before {
+  background-image: url("../img/check.svg");
+  background-color: #6b75ca;
+}
+
+.function-edit-pay .shadow label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.function-edit-pay .shadow label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: #f4f5f8;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 16px;
+}
+
+.function-edit-pay .textarea .subtitle {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.function-edit-pay .textarea .text-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+
+.function-edit-pay .textarea .text-settings .item {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.function-edit-pay .textarea .text-settings .item:hover {
+  background: #f4f5f8;
+}
+
+.function-edit-pay .textarea .text-settings .item.active {
+  color: #6b75ca;
+}
+
+.function-edit-pay .textarea .text-settings .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.function-edit-pay .textarea .title-input.bold {
+  font-weight: bold !important;
+}
+
+.function-edit-pay .textarea .title-input.italic {
+  font-style: italic;
+}
+
+.function-edit-pay .textarea .title-input.underline {
+  text-decoration: underline;
+}
+
+.function-edit-pay .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 16px 0 100px 0;
+}
+
+.function-edit-pay .btns button:not(:last-child) {
+  margin-right: 16px;
+}
