@@ -1,0 +1,46 @@
+.function-avatar
+  background: $white
+  height: calc(100% - 72px)
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06)
+  padding: 38px 90px 115px 32px
+  max-width: 535px
+  width: 100%
+  overflow-y: auto
+  .bg-pic
+    display: flex
+    align-items: flex-start
+    margin-bottom: 16px
+    .background
+      width: initial
+      margin: 0
+      &:not(:last-child)
+        margin-right: 39px
+      .placeholder
+        margin-left: 0
+    .background
+      input
+        display: none
+      label
+        cursor: pointer
+  .shadow
+    font-size: 14px
+    line-height: 20px
+    margin-bottom: 36px
+    input
+      display: none
+      &:checked ~ label::before
+        background-image: url('../img/check.svg')
+        background-color: $blue
+    label
+      display: flex
+      align-items: center
+      cursor: pointer
+      &::before
+        content: ''
+        width: 24px
+        height: 24px
+        background:  #f4f5f8
+        border-radius: 4px
+        background-repeat: no-repeat
+        background-position: center center
+        margin-right: 16px

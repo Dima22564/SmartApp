@@ -37,8 +37,20 @@ block content
               span.icon-settings.js-edit-menu-func
             .edit-item
               span.icon-copy
-        .profile-sec
-          img(src="./img/profile.jpg", alt="").profile-sec-icon
+        .main-edit-icon.edit-section
+          .top-edit
+            +editors('left')
+            h2 Аватарка мини-сайта
+            +editors('right', 'js-edit-icon-func')
+          .row.justify-content-center
+            .col-xl-7
+              .profile-icon
+                img(src="./img/profile.jpg", alt="").profile-img
+                .desc
+                  p.text Загрузите квадратное изображение выбрав его на компьютере или перетищите картинку в эту область
+                  input#icon(type="file", name="")
+                  label(for="icon") Загрузить
+
 
         +addBlock
 
@@ -278,7 +290,8 @@ block content
   //- include ./pug/video.pug
   //- include ./pug/pixel.pug
   //- include ./pug/menu.pug
-  include ./pug/pay.pug
+  //- include ./pug/pay.pug
+  include ./pug/avatar.pug
   
 
 
