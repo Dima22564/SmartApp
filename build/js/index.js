@@ -26,7 +26,8 @@ $(document).ready(function () {
   });
   $('.js-aside-hide').click(function (e) {
     $('.js-aside').css({
-      width: 0
+      width: 0,
+      overflow: 'hidden'
     });
   });
   $(".js-select-menu").selectmenu({
