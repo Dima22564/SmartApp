@@ -8,332 +8,336 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&amp;display=swap" rel="stylesheet">
         <link href="./libs/css/vendor.min.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
+        <script src="./libs/js/vue.js"></script>
         <title>Goods</title>
     </head>
     <body>
-        <div class="page">
-            <aside class="aside js-aside">
-                <div class="aside-links">
-                    <div class="aside-logo"><a href=""><img class="logo" src="./img/logo.png" alt></a>
-                        <div class="arrow js-aside-hide"><span class="icon-arrow-up"></span></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-1.svg" alt><span class="text">Рабочий стол</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-2.svg" alt><span class="text">Мультиссылка</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-3.svg" alt><span class="text">Статистика</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-4.svg" alt><span class="text">Контент план</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-5.svg" alt><span class="text">Делегирование</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                </div>
-                <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
-            </aside>
-            <main class="main main-goods">
-                <header class="top-menu js-top-menu"><a class="func-logo" href><img src="./img/logo.png" alt></a>
-                    <div class="container">
-                        <div class="top-menu-content">
-                            <div class="links"><a class="top-link emp" href>Инструменты</a><a class="top-link" href>Биржа рекламы</a></div>
-                            <div class="right-panel">
-                                <div class="tariff">
-                                    <div class="top"><span class="emp">Тариф: Максимальный</span><span>365 дней</span></div>
-                                    <div class="progress-1"><span></span></div>
-                                </div>
-                                <div class="notices">
-                                    <div class="wrapper"><img src="./img/notice.svg" alt><span>2</span></div>
-                                </div>
-                                <div class="profile">
-                                    <div class="avatar"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                            </div>
+        <div id="app">
+            <div class="page">
+                <aside class="aside js-aside">
+                    <div class="aside-links">
+                        <div class="aside-logo"><a href=""><img class="logo" src="./img/logo.png" alt></a>
+                            <div class="arrow js-aside-hide"><span class="icon-arrow-up"></span></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-1.svg" alt><span class="text">Рабочий стол</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-2.svg" alt><span class="text">Мультиссылка</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-3.svg" alt><span class="text">Статистика</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-4.svg" alt><span class="text">Контент план</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-5.svg" alt><span class="text">Делегирование</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
                         </div>
                     </div>
-                </header>
-                <section class="main-goods-header">
-                    <div class="container">
-                        <div class="content">
-                            <div class="text">
-                                <p class="title">Товары:</p>
-                                <p class="desc">*Не забудьте добавить товары на свою мультиссылку</p>
-                            </div>
-                            <div class="btns">
-                                <button class="btn-white js-import-btn">Импортировать товар</button>
-                                <button class="btn-blue js-add-func">Добавить товар</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="main-goods-items">
-                    <div class="container">
-                        <div class="filter-items">
-                            <div class="select"><span class="subtitle">Проект</span>
-                                <select class="js-select-menu" name>
-                                    <option value="">Розница</option>
-                                    <option value="">Розница</option>
-                                </select>
-                            </div>
-                            <div class="btns">
-                                <button class="btn-white active">Все категории</button>
-                                <button class="btn-white">Розница</button>
-                                <button class="btn-white">Опт</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="good-item">
-                                    <div class="img"><img src="./img/flower.jpg" alt></div>
-                                    <div class="text">
-                                        <div class="top">
-                                            <p class="title">Доставка цветов опт</p>
-                                            <div class="settings"><span class="icon-copy"></span><span class="icon-settings"></span><span class="icon-del"> </span></div>
-                                        </div>
-                                        <p class="common-text">Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.</p>
-                                        <div class="bottom"><span class="desc">Розница</span>
-                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div>
-                                        </div>
+                    <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
+                </aside>
+                <main class="main main-goods">
+                    <header class="top-menu js-top-menu"><a class="func-logo" href><img src="./img/logo.png" alt></a>
+                        <div class="container">
+                            <div class="top-menu-content">
+                                <div class="links"><a class="top-link emp" href>Инструменты</a><a class="top-link" href>Биржа рекламы</a></div>
+                                <div class="right-panel">
+                                    <div class="tariff">
+                                        <div class="top"><span class="emp">Тариф: Максимальный</span><span>365 дней</span></div>
+                                        <div class="progress-1"><span></span></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="good-item">
-                                    <div class="img"><img src="./img/flower.jpg" alt></div>
-                                    <div class="text">
-                                        <div class="top">
-                                            <p class="title">Доставка цветов опт</p>
-                                            <div class="settings"><span class="icon-copy"></span><span class="icon-settings"></span><span class="icon-del"> </span></div>
-                                        </div>
-                                        <p class="common-text">Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.</p>
-                                        <div class="bottom"><span class="desc">Розница</span>
-                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div>
-                                        </div>
+                                    <div class="notices">
+                                        <div class="wrapper"><img src="./img/notice.svg" alt><span>2</span></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="good-item">
-                                    <div class="img"><img src="./img/flower.jpg" alt></div>
-                                    <div class="text">
-                                        <div class="top">
-                                            <p class="title">Доставка цветов опт</p>
-                                            <div class="settings"><span class="icon-copy"></span><span class="icon-settings"></span><span class="icon-del"> </span></div>
-                                        </div>
-                                        <p class="common-text">Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.</p>
-                                        <div class="bottom"><span class="desc">Розница</span>
-                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div>
-                                        </div>
+                                    <div class="profile">
+                                        <div class="avatar"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <div class="wrapper-function js-wrapper-function">
-                    <div class="function-body js-function-add-body">
-                        <div class="function-add">
-                            <div class="top">
-                                <div class="text"><span class="title">Добавление товара</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                    </header>
+                    <section class="main-goods-header">
+                        <div class="container">
+                            <div class="content">
+                                <div class="text">
+                                    <p class="title">Товары:</p>
+                                    <p class="desc">*Не забудьте добавить товары на свою мультиссылку</p>
+                                </div>
+                                <div class="btns">
+                                    <button class="btn-white js-import-btn">Импортировать товар</button>
+                                    <button class="btn-blue js-add-func">Добавить товар</button>
+                                </div>
                             </div>
-                            <div class="inputs">
-                                <div class="input-wrapper"><span class="placeholder">Проект</span>
+                        </div>
+                    </section>
+                    <section class="main-goods-items">
+                        <div class="container">
+                            <div class="filter-items">
+                                <div class="select"><span class="subtitle">Проект</span>
                                     <select class="js-select-menu" name>
                                         <option value="">Розница</option>
                                         <option value="">Розница</option>
                                     </select>
                                 </div>
-                                <div class="input-wrapper"><span class="placeholder">Название товара</span>
-                                    <input class="input" type="text">
+                                <div class="btns">
+                                    <button class="btn-white active">Все категории</button>
+                                    <button class="btn-white">Розница</button>
+                                    <button class="btn-white">Опт</button>
                                 </div>
-                                <div class="price">
-                                    <div class="input-wrapper"><span class="placeholder">Цена</span>
-                                        <input class="input" type="text">
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="good-item">
+                                        <div class="img"><img src="./img/flower.jpg" alt></div>
+                                        <div class="text">
+                                            <div class="top">
+                                                <p class="title">Доставка цветов опт</p>
+                                                <div class="settings"><span class="icon-copy"></span><span class="icon-settings"></span><span class="icon-del"> </span></div>
+                                            </div>
+                                            <p class="common-text">Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.</p>
+                                            <div class="bottom"><span class="desc">Розница</span>
+                                                <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="input-wrapper"><span class="placeholder">Цена со скидкой</span>
-                                        <input class="input" type="text">
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="good-item">
+                                        <div class="img"><img src="./img/flower.jpg" alt></div>
+                                        <div class="text">
+                                            <div class="top">
+                                                <p class="title">Доставка цветов опт</p>
+                                                <div class="settings"><span class="icon-copy"></span><span class="icon-settings"></span><span class="icon-del"> </span></div>
+                                            </div>
+                                            <p class="common-text">Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.</p>
+                                            <div class="bottom"><span class="desc">Розница</span>
+                                                <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="input-wrapper currency"><span class="placeholder">Валюта</span>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="good-item">
+                                        <div class="img"><img src="./img/flower.jpg" alt></div>
+                                        <div class="text">
+                                            <div class="top">
+                                                <p class="title">Доставка цветов опт</p>
+                                                <div class="settings"><span class="icon-copy"></span><span class="icon-settings"></span><span class="icon-del"> </span></div>
+                                            </div>
+                                            <p class="common-text">Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.</p>
+                                            <div class="bottom"><span class="desc">Розница</span>
+                                                <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="wrapper-function js-wrapper-function">
+                        <div class="function-body js-function-add-body">
+                            <div class="function-add">
+                                <div class="top">
+                                    <div class="text"><span class="title">Добавление товара</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                                </div>
+                                <div class="inputs">
+                                    <div class="input-wrapper"><span class="placeholder">Проект</span>
                                         <select class="js-select-menu" name>
-                                            <option value="">USD</option>
-                                            <option value="">USD</option>
+                                            <option value="">Розница</option>
+                                            <option value="">Розница</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="input-wrapper"><span class="placeholder">Категория товара</span>
-                                    <select class="js-select-menu" name>
-                                        <option value="">Введите название категории</option>
-                                        <option value="">Введите название категории</option>
-                                    </select>
-                                </div>
-                                <div class="input-wrapper textarea"><span class="placeholder">Цена со скидкой</span>
-                                    <textarea class="input" name></textarea><span class="symbols">0 / 299</span>
-                                </div>
-                                <div class="photos">
-                                    <div class="input-wrapper"><span class="placeholder">Превью товара</span>
-                                        <div class="photo-big"><span class="icon-settings icon"></span><img src="./img/photo.jpg" alt></div>
+                                    <div class="input-wrapper"><span class="placeholder">Название товара</span>
+                                        <input class="input" type="text">
                                     </div>
-                                    <div class="input-wrapper"><span class="placeholder">Фотографии товара</span>
-                                        <div class="photos-small">
-                                            <div class="photo-item"><span class="icon-del icon"></span><img src="./img/photo.jpg" alt></div>
-                                            <div class="photo-item"><span class="icon-del icon"></span><img src="./img/photo.jpg" alt></div>
-                                            <div class="photo-item"><span class="icon-del icon"></span><img src="./img/photo.jpg" alt></div>
-                                            <div class="photo-item"><span class="icon-del icon"></span><img src="./img/photo.jpg" alt></div>
+                                    <div class="price">
+                                        <div class="input-wrapper"><span class="placeholder">Цена</span>
+                                            <input class="input" type="text">
+                                        </div>
+                                        <div class="input-wrapper"><span class="placeholder">Цена со скидкой</span>
+                                            <input class="input" type="text">
+                                        </div>
+                                        <div class="input-wrapper currency"><span class="placeholder">Валюта</span>
+                                            <select class="js-select-menu" name>
+                                                <option value="">USD</option>
+                                                <option value="">USD</option>
+                                            </select>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="download">
-                                    <input id="download" name type="file">
-                                    <label class="btn-blue" for="download">Загрузить</label>
-                                </div>
-                                <div class="bottom-bnts">
-                                    <button class="btn-white">Удалить товар</button>
-                                    <button class="btn-blue">Сохранить</button>
+                                    <div class="input-wrapper"><span class="placeholder">Категория товара</span>
+                                        <select class="js-select-menu" name>
+                                            <option value="">Введите название категории</option>
+                                            <option value="">Введите название категории</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-wrapper textarea"><span class="placeholder">Цена со скидкой</span>
+                                        <textarea class="input" name></textarea><span class="symbols">0 / 299</span>
+                                    </div>
+                                    <div class="photos">
+                                        <div class="input-wrapper"><span class="placeholder">Превью товара</span>
+                                            <div class="photo-big"><span class="icon-settings icon"></span><img src="./img/photo.jpg" alt></div>
+                                        </div>
+                                        <div class="input-wrapper"><span class="placeholder">Фотографии товара</span>
+                                            <div class="photos-small">
+                                                <div class="photo-item"><span class="icon-del icon"></span><img src="./img/photo.jpg" alt></div>
+                                                <div class="photo-item"><span class="icon-del icon"></span><img src="./img/photo.jpg" alt></div>
+                                                <div class="photo-item"><span class="icon-del icon"></span><img src="./img/photo.jpg" alt></div>
+                                                <div class="photo-item"><span class="icon-del icon"></span><img src="./img/photo.jpg" alt></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="download">
+                                        <input id="download" name type="file">
+                                        <label class="btn-blue" for="download">Загрузить</label>
+                                    </div>
+                                    <div class="bottom-bnts">
+                                        <button class="btn-white">Удалить товар</button>
+                                        <button class="btn-blue">Сохранить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="wrapper-function js-wrapper-function-import">
-                    <div class="function-body-import js-function-body">
-                        <div class="function-import">
-                            <div class="top"> <span class="title">Добавление товара</span><img class="close-func-import" src="./img/close.svg" alt></div>
-                            <p class="load">Скачайте шаблон для загрузки товаров <a href="#">.xls .txt</a> </p>
-                            <div class="input-load">
-                                <input id="load" type="file">
-                                <label for="load"><span>Перетащите файл сюда</span></label>
-                            </div>
-                            <div class="bottom">
-                                <button class="btn-blue">Загрузить товары (txt)</button>
-                                <button class="btn-blue">Загрузить товары (xls)</button>
+                    <div class="wrapper-function js-wrapper-function-import">
+                        <div class="function-body-import js-function-body">
+                            <div class="function-import">
+                                <div class="top"> <span class="title">Добавление товара</span><img class="close-func-import" src="./img/close.svg" alt></div>
+                                <p class="load">Скачайте шаблон для загрузки товаров <a href="#">.xls .txt</a> </p>
+                                <div class="input-load">
+                                    <input id="load" type="file">
+                                    <label for="load"><span>Перетащите файл сюда</span></label>
+                                </div>
+                                <div class="bottom">
+                                    <button class="btn-blue">Загрузить товары (txt)</button>
+                                    <button class="btn-blue">Загрузить товары (xls)</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="wrapper-function js-wrapper-function-link">
-                    <div class="function-body-link js-function-body">
-                        <div class="function-link js-function-link">
-                            <div class="top"> <span class="title">Мультиссылка</span><img class="js-close-func-multilink" src="./img/close.svg" alt></div>
-                            <p class="subtitle">Настройка проекта</p>
-                            <div class="content">
-                                <div class="visible-part">
-                                    <div class="inputs">
-                                        <div class="input-wrapper"><span class="placeholder">Название проекта</span>
-                                            <input class="input" type="text">
+                    <div class="wrapper-function js-wrapper-function-link">
+                        <div class="function-body-link js-function-body">
+                            <div class="function-link js-function-link">
+                                <div class="top"> <span class="title">Мультиссылка</span><img class="js-close-func-multilink" src="./img/close.svg" alt></div>
+                                <p class="subtitle">Настройка проекта</p>
+                                <div class="content">
+                                    <div class="visible-part">
+                                        <div class="inputs">
+                                            <div class="input-wrapper"><span class="placeholder">Название проекта</span>
+                                                <input class="input" type="text">
+                                            </div>
+                                            <div class="input-wrapper"><span class="placeholder">Название минисайта</span>
+                                                <input class="input" type="text">
+                                            </div>
+                                            <div class="input-wrapper link"><span class="placeholder">Ваша ссылка</span>
+                                                <input class="input js-copy-text" type="text" readonly="true"><span class="copy icon-copy js-copy"></span><span class="addition js-add-settings">Дополнительные настройки</span>
+                                            </div>
                                         </div>
-                                        <div class="input-wrapper"><span class="placeholder">Название минисайта</span>
-                                            <input class="input" type="text">
+                                        <button class="btn-blue save">Сохранить</button>
+                                    </div>
+                                    <div class="invisible-part-wrapper js-invisible-part-wrapper">
+                                        <div class="invisible-part">
+                                            <div class="font">
+                                                <div class="input-wrapper"><span class="placeholder">Шрифт заголовков</span>
+                                                    <select class="js-select-menu" name>
+                                                        <option value="">Proxima Nova</option>
+                                                        <option value="">Proxima Nova</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input-wrapper"><span class="placeholder">Шрифт основного текста</span>
+                                                    <select class="js-select-menu" name>
+                                                        <option value="">Proxima Nova</option>
+                                                        <option value="">Proxima Nova</option>
+                                                    </select>
+                                                </div>
+                                                <div class="bg-pic">
+                                                    <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                                        <input id="color" type="color">
+                                                        <label for="color"> <img src="./img/bg.jpg" alt></label>
+                                                    </div>
+                                                    <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                                        <input id="picture" type="file">
+                                                        <label for="picture"> <img src="./img/pic.jpg" alt></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="font font-weight">
+                                                <div class="input-wrapper"><span class="placeholder">Начертание</span>
+                                                    <select class="js-select-menu" name>
+                                                        <option value="">Regular</option>
+                                                        <option value="">Regular</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input-wrapper"><span class="placeholder">Начертание</span>
+                                                    <select class="js-select-menu" name>
+                                                        <option value="">Regular</option>
+                                                        <option value="">Regular</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="font font-size">
+                                                <div class="input-wrapper"><span class="placeholder">Размер</span>
+                                                    <select class="js-select-menu" name>
+                                                        <option value="">42</option>
+                                                        <option value="">42</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input-wrapper"><span class="placeholder">Размер</span>
+                                                    <select class="js-select-menu" name>
+                                                        <option value="">42</option>
+                                                        <option value="">42</option>
+                                                    </select>
+                                                </div>
+                                            </div><span class="addition js-hide-settings">Скрыть дополнительные настройки</span>
                                         </div>
-                                        <div class="input-wrapper link"><span class="placeholder">Ваша ссылка</span>
-                                            <input class="input js-copy-text" type="text" readonly="true"><span class="copy icon-copy js-copy"></span><span class="addition js-add-settings">Дополнительные настройки</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-function js-wrapper-function-link-2">
+                        <div class="function-body-link-2 js-function-body">
+                            <div class="function-link-2">
+                                <div class="top"> <span class="title">Мультиссылка</span><img class="js-close-func-multilink" src="./img/close.svg" alt></div>
+                                <p class="subtitle">Настройка проекта</p>
+                                <div class="inputs">
+                                    <div class="input-wrapper"><span class="placeholder">Название страницы</span>
+                                        <input class="input" type="text">
+                                    </div>
+                                    <div class="input-wrapper"><span class="placeholder">Название минисайта</span>
+                                        <input class="input" type="text">
+                                    </div>
+                                    <div class="input-wrapper"><span class="placeholder">Расположение страницы</span>
+                                        <select class="js-select-menu" name>
+                                            <option value="">Корневая папка</option>
+                                            <option value="">Корневая папка</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-wrapper"><span class="placeholder">Название страницы для ссылки:</span>
+                                        <input class="input" type="text">
+                                    </div>
+                                    <div class="input-wrapper link"><span class="placeholder">Ваша ссылка</span>
+                                        <input class="input js-copy-text error" type="text" readonly="true"><span class="copy icon-copy js-copy"></span>
+                                        <div class="error-text">
+                                            Некорректное имя аккаунта. Допустимо использовать только латинские буквы, цифры, знак подчеркивания («_»), точку («.»), минус («-»)
+
                                         </div>
                                     </div>
                                     <button class="btn-blue save">Сохранить</button>
                                 </div>
-                                <div class="invisible-part-wrapper js-invisible-part-wrapper">
-                                    <div class="invisible-part">
-                                        <div class="font">
-                                            <div class="input-wrapper"><span class="placeholder">Шрифт заголовков</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">Proxima Nova</option>
-                                                    <option value="">Proxima Nova</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-wrapper"><span class="placeholder">Шрифт основного текста</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">Proxima Nova</option>
-                                                    <option value="">Proxima Nova</option>
-                                                </select>
-                                            </div>
-                                            <div class="bg-pic">
-                                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
-                                                    <input id="color" type="color">
-                                                    <label for="color"> <img src="./img/bg.jpg" alt></label>
-                                                </div>
-                                                <div class="background input-wrapper"><span class="placeholder">Изображение</span>
-                                                    <input id="picture" type="file">
-                                                    <label for="picture"> <img src="./img/pic.jpg" alt></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="font font-weight">
-                                            <div class="input-wrapper"><span class="placeholder">Начертание</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">Regular</option>
-                                                    <option value="">Regular</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-wrapper"><span class="placeholder">Начертание</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">Regular</option>
-                                                    <option value="">Regular</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="font font-size">
-                                            <div class="input-wrapper"><span class="placeholder">Размер</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">42</option>
-                                                    <option value="">42</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-wrapper"><span class="placeholder">Размер</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">42</option>
-                                                    <option value="">42</option>
-                                                </select>
-                                            </div>
-                                        </div><span class="addition js-hide-settings">Скрыть дополнительные настройки</span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="wrapper-function js-wrapper-function-link-2">
-                    <div class="function-body-link-2 js-function-body">
-                        <div class="function-link-2">
-                            <div class="top"> <span class="title">Мультиссылка</span><img class="js-close-func-multilink" src="./img/close.svg" alt></div>
-                            <p class="subtitle">Настройка проекта</p>
-                            <div class="inputs">
-                                <div class="input-wrapper"><span class="placeholder">Название страницы</span>
-                                    <input class="input" type="text">
-                                </div>
-                                <div class="input-wrapper"><span class="placeholder">Название минисайта</span>
-                                    <input class="input" type="text">
-                                </div>
-                                <div class="input-wrapper"><span class="placeholder">Расположение страницы</span>
-                                    <select class="js-select-menu" name>
-                                        <option value="">Корневая папка</option>
-                                        <option value="">Корневая папка</option>
-                                    </select>
-                                </div>
-                                <div class="input-wrapper"><span class="placeholder">Название страницы для ссылки:</span>
-                                    <input class="input" type="text">
-                                </div>
-                                <div class="input-wrapper link"><span class="placeholder">Ваша ссылка</span>
-                                    <input class="input js-copy-text error" type="text" readonly="true"><span class="copy icon-copy js-copy"></span>
-                                    <div class="error-text">
-                                        Некорректное имя аккаунта. Допустимо использовать только латинские буквы, цифры, знак подчеркивания («_»), точку («.»), минус («-»)
-
-                                    </div>
-                                </div>
-                                <button class="btn-blue save">Сохранить</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
     </body>
     <script src="./libs/js/vendor.min.js"></script>
+    <script src="./js/vue.js"></script>
     <script src="./js/index.js"></script>
 </html>

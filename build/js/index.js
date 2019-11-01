@@ -115,35 +115,34 @@ $(document).ready(function () {
   });
   $('.js-close-func-multilink').click(function (e) {
     $('.js-wrapper-function-link-2').hide();
-  });
-  $('.js-text-align').click(function (e) {
-    e.preventDefault();
-    $('.js-text-align').removeClass('active');
-    $(this).addClass('active');
-    var attr = $(this).attr('data-text');
-    $('#text-block').css({
-      textAlign: attr
-    });
-  });
-  $('.js-text-style').click(function (e) {
-    e.preventDefault();
-    var attr = $(this).attr('data-style');
-    $(this).toggleClass('active');
-    $('#text-block').toggleClass(attr);
-  });
-  $('.js-text-align').click(function (e) {
-    e.preventDefault();
-    $('.js-text-align').removeClass('active');
-    $(this).addClass('active');
-    var attr = $(this).attr('data-text');
-    $('#text-block-2').css({
-      textAlign: attr
-    });
-  });
-  $('.js-text-style').click(function (e) {
-    e.preventDefault();
-    var attr = $(this).attr('data-style');
-    $(this).toggleClass('active');
-    $('#text-block-2').toggleClass(attr);
-  });
+  }); // $('.js-text-align').click(function(e){
+  //   e.preventDefault();
+  //   $('.js-text-align').removeClass('active')
+  //   $(this).addClass('active')
+  //   var attr = $(this).attr('data-text')
+  //   $('#text-block').css({
+  //     textAlign: attr
+  //   })
+  // })
+  // $('.js-text-style').click(function(e){
+  //   e.preventDefault();
+  //   var attr = $(this).attr('data-style')
+  //   $(this).toggleClass('active')
+  //   $('#text-block').toggleClass(attr)
+  // })
+  // $('.js-text-align').click(function(e){
+  //   e.preventDefault();
+  //   $('.js-text-align').removeClass('active')
+  //   $(this).addClass('active')
+  //   var attr = $(this).attr('data-text')
+  //   $('#text-block-2').css({
+  //     textAlign: attr
+  //   })
+  // })
+  // $('.js-text-style').click(function(e){
+  //   e.preventDefault();
+  //   var attr = $(this).attr('data-style')
+  //   $(this).toggleClass('active')
+  //   $('#text-block-2').toggleClass(attr)
+  // })
 });

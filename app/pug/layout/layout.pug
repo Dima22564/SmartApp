@@ -14,30 +14,34 @@ html(lang="ru")
     link(href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap", rel="stylesheet")
     link(href="./libs/css/vendor.min.css", rel="stylesheet")
     link(href="./css/style.css", rel="stylesheet")
+    script(src="./libs/js/vue.js")
     title= title
 
   body
+    #app
 
-    .page(class='')
-  
-      //- Aside
-      include ../aside.pug
-      //- Aside
-  
-  
-      main.main(class= `main-${page}`)
-  
-        //- Top menu
-        include ../top-menu.pug
-        //- Top menu
-  
-        block content
+      .page(class='')
+
+        //- Aside
+        include ../aside.pug
+        //- Aside
+
+
+        main.main(class= `main-${page}`)
+
+          //- Top menu
+          include ../top-menu.pug
+          //- Top menu
+
+          block content
     
 
 
 
   block script
     script(src="./libs/js/vendor.min.js")
+    script(src="./js/vue.js")
+    
     script(src="./js/index.js")
     
 

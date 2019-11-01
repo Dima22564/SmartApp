@@ -59,8 +59,9 @@ block content
             +editors('left')
             h2 Текстовый блок
             +editors('right', 'js-edit-text-func')
-          p.text.
-            Компания "Цветы Мира" занимается доставкой экзатических цветов и авторских букетов по всей Москве и Московской области. Мы можем привезти цветы в точно указанное время и предложим варианты оригинального поздравления или предложения руки и сердца
+          p.text(v-txtd:[textArg].align.style='') {{textOut}}
+            
+            
 
         +addBlock
 
@@ -285,12 +286,12 @@ block content
     +customBlock
 
 
-  //- include ./pug/text-block.pug
-  //- include ./pug/image.pug
-  //- include ./pug/video.pug
-  //- include ./pug/pixel.pug
-  //- include ./pug/menu.pug
-  //- include ./pug/pay.pug
+  include ./pug/text-block.pug
+  include ./pug/image.pug
+  include ./pug/video.pug
+  include ./pug/pixel.pug
+  include ./pug/menu.pug
+  include ./pug/pay.pug
   include ./pug/avatar.pug
   
 

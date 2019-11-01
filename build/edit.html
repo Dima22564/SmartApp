@@ -8,533 +8,769 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&amp;display=swap" rel="stylesheet">
         <link href="./libs/css/vendor.min.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
+        <script src="./libs/js/vue.js"></script>
         <title>Edit</title>
     </head>
     <body>
-        <div class="page">
-            <aside class="aside js-aside">
-                <div class="aside-links">
-                    <div class="aside-logo"><a href=""><img class="logo" src="./img/logo.png" alt></a>
-                        <div class="arrow js-aside-hide"><span class="icon-arrow-up"></span></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-1.svg" alt><span class="text">Рабочий стол</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-2.svg" alt><span class="text">Мультиссылка</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-3.svg" alt><span class="text">Статистика</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-4.svg" alt><span class="text">Контент план</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-5.svg" alt><span class="text">Делегирование</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                </div>
-                <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
-            </aside>
-            <main class="main main-review main-edit">
-                <header class="top-menu js-top-menu"><a class="func-logo" href><img src="./img/logo.png" alt></a>
-                    <div class="container">
-                        <div class="top-menu-content">
-                            <div class="links"><a class="top-link emp" href>Инструменты</a><a class="top-link" href>Биржа рекламы</a></div>
-                            <div class="right-panel">
-                                <div class="tariff">
-                                    <div class="top"><span class="emp">Тариф: Максимальный</span><span>365 дней</span></div>
-                                    <div class="progress-1"><span></span></div>
-                                </div>
-                                <div class="notices">
-                                    <div class="wrapper"><img src="./img/notice.svg" alt><span>2</span></div>
-                                </div>
-                                <div class="profile">
-                                    <div class="avatar"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                            </div>
+        <div id="app">
+            <div class="page">
+                <aside class="aside js-aside">
+                    <div class="aside-links">
+                        <div class="aside-logo"><a href=""><img class="logo" src="./img/logo.png" alt></a>
+                            <div class="arrow js-aside-hide"><span class="icon-arrow-up"></span></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-1.svg" alt><span class="text">Рабочий стол</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-2.svg" alt><span class="text">Мультиссылка</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-3.svg" alt><span class="text">Статистика</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-4.svg" alt><span class="text">Контент план</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-5.svg" alt><span class="text">Делегирование</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
                         </div>
                     </div>
-                </header>
-                <section class="top-btns edit-top-btns">
-                    <div class="container">
-                        <div class="content">
-                            <div class="title">
-                                <p class="emp">Мультиссылка</p><span>Конструктор мини-сайта</span>
-                            </div>
-                            <div class="btns"><a class="btn-white" href>Просмотр</a><a class="btn-white" href>Редактировать</a><a class="btn-blue" href>Сохранить</a></div>
-                        </div>
-                    </div>
-                </section>
-                <div class="wrapper-for-bg">
-                    <section class="main-review-header main-edit-header">
+                    <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
+                </aside>
+                <main class="main main-review main-edit">
+                    <header class="top-menu js-top-menu"><a class="func-logo" href><img src="./img/logo.png" alt></a>
                         <div class="container">
-                            <div class="nav">
-                                <div class="edit-item"><span class="icon-del"></span></div>
-                                <div class="nav-links"><a class="nav-link" href>Главная</a>
-                                    <div class="nav-drop-link">
-                                        <div class="wrapper"><span>Товары</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                        <div class="drop-menu"></div>
-                                    </div><a class="nav-link" href>Отзывы</a><a class="nav-link" href>Фотогаллерея</a><a class="nav-link" href>Контакты</a>
-                                </div>
-                                <div class="edit-items-wrapper">
-                                    <div class="edit-item"><span class="icon-settings js-edit-menu-func"></span></div>
-                                    <div class="edit-item"><span class="icon-copy"></span></div>
+                            <div class="top-menu-content">
+                                <div class="links"><a class="top-link emp" href>Инструменты</a><a class="top-link" href>Биржа рекламы</a></div>
+                                <div class="right-panel">
+                                    <div class="tariff">
+                                        <div class="top"><span class="emp">Тариф: Максимальный</span><span>365 дней</span></div>
+                                        <div class="progress-1"><span></span></div>
+                                    </div>
+                                    <div class="notices">
+                                        <div class="wrapper"><img src="./img/notice.svg" alt><span>2</span></div>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="avatar"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="main-edit-icon edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
+                        </div>
+                    </header>
+                    <section class="top-btns edit-top-btns">
+                        <div class="container">
+                            <div class="content">
+                                <div class="title">
+                                    <p class="emp">Мультиссылка</p><span>Конструктор мини-сайта</span>
+                                </div>
+                                <div class="btns"><a class="btn-white" href>Просмотр</a><a class="btn-white" href>Редактировать</a><a class="btn-blue" href>Сохранить</a></div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="wrapper-for-bg">
+                        <section class="main-review-header main-edit-header">
+                            <div class="container">
+                                <div class="nav">
+                                    <div class="edit-item"><span class="icon-del"></span></div>
+                                    <div class="nav-links"><a class="nav-link" href>Главная</a>
+                                        <div class="nav-drop-link">
+                                            <div class="wrapper"><span>Товары</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                            <div class="drop-menu"></div>
+                                        </div><a class="nav-link" href>Отзывы</a><a class="nav-link" href>Фотогаллерея</a><a class="nav-link" href>Контакты</a>
                                     </div>
-                                    <h2>Аватарка мини-сайта</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item js-edit-icon-func"><span class="icon-settings"></span></div>
+                                    <div class="edit-items-wrapper">
+                                        <div class="edit-item"><span class="icon-settings js-edit-menu-func"></span></div>
                                         <div class="edit-item"><span class="icon-copy"></span></div>
                                     </div>
                                 </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-7">
-                                        <div class="profile-icon"><img class="profile-img" src="./img/profile.jpg" alt>
-                                            <div class="desc">
-                                                <p class="text">Загрузите квадратное изображение выбрав его на компьютере или перетищите картинку в эту область</p>
-                                                <input id="icon" name type="file">
-                                                <label for="icon">Загрузить</label>
-                                            </div>
+                                <div class="main-edit-icon edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Аватарка мини-сайта</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item js-edit-icon-func"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                            <div class="text-block edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Текстовый блок</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item js-edit-text-func"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
-                                </div>
-                                <p class="text">
-                                    Компания "Цветы Мира" занимается доставкой экзатических цветов и авторских букетов по всей Москве и Московской области. Мы можем привезти цветы в точно указанное время и предложим варианты оригинального поздравления или предложения руки и сердца
-
-                                </p>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main-review-contact main-edit-contact">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Мессенджеры</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
-                                </div>
-                                <div class="social-icons"><a class="social-link" href><img src="./img/social-1.svg" alt></a><a class="social-link" href><img src="./img/social-2.svg" alt></a><a class="social-link" href><img src="./img/social-3.svg" alt></a><a class="social-link" href><img src="./img/social-4.svg" alt></a><a class="social-link" href><img src="./img/social-5.svg" alt></a><a class="social-link" href><img src="./img/social-6.svg" alt></a>
-                                </div>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                            <div class="separator-wrapper edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Разделить</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
-                                </div>
-                                <div class="separator"></div>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main-review-slider main-edit-slider">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Изображение</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item js-edit-image-func"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-6">
-                                        <div class="slider js-slider">
-                                            <div class="slide"><img src="./img/slider.jpg" alt></div>
-                                            <div class="slide"><img src="./img/slider.jpg" alt></div>
-                                            <div class="slide"><img src="./img/slider.jpg" alt></div>
-                                            <div class="slide"><img src="./img/slider.jpg" alt></div>
-                                            <div class="slide"><img src="./img/slider.jpg" alt></div>
-                                        </div>
-                                        <div class="controls">
-                                            <div class="arrows">
-                                                <button class="arrow prev js-prev-btn"><img src="./img/arrow-down.svg" alt></button>
-                                                <button class="arrow next js-next-btn"><img src="./img/arrow-down.svg" alt></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main-review-video main-edit-video">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Видео</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item js-edit-video-func"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-6">
-                                        <div class="video js-video">
-                                            <div class="bg"><img class="play" src="./img/play.svg" alt></div>
-                                            <video src=""></video>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main-review-pixel main-edit-pixel">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Пиксель FB*</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item js-edit-pixel-func"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
-                                </div>
-                                <p class="edit-text">Счетчик id5163262 установлен и работает</p>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main-review-sell main-edit-sell">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Товары</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
-                                </div>
-                                <p class="edit-text">Розница</p>
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-6">
-                                        <div class="item">
-                                            <div class="img"><img src="./img/flower.jpg" alt></div>
-                                            <div class="text-block">
-                                                <p class="title">Доставка цветов опт</p>
-                                                <p class="text">Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.</p>
-                                                <div class="order"><a class="btn-order" href>Заказать</a>
-                                                    <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-7">
+                                            <div class="profile-icon"><img class="profile-img" src="./img/profile.jpg" alt>
+                                                <div class="desc">
+                                                    <p class="text">Загрузите квадратное изображение выбрав его на компьютере или перетищите картинку в эту область</p>
+                                                    <input id="icon" name type="file">
+                                                    <label for="icon">Загрузить</label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                                <div class="text-block edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Текстовый блок</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item js-edit-text-func"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
+                                    </div>
+                                    <p class="text" v-txtd:[textArg].align.style>{{textOut}}</p>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
                             </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
+                        </section>
+                        <section class="main-review-contact main-edit-contact">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Мессенджеры</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="social-icons"><a class="social-link" href><img src="./img/social-1.svg" alt></a><a class="social-link" href><img src="./img/social-2.svg" alt></a><a class="social-link" href><img src="./img/social-3.svg" alt></a><a class="social-link" href><img src="./img/social-4.svg" alt></a><a class="social-link" href><img src="./img/social-5.svg" alt></a><a class="social-link" href><img src="./img/social-6.svg" alt></a>
+                                    </div>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                                <div class="separator-wrapper edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Разделить</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="separator"></div>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="add-custom-block">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <h2>Добавить блок</h2>
-                                <div class="add-items">
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Товары</span>
+                        </section>
+                        <section class="main-review-slider main-edit-slider">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Изображение</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item js-edit-image-func"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
                                     </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Мессенджеры</span>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6">
+                                            <div class="slider js-slider">
+                                                <div class="slide"><img src="./img/slider.jpg" alt></div>
+                                                <div class="slide"><img src="./img/slider.jpg" alt></div>
+                                                <div class="slide"><img src="./img/slider.jpg" alt></div>
+                                                <div class="slide"><img src="./img/slider.jpg" alt></div>
+                                                <div class="slide"><img src="./img/slider.jpg" alt></div>
+                                            </div>
+                                            <div class="controls">
+                                                <div class="arrows">
+                                                    <button class="arrow prev js-prev-btn"><img src="./img/arrow-down.svg" alt></button>
+                                                    <button class="arrow next js-next-btn"><img src="./img/arrow-down.svg" alt></button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Разделитель</span>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="main-review-video main-edit-video">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Видео</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item js-edit-video-func"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
                                     </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Текст</span>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6">
+                                            <div class="video js-video">
+                                                <div class="bg"><img class="play" src="./img/play.svg" alt></div>
+                                                <video src=""></video>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Изображение</span>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="main-review-pixel main-edit-pixel">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Пиксель FB*</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item js-edit-pixel-func"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
                                     </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Ссылка</span>
+                                    <p class="edit-text">Счетчик id5163262 установлен и работает</p>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="main-review-sell main-edit-sell">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Товары</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
                                     </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Пиксель FB</span>
+                                    <p class="edit-text">Розница</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6">
+                                            <div class="item">
+                                                <div class="img"><img src="./img/flower.jpg" alt></div>
+                                                <div class="text-block">
+                                                    <p class="title">Доставка цветов опт</p>
+                                                    <p class="text">Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.</p>
+                                                    <div class="order"><a class="btn-order" href>Заказать</a>
+                                                        <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Заявка</span>
-                                    </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Меню</span>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="add-custom-block">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <h2>Добавить блок</h2>
+                                    <div class="add-items">
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Товары</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Мессенджеры</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Разделитель</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Текст</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Изображение</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Ссылка</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Пиксель FB</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Заявка</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Меню</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="main-review-cards main-edit-cards">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
+                        </section>
+                        <section class="main-review-cards main-edit-cards">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Товары</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
                                     </div>
-                                    <h2>Товары</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
-                                </div>
-                                <p class="edit-text">Розница</p>
-                                <div class="cards">
-                                    <div class="item"><img src="./img/small-flower.jpg" alt>
-                                        <p class="title">Доставка цветов опт</p>
-                                        <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
-                                    </div>
-                                    <div class="item"><img src="./img/small-flower.jpg" alt>
-                                        <p class="title">Доставка цветов опт</p>
-                                        <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
-                                    </div>
-                                    <div class="item"><img src="./img/small-flower.jpg" alt>
-                                        <p class="title">Доставка цветов опт</p>
-                                        <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
-                                    </div>
-                                    <div class="item"><img src="./img/small-flower.jpg" alt>
-                                        <p class="title">Доставка цветов опт</p>
-                                        <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main-review-footer main-edit-footer">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Оплата</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item js-edit-pay-func"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
+                                    <p class="edit-text">Розница</p>
+                                    <div class="cards">
+                                        <div class="item"><img src="./img/small-flower.jpg" alt>
+                                            <p class="title">Доставка цветов опт</p>
+                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                        </div>
+                                        <div class="item"><img src="./img/small-flower.jpg" alt>
+                                            <p class="title">Доставка цветов опт</p>
+                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                        </div>
+                                        <div class="item"><img src="./img/small-flower.jpg" alt>
+                                            <p class="title">Доставка цветов опт</p>
+                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                        </div>
+                                        <div class="item"><img src="./img/small-flower.jpg" alt>
+                                            <p class="title">Доставка цветов опт</p>
+                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <p class="edit-text">Заказ цветов на дом</p>
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-6">
-                                        <form class="online-order" action>
-                                            <input name type="text">
-                                            <button>Оплатить</button>
-                                        </form>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="main-review-footer main-edit-footer">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Оплата</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item js-edit-pay-func"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
+                                    </div>
+                                    <p class="edit-text">Заказ цветов на дом</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6">
+                                            <form class="online-order" action>
+                                                <input name type="text">
+                                                <button>Оплатить</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="main-edit-site">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Ссылка</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
+                                    </div><a class="site" href>Наш сайт</a>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="messengers">
+                            <div class="container">
+                                <div class="content edit-section blue">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Мессенджеры</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
+                                    </div>
+                                    <p class="edit-text">Модуль "Мессенджеры" не отображается. Завершите настройку</p>
+                                    <button class="sett">Настроить</button>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="messengers">
+                            <div class="container">
+                                <div class="content edit-section red">
+                                    <div class="top-edit">
+                                        <div class="edit-items-wrapper left">
+                                            <div class="edit-item"><span class="icon-arrow-d"></span></div>
+                                            <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                            <div class="edit-item"><span class="icon-del"> </span></div>
+                                        </div>
+                                        <h2>Сменить тариф</h2>
+                                        <div class="edit-items-wrapper right">
+                                            <div class="edit-item"><span class="icon-settings"></span></div>
+                                            <div class="edit-item"><span class="icon-copy"></span></div>
+                                        </div>
+                                    </div>
+                                    <p class="edit-text">Модуль "Мессенджеры" не отображается. Завершите настройку</p>
+                                    <button class="sett">Настроить</button>
+                                </div>
+                                <div class="add-block">
+                                    <div class="add"><img src="./img/plus.svg" alt></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="add-custom-block">
+                            <div class="container">
+                                <div class="content edit-section">
+                                    <h2>Добавить блок</h2>
+                                    <div class="add-items">
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Товары</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Мессенджеры</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Разделитель</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Текст</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Изображение</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Ссылка</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Пиксель FB</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Заявка</span>
+                                        </div>
+                                        <div class="add-item-wrapper">
+                                            <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Меню</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main-edit-site">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
+                        </section>
+                    </div>
+                    <div class="wrapper-function js-wrapper-text-function">
+                        <div class="function-body js-function-add-body">
+                            <div class="function-edit-text">
+                                <div class="top">
+                                    <div class="text"><span class="title">Текстовый блок</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                                </div>
+                                <div class="bg-pic">
+                                    <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                        <input id="color-2" type="color">
+                                        <label for="color-2"> <img src="./img/bg.jpg" alt></label>
                                     </div>
-                                    <h2>Ссылка</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
-                                </div><a class="site" href>Наш сайт</a>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="messengers">
-                        <div class="container">
-                            <div class="content edit-section blue">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Мессенджеры</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
+                                    <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                        <input id="picture-2" type="file">
+                                        <label for="picture-2"> <img src="./img/pic.jpg" alt></label>
                                     </div>
                                 </div>
-                                <p class="edit-text">Модуль "Мессенджеры" не отображается. Завершите настройку</p>
-                                <button class="sett">Настроить</button>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="messengers">
-                        <div class="container">
-                            <div class="content edit-section red">
-                                <div class="top-edit">
-                                    <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
-                                        <div class="edit-item"><span class="icon-del"> </span></div>
-                                    </div>
-                                    <h2>Сменить тариф</h2>
-                                    <div class="edit-items-wrapper right">
-                                        <div class="edit-item"><span class="icon-settings"></span></div>
-                                        <div class="edit-item"><span class="icon-copy"></span></div>
-                                    </div>
+                                <div class="shadow">
+                                    <input id="shadow-2" name type="checkbox">
+                                    <label for="shadow-2">Тень</label>
                                 </div>
-                                <p class="edit-text">Модуль "Мессенджеры" не отображается. Завершите настройку</p>
-                                <button class="sett">Настроить</button>
-                            </div>
-                            <div class="add-block">
-                                <div class="add"><img src="./img/plus.svg" alt></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="add-custom-block">
-                        <div class="container">
-                            <div class="content edit-section">
-                                <h2>Добавить блок</h2>
-                                <div class="add-items">
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Товары</span>
+                                <div class="textarea">
+                                    <p class="subtitle">Контент</p>
+                                    <div class="text-settings">
+                                        <div class="item js-text-style" @click="textStyle('bold', $event)" data-style="bold"></div>
+                                        <div class="item js-text-style" @click="textStyle('italic', $event)" data-style="italic"></div>
+                                        <div class="item js-text-style" @click="textStyle('underline', $event)" data-style="underline"></div>
+                                        <div class="item js-text-align" @click="textStylePos('left', $event)" data-text="left"></div>
+                                        <div class="item js-text-align" @click="textStylePos('center', $event)" data-text="center"></div>
+                                        <div class="item js-text-align" @click="textStylePos('right', $event)" data-text="right"></div>
+                                        <div class="item js-text-align" @click="textStylePos('justify', $event)" data-text="justify"></div>
                                     </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Мессенджеры</span>
-                                    </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Разделитель</span>
-                                    </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Текст</span>
-                                    </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Изображение</span>
-                                    </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Ссылка</span>
-                                    </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Пиксель FB</span>
-                                    </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Заявка</span>
-                                    </div>
-                                    <div class="add-item-wrapper">
-                                        <div class="add-item"><img src="./img/aside-1.svg" alt></div><span class="desc">Меню</span>
-                                    </div>
+                                    <textarea id="text-block" name v-model="text" v-txtd:[textArg].align.style></textarea>
+                                    <p class="symbols">{{text.length}} / 299</p>
+                                    <button class="btn-blue" @click="saveText">Сохранить</button>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="wrapper-function js-wrapper-avatar-function">
-                    <div class="function-body js-function-add-body">
-                        <div class="function-avatar">
-                            <div class="top">
-                                <div class="text"><span class="title">Аватар</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
-                            </div>
-                            <div class="bg-pic">
-                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
-                                    <input id="color-1" type="color">
-                                    <label for="color-1"> <img src="./img/bg.jpg" alt></label>
-                                </div>
-                            </div>
-                            <div class="shadow">
-                                <input id="shadow-1" name type="checkbox">
-                                <label for="shadow-1">Тень</label>
                             </div>
                         </div>
                     </div>
-                </div>
-            </main>
+                    <div class="wrapper-function js-wrapper-image-function">
+                        <div class="function-body js-function-add-body">
+                            <div class="function-image">
+                                <div class="top">
+                                    <div class="text"><span class="title">Изображение</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                                </div>
+                                <div class="bg-pic">
+                                    <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                        <input id="color-4" type="color">
+                                        <label for="color-4"> <img src="./img/bg.jpg" alt></label>
+                                    </div>
+                                    <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                        <input id="picture-4" type="file">
+                                        <label for="picture-4"> <img src="./img/pic.jpg" alt></label>
+                                    </div>
+                                </div>
+                                <div class="shadow">
+                                    <input id="shadow-4" name type="checkbox">
+                                    <label for="shadow-4">Тень</label>
+                                </div>
+                                <div class="input-download">
+                                    <div class="input-wrapper"><span class="placeholder">Ссылка на изображение</span>
+                                        <select class="js-select-menu" name>
+                                            <option value="">Введите название категории</option>
+                                            <option value="">Введите название категории</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn-blue">Загрузить</button>
+                                </div>
+                                <div class="input-download">
+                                    <div class="input-wrapper">
+                                        <select class="js-select-menu" name>
+                                            <option value="">Введите название категории</option>
+                                            <option value="">Введите название категории</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn-blue">Загрузить</button>
+                                </div>
+                                <div class="photos">
+                                    <div class="input-wrapper">
+                                        <div class="photo-big"><span class="icon-settings icon"></span><img src="./img/photo.jpg" alt></div>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <div class="photo-big"><span class="icon-settings icon"></span><img src="./img/photo.jpg" alt></div>
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <button class="btn-white">Добавить изображение</button>
+                                    <button class="btn-blue">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-function js-wrapper-video-function">
+                        <div class="function-body js-function-add-body">
+                            <div class="function-video">
+                                <div class="top">
+                                    <div class="text"><span class="title">Видео</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                                </div>
+                                <div class="bg-pic">
+                                    <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                        <input id="color-1" type="color">
+                                        <label for="color-1"> <img src="./img/bg.jpg" alt></label>
+                                    </div>
+                                    <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                        <input id="picture-1" type="file">
+                                        <label for="picture-1"> <img src="./img/pic.jpg" alt></label>
+                                    </div>
+                                </div>
+                                <div class="shadow">
+                                    <input id="shadow-1" name type="checkbox">
+                                    <label for="shadow-1">Тень</label>
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">Ссылка на видео (youtube/vimeo)</span>
+                                    <input class="input" type="text">
+                                </div>
+                                <div class="video js-video-edit">
+                                    <div class="bg"><img class="play-2" src="./img/play.svg" alt></div>
+                                    <video src=""></video>
+                                </div>
+                                <div class="btns">
+                                    <button class="btn-blue">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-function js-wrapper-pixel-function">
+                        <div class="function-body js-function-add-body">
+                            <div class="function-pixel">
+                                <div class="top">
+                                    <div class="text"><span class="title">Пиксель Facebook</span></div><img class="close-func" src="./img/close.svg" alt>
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">ID пикселя Facebook</span>
+                                    <select class="js-select-menu" name>
+                                        <option value="">Розница</option>
+                                        <option value="">Розница</option>
+                                    </select>
+                                </div>
+                                <div class="btns">
+                                    <button class="btn-blue">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-function js-wrapper-menu-function">
+                        <div class="function-body js-function-add-body">
+                            <div class="function-edit-menu">
+                                <div class="top">
+                                    <div class="text"><span class="title">Меню</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                                </div>
+                                <div class="bg-pic">
+                                    <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                        <input id="color-3" type="color">
+                                        <label for="color-3"> <img src="./img/bg.jpg" alt></label>
+                                    </div>
+                                </div>
+                                <div class="shadow">
+                                    <input id="shadow-3" name type="checkbox">
+                                    <label for="shadow-3">Тень</label>
+                                </div>
+                                <div class="input-del">
+                                    <div class="input-wrapper"><span class="placeholder">Разделы</span>
+                                        <input class="input" type="text">
+                                    </div>
+                                    <div class="del"><span class="icon-del"></span></div>
+                                </div><a class="add" href>Добавить субменю</a>
+                                <div class="input-del">
+                                    <div class="input-wrapper">
+                                        <input class="input" type="text">
+                                    </div>
+                                    <div class="del"><span class="icon-del"></span></div>
+                                </div>
+                                <div class="input-del sub">
+                                    <div class="input-wrapper">
+                                        <input class="input" type="text">
+                                    </div>
+                                    <div class="del"><span class="icon-del"></span></div>
+                                </div><a class="add sub" href>Добавить субменю</a>
+                                <div class="btns">
+                                    <button class="btn-white">Добавить раздел</button>
+                                    <button class="btn-blue">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-function js-wrapper-pay-function">
+                        <div class="function-body js-function-add-body">
+                            <div class="function-edit-pay">
+                                <div class="top">
+                                    <div class="text"><span class="title">Оплата</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                                </div>
+                                <div class="bg-pic">
+                                    <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                        <input id="color-4" type="color">
+                                        <label for="color-4"> <img src="./img/bg.jpg" alt></label>
+                                    </div>
+                                    <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                        <input id="picture-4" type="file">
+                                        <label for="picture-4"> <img src="./img/pic.jpg" alt></label>
+                                    </div>
+                                </div>
+                                <div class="shadow">
+                                    <input id="shadow-4" name type="checkbox">
+                                    <label for="shadow-4">Тень</label>
+                                </div>
+                                <div class="textarea">
+                                    <p class="subtitle">Заголовок</p>
+                                    <div class="text-settings">
+                                        <div class="item js-text-style" data-style="underline"></div>
+                                        <div class="item js-text-align" data-text="left"></div>
+                                        <div class="item js-text-align" data-text="center"></div>
+                                        <div class="item js-text-align" data-text="right"></div>
+                                        <div class="item js-text-align" data-text="justify"></div>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input class="input title-input" id="text-block-2" type="text">
+                                    </div>
+                                    <div class="input-wrapper"><span class="placeholder">Способ оплаты</span>
+                                        <select class="js-select-menu" name>
+                                            <option value="">Яндекс деньги</option>
+                                            <option value="">Яндекс деньги</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-wrapper"><span class="placeholder">Стоимость</span>
+                                        <input class="input" type="text">
+                                    </div>
+                                </div>
+                                <div class="shadow">
+                                    <input id="price" name type="checkbox">
+                                    <label for="price">Покупатель может изменять цену</label>
+                                </div>
+                                <div class="btns">
+                                    <button class="btn-blue">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-function js-wrapper-avatar-function">
+                        <div class="function-body js-function-add-body">
+                            <div class="function-avatar">
+                                <div class="top">
+                                    <div class="text"><span class="title">Аватар</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                                </div>
+                                <div class="bg-pic">
+                                    <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                        <input id="color-1" type="color">
+                                        <label for="color-1"> <img src="./img/bg.jpg" alt></label>
+                                    </div>
+                                </div>
+                                <div class="shadow">
+                                    <input id="shadow-1" name type="checkbox">
+                                    <label for="shadow-1">Тень</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
         </div>
     </body>
     <script src="./libs/js/vendor.min.js"></script>
+    <script src="./js/vue.js"></script>
     <script src="./js/index.js"></script>
 </html>

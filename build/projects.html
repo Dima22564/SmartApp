@@ -8,104 +8,108 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&amp;display=swap" rel="stylesheet">
         <link href="./libs/css/vendor.min.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
+        <script src="./libs/js/vue.js"></script>
         <title>Projects</title>
     </head>
     <body>
-        <div class="page">
-            <aside class="aside js-aside">
-                <div class="aside-links">
-                    <div class="aside-logo"><a href=""><img class="logo" src="./img/logo.png" alt></a>
-                        <div class="arrow js-aside-hide"><span class="icon-arrow-up"></span></div>
+        <div id="app">
+            <div class="page">
+                <aside class="aside js-aside">
+                    <div class="aside-links">
+                        <div class="aside-logo"><a href=""><img class="logo" src="./img/logo.png" alt></a>
+                            <div class="arrow js-aside-hide"><span class="icon-arrow-up"></span></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-1.svg" alt><span class="text">Рабочий стол</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-2.svg" alt><span class="text">Мультиссылка</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-3.svg" alt><span class="text">Статистика</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-4.svg" alt><span class="text">Контент план</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
+                        <div class="drop-link js-drop-link">
+                            <div class="link-body"><img class="icon" src="./img/aside-5.svg" alt><span class="text">Делегирование</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                        </div>
                     </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-1.svg" alt><span class="text">Рабочий стол</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-2.svg" alt><span class="text">Мультиссылка</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-3.svg" alt><span class="text">Статистика</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-4.svg" alt><span class="text">Контент план</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                    <div class="drop-link js-drop-link">
-                        <div class="link-body"><img class="icon" src="./img/aside-5.svg" alt><span class="text">Делегирование</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
-                    </div>
-                </div>
-                <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
-            </aside>
-            <main class="main main-projects">
-                <header class="top-menu js-top-menu"><a class="func-logo" href><img src="./img/logo.png" alt></a>
-                    <div class="container">
-                        <div class="top-menu-content">
-                            <div class="links"><a class="top-link emp" href>Инструменты</a><a class="top-link" href>Биржа рекламы</a></div>
-                            <div class="right-panel">
-                                <div class="tariff">
-                                    <div class="top"><span class="emp">Тариф: Максимальный</span><span>365 дней</span></div>
-                                    <div class="progress-1"><span></span></div>
-                                </div>
-                                <div class="notices">
-                                    <div class="wrapper"><img src="./img/notice.svg" alt><span>2</span></div>
-                                </div>
-                                <div class="profile">
-                                    <div class="avatar"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                    <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
+                </aside>
+                <main class="main main-projects">
+                    <header class="top-menu js-top-menu"><a class="func-logo" href><img src="./img/logo.png" alt></a>
+                        <div class="container">
+                            <div class="top-menu-content">
+                                <div class="links"><a class="top-link emp" href>Инструменты</a><a class="top-link" href>Биржа рекламы</a></div>
+                                <div class="right-panel">
+                                    <div class="tariff">
+                                        <div class="top"><span class="emp">Тариф: Максимальный</span><span>365 дней</span></div>
+                                        <div class="progress-1"><span></span></div>
+                                    </div>
+                                    <div class="notices">
+                                        <div class="wrapper"><img src="./img/notice.svg" alt><span>2</span></div>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="avatar"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </header>
-                <section class="active-projects">
-                    <div class="container">
-                        <div class="active-projects-top">
-                            <h1>Активные проекты:</h1>
-                            <div class="right-side">
-                                <div class="show"><span class="text">Показывать</span><span class="icon-row icon"></span><span class="icon-blocks icon"></span></div>
-                                <button class="btn-blue">Создать проект</button>
+                    </header>
+                    <section class="active-projects">
+                        <div class="container">
+                            <div class="active-projects-top">
+                                <h1>Активные проекты:</h1>
+                                <div class="right-side">
+                                    <div class="show"><span class="text">Показывать</span><span class="icon-row icon"></span><span class="icon-blocks icon"></span></div>
+                                    <button class="btn-blue">Создать проект</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <div class="project-item">
+                                        <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
+                                        <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="project-item">
+                                        <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
+                                        <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="project-item">
+                                        <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
+                                        <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="project-item">
+                                        <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
+                                        <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="project-item">
+                                        <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
+                                        <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
+                    </section>
+                </main>
+            </div>
         </div>
     </body>
     <script src="./libs/js/vendor.min.js"></script>
+    <script src="./js/vue.js"></script>
     <script src="./js/index.js"></script>
 </html>

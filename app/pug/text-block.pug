@@ -23,13 +23,13 @@
       .textarea
         p.subtitle Контент
         .text-settings
-          .item.js-text-style(data-style="bold")
-          .item.js-text-style(data-style="italic")
-          .item.js-text-style(data-style="underline")
-          .item.js-text-align(data-text="left")
-          .item.js-text-align(data-text="center")
-          .item.js-text-align(data-text="right")
-          .item.js-text-align(data-text="justify")
-        textarea#text-block(name="")
-        p.symbols 0 / 299
-        button.btn-blue Сохранить
+          .item.js-text-style(@click="textStyle('bold', $event)" data-style="bold")
+          .item.js-text-style(@click="textStyle('italic', $event)" data-style="italic")
+          .item.js-text-style(@click="textStyle('underline', $event)" data-style="underline")
+          .item.js-text-align(@click="textStylePos('left', $event)" data-text="left")
+          .item.js-text-align(@click="textStylePos('center', $event)" data-text="center")
+          .item.js-text-align(@click="textStylePos('right', $event)" data-text="right")
+          .item.js-text-align(@click="textStylePos('justify', $event)" data-text="justify")
+        textarea#text-block(name="", v-model="text", v-txtd:[textArg].align.style='')
+        p.symbols {{text.length}} / 299
+        button.btn-blue(@click="saveText") Сохранить
