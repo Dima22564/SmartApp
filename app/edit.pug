@@ -41,7 +41,7 @@ block content
           .top-edit
             +editors('left')
             h2 Аватарка мини-сайта
-            +editors('right', 'js-edit-icon-func')
+            +editors('right', 'js-edit-avatar-func')
           .row.justify-content-center
             .col-xl-7
               .profile-icon
@@ -248,7 +248,7 @@ block content
           .top-edit
             +editors('left')
             h2 Ссылка
-            +editors('right')
+            +editors('right', 'js-edit-link-func')
           a(href="").site Наш сайт
 
         +addBlock
@@ -291,7 +291,9 @@ block content
   //- include ./pug/pixel.pug
   //- include ./pug/menu.pug
   //- include ./pug/pay.pug
-  include ./pug/avatar.pug
+  //- include ./pug/avatar.pug
+  //- include ./pug/link.pug
+  include ./pug/messengers.pug
   
 
 

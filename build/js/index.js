@@ -52,6 +52,7 @@ $(document).ready(function () {
   editFunc('.js-edit-menu-func', '.js-wrapper-menu-function');
   editFunc('.js-edit-pay-func', '.js-wrapper-pay-function');
   editFunc('.js-edit-avatar-func', '.js-wrapper-avatar-function');
+  editFunc('.js-edit-link-func', '.js-wrapper-link-function');
 
   function editFunc(btn, el) {
     $(btn).click(function (e) {
