@@ -82,7 +82,7 @@
                                     </div><a class="nav-link" href>Отзывы</a><a class="nav-link" href>Фотогаллерея</a><a class="nav-link" href>Контакты</a>
                                 </div>
                                 <div class="edit-items-wrapper">
-                                    <div class="edit-item"><span class="icon-settings js-edit-menu-func"></span></div>
+                                    <div class="edit-item js-edit-menu-func"><span class="icon-settings"></span></div>
                                     <div class="edit-item"><span class="icon-copy"></span></div>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@
                                     </div>
                                     <h2>Мессенджеры</h2>
                                     <div class="edit-items-wrapper right">
-                                        <div class="edit-item"><span class="icon-settings"></span></div>
+                                        <div class="edit-item js-edit-mess-func"><span class="icon-settings"></span></div>
                                         <div class="edit-item"><span class="icon-copy"></span></div>
                                     </div>
                                 </div>
@@ -513,6 +513,307 @@
                         </div>
                     </section>
                 </div>
+                <div class="wrapper-function js-wrapper-text-function">
+                    <div class="function-body js-function-add-body">
+                        <div class="function-edit-text">
+                            <div class="top">
+                                <div class="text"><span class="title">Текстовый блок</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                            </div>
+                            <div class="bg-pic">
+                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                    <input id="color-2" type="color">
+                                    <label for="color-2"> <img src="./img/bg.jpg" alt></label>
+                                </div>
+                                <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                    <input id="picture-2" type="file">
+                                    <label for="picture-2"> <img src="./img/pic.jpg" alt></label>
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="shadow-2" name type="checkbox">
+                                <label for="shadow-2">Тень</label>
+                            </div>
+                            <div class="textarea">
+                                <p class="subtitle">Контент</p>
+                                <div class="text-settings">
+                                    <div class="item js-text-style" data-style="bold"></div>
+                                    <div class="item js-text-style" data-style="italic"></div>
+                                    <div class="item js-text-style" data-style="underline"></div>
+                                    <div class="item js-text-align" data-text="left"></div>
+                                    <div class="item js-text-align" data-text="center"></div>
+                                    <div class="item js-text-align" data-text="right"></div>
+                                    <div class="item js-text-align" data-text="justify"></div>
+                                </div>
+                                <textarea id="text-block" name></textarea>
+                                <p class="symbols">0 / 299</p>
+                                <button class="btn-blue">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-function js-wrapper-image-function">
+                    <div class="function-body js-function-add-body">
+                        <div class="function-image">
+                            <div class="top">
+                                <div class="text"><span class="title">Изображение</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                            </div>
+                            <div class="bg-pic">
+                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                    <input id="color-4" type="color">
+                                    <label for="color-4"> <img src="./img/bg.jpg" alt></label>
+                                </div>
+                                <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                    <input id="picture-4" type="file">
+                                    <label for="picture-4"> <img src="./img/pic.jpg" alt></label>
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="shadow-4" name type="checkbox">
+                                <label for="shadow-4">Тень</label>
+                            </div>
+                            <div class="input-download">
+                                <div class="input-wrapper"><span class="placeholder">Ссылка на изображение</span>
+                                    <select class="js-select-menu" name>
+                                        <option value="">Введите название категории</option>
+                                        <option value="">Введите название категории</option>
+                                    </select>
+                                </div>
+                                <button class="btn-blue">Загрузить</button>
+                            </div>
+                            <div class="input-download">
+                                <div class="input-wrapper">
+                                    <select class="js-select-menu" name>
+                                        <option value="">Введите название категории</option>
+                                        <option value="">Введите название категории</option>
+                                    </select>
+                                </div>
+                                <button class="btn-blue">Загрузить</button>
+                            </div>
+                            <div class="photos">
+                                <div class="input-wrapper">
+                                    <div class="photo-big"><span class="icon-settings icon"></span><img src="./img/photo.jpg" alt></div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="photo-big"><span class="icon-settings icon"></span><img src="./img/photo.jpg" alt></div>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button class="btn-white">Добавить изображение</button>
+                                <button class="btn-blue">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-function js-wrapper-video-function">
+                    <div class="function-body js-function-add-body">
+                        <div class="function-video">
+                            <div class="top">
+                                <div class="text"><span class="title">Видео</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                            </div>
+                            <div class="bg-pic">
+                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                    <input id="color-1" type="color">
+                                    <label for="color-1"> <img src="./img/bg.jpg" alt></label>
+                                </div>
+                                <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                    <input id="picture-1" type="file">
+                                    <label for="picture-1"> <img src="./img/pic.jpg" alt></label>
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="shadow-1" name type="checkbox">
+                                <label for="shadow-1">Тень</label>
+                            </div>
+                            <div class="input-wrapper"><span class="placeholder">Ссылка на видео (youtube/vimeo)</span>
+                                <input class="input" type="text">
+                            </div>
+                            <div class="video js-video-edit">
+                                <div class="bg"><img class="play-2" src="./img/play.svg" alt></div>
+                                <video src=""></video>
+                            </div>
+                            <div class="btns">
+                                <button class="btn-blue">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-function js-wrapper-pixel-function">
+                    <div class="function-body js-function-add-body">
+                        <div class="function-pixel">
+                            <div class="top">
+                                <div class="text"><span class="title">Пиксель Facebook</span></div><img class="close-func" src="./img/close.svg" alt>
+                            </div>
+                            <div class="input-wrapper"><span class="placeholder">ID пикселя Facebook</span>
+                                <select class="js-select-menu" name>
+                                    <option value="">Розница</option>
+                                    <option value="">Розница</option>
+                                </select>
+                            </div>
+                            <div class="btns">
+                                <button class="btn-blue">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-function js-wrapper-menu-function">
+                    <div class="function-body js-function-add-body">
+                        <div class="function-edit-menu">
+                            <div class="top">
+                                <div class="text"><span class="title">Меню</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                            </div>
+                            <div class="bg-pic">
+                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                    <input id="color-3" type="color">
+                                    <label for="color-3"> <img src="./img/bg.jpg" alt></label>
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="shadow-3" name type="checkbox">
+                                <label for="shadow-3">Тень</label>
+                            </div>
+                            <div class="input-del">
+                                <div class="input-wrapper"><span class="placeholder">Разделы</span>
+                                    <input class="input" type="text">
+                                </div>
+                                <div class="del"><span class="icon-del"></span></div>
+                            </div><a class="add" href>Добавить субменю</a>
+                            <div class="input-del">
+                                <div class="input-wrapper">
+                                    <input class="input" type="text">
+                                </div>
+                                <div class="del"><span class="icon-del"></span></div>
+                            </div>
+                            <div class="input-del sub">
+                                <div class="input-wrapper">
+                                    <input class="input" type="text">
+                                </div>
+                                <div class="del"><span class="icon-del"></span></div>
+                            </div><a class="add sub" href>Добавить субменю</a>
+                            <div class="btns">
+                                <button class="btn-white">Добавить раздел</button>
+                                <button class="btn-blue">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-function js-wrapper-pay-function">
+                    <div class="function-body js-function-add-body">
+                        <div class="function-edit-pay">
+                            <div class="top">
+                                <div class="text"><span class="title">Оплата</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                            </div>
+                            <div class="bg-pic">
+                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                    <input id="color-4" type="color">
+                                    <label for="color-4"> <img src="./img/bg.jpg" alt></label>
+                                </div>
+                                <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                    <input id="picture-4" type="file">
+                                    <label for="picture-4"> <img src="./img/pic.jpg" alt></label>
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="shadow-4" name type="checkbox">
+                                <label for="shadow-4">Тень</label>
+                            </div>
+                            <div class="textarea">
+                                <p class="subtitle">Заголовок</p>
+                                <div class="text-settings">
+                                    <div class="item js-text-style" data-style="underline"></div>
+                                    <div class="item js-text-align" data-text="left"></div>
+                                    <div class="item js-text-align" data-text="center"></div>
+                                    <div class="item js-text-align" data-text="right"></div>
+                                    <div class="item js-text-align" data-text="justify"></div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input class="input title-input" id="text-block-2" type="text">
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">Способ оплаты</span>
+                                    <select class="js-select-menu" name>
+                                        <option value="">Яндекс деньги</option>
+                                        <option value="">Яндекс деньги</option>
+                                    </select>
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">Стоимость</span>
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="price" name type="checkbox">
+                                <label for="price">Покупатель может изменять цену</label>
+                            </div>
+                            <div class="btns">
+                                <button class="btn-blue">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-function js-wrapper-avatar-function">
+                    <div class="function-body js-function-add-body">
+                        <div class="function-avatar">
+                            <div class="top">
+                                <div class="text"><span class="title">Аватар</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                            </div>
+                            <div class="bg-pic">
+                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                    <input id="color-1" type="color">
+                                    <label for="color-1"> <img src="./img/bg.jpg" alt></label>
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="shadow-1" name type="checkbox">
+                                <label for="shadow-1">Тень</label>
+                            </div>
+                            <div class="input-download">
+                                <div class="input-wrapper"><span class="placeholder">Ссылка на изображение</span>
+                                    <input class="input" type="text">
+                                </div>
+                                <button class="btn-blue">Загрузить</button>
+                            </div>
+                            <div class="img"><img src="./img/profile.jpg" alt>
+                                <div class="icons"><span class="icon-settings"></span><span class="icon-del"></span></div>
+                            </div>
+                            <div class="bottom-bnts">
+                                <button class="btn-blue">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-function js-wrapper-link-function">
+                    <div class="function-body js-function-add-body">
+                        <div class="function-link-3">
+                            <div class="top">
+                                <div class="text"><span class="title">Текстовый блок</span><span class="desc">Стиль блока</span></div><img class="close-func" src="./img/close.svg" alt>
+                            </div>
+                            <div class="bg-pic">
+                                <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
+                                    <input id="color-4" type="color">
+                                    <label for="color-4"> <img src="./img/bg.jpg" alt></label>
+                                </div>
+                                <div class="background input-wrapper"><span class="placeholder">Изображение</span>
+                                    <input id="picture-4" type="file">
+                                    <label for="picture-4"> <img src="./img/pic.jpg" alt></label>
+                                </div>
+                            </div>
+                            <div class="shadow">
+                                <input id="shadow-4" name type="checkbox">
+                                <label for="shadow-4">Тень</label>
+                            </div>
+                            <div class="input-download">
+                                <div class="link-wrapper">
+                                    <div class="input-wrapper"><span class="placeholder">Ссылка</span>
+                                        <input class="input" type="text">
+                                    </div><a class="my-link" href>Наша кнопка</a>
+                                </div>
+                                <div class="icon"> <span class="icon-del"></span></div>
+                            </div>
+                            <div class="bottom-bnts">
+                                <button class="btn-white">Добавить кнопку</button>
+                                <button class="btn-blue">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="wrapper-function js-wrapper-mess-function">
                     <div class="function-body js-function-add-body">
                         <div class="function-mess">
@@ -532,6 +833,24 @@
                             <div class="shadow">
                                 <input id="shadow-4" name type="checkbox">
                                 <label for="shadow-4">Тень</label>
+                            </div>
+                            <div class="input-mess">
+                                <div class="input-wrapper"><span class="placeholder">Мессенджеры</span>
+                                    <select class="js-select-mess" name>
+                                        <option value="tg"></option>
+                                        <option value="tg-2"></option>
+                                        <option value="tg-3"></option>
+                                        <option value="tg-4"></option>
+                                        <option value="tg-5"></option>
+                                    </select>
+                                </div>
+                                <div class="input-wrapper input-name">
+                                    <input class="input" type="text">
+                                </div><span class="del"><span class="icon-del"></span></span>
+                            </div>
+                            <div class="bottom-bnts">
+                                <button class="btn-white">Добавить</button>
+                                <button class="btn-blue">Сохранить</button>
                             </div>
                         </div>
                     </div>

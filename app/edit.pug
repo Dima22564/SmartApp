@@ -33,8 +33,8 @@ block content
             a(href="").nav-link Фотогаллерея
             a(href="").nav-link Контакты
           .edit-items-wrapper
-            .edit-item
-              span.icon-settings.js-edit-menu-func
+            .edit-item.js-edit-menu-func
+              span.icon-settings
             .edit-item
               span.icon-copy
         .main-edit-icon.edit-section
@@ -71,7 +71,7 @@ block content
           .top-edit
             +editors('left')
             h2 Мессенджеры
-            +editors('right')
+            +editors('right', 'js-edit-mess-func')
           .social-icons
             -var i = 1;
             while i < 7
@@ -285,14 +285,14 @@ block content
     +customBlock
 
 
-  //- include ./pug/text-block.pug
-  //- include ./pug/image.pug
-  //- include ./pug/video.pug
-  //- include ./pug/pixel.pug
-  //- include ./pug/menu.pug
-  //- include ./pug/pay.pug
-  //- include ./pug/avatar.pug
-  //- include ./pug/link.pug
+  include ./pug/text-block.pug
+  include ./pug/image.pug
+  include ./pug/video.pug
+  include ./pug/pixel.pug
+  include ./pug/menu.pug
+  include ./pug/pay.pug
+  include ./pug/avatar.pug
+  include ./pug/link.pug
   include ./pug/messengers.pug
   
 

@@ -52,6 +52,7 @@ $(document).ready(function () {
   editFunc('.js-edit-menu-func', '.js-wrapper-menu-function');
   editFunc('.js-edit-pay-func', '.js-wrapper-pay-function');
   editFunc('.js-edit-avatar-func', '.js-wrapper-avatar-function');
+  editFunc('.js-edit-mess-func', '.js-wrapper-mess-function');
   editFunc('.js-edit-link-func', '.js-wrapper-link-function');
 
   function editFunc(btn, el) {
@@ -148,4 +149,28 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('#text-block-2').toggleClass(attr);
   });
+  $.widget('app.selectmenu', $.ui.selectmenu, {
+    _renderItem: function _renderItem(ul, item) {
+      var li = $("<li>"),
+          wrapper = $("<div>", {
+        text: item.label
+      });
+      wrapper.append("<img src=\"./img/".concat(item.value, ".svg\" alt=\"\">"));
+      console.log();
+      return li.append(wrapper).appendTo(ul);
+    }
+  });
+  $(".js-select-mess").selectmenu({
+    classes: {
+      "ui-selectmenu-button-closed": "select-drop-menu select-drop-mess",
+      "ui-selectmenu-button-open": "select-drop-menu select-drop-mess",
+      "ui-menu-item-wrapper": "select-drop-menu-wrapper select-drop-mess"
+    },
+    icons: {
+      button: "custom-icon"
+    },
+    change: function change(event, ui) {
+      $('.select-drop-mess .ui-selectmenu-text').append("<img src=\"./img/".concat(ui.item.value, ".svg\" alt=\"\">"));
+    }
+  }).selectmenu("menuWidget");
 });

@@ -2225,6 +2225,7 @@ div:active {
   height: 100%;
   background: rgba(0, 0, 0, 0.24);
   z-index: 55555;
+  display: none;
   -webkit-transform-origin: 50% 50% !important;
   -ms-transform-origin: 50% 50% !important;
   transform-origin: 50% 50% !important;
@@ -2241,6 +2242,9 @@ div:active {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-transform: translateX(300%);
+  -ms-transform: translateX(300%);
+  transform: translateX(300%);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -3958,5 +3962,66 @@ div:active {
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-right: 16px;
+}
+
+.function-mess .input-mess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.function-mess .input-mess .del {
+  width: 52px;
+  height: 48px;
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  background: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.function-mess .input-wrapper {
+  margin-bottom: 0;
+}
+
+.function-mess .input-wrapper.input-name {
+  width: 259% !important;
+  margin: 0 8px;
+}
+
+.function-mess .input-wrapper .placeholder {
+  margin-left: 0;
+}
+
+.function-mess .input-wrapper .select-drop-mess {
+  width: 96px !important;
+  padding: 16px 14px;
+}
+
+.function-mess .bottom-bnts {
+  margin-bottom: 100px;
+}
+
+.function-mess .bottom-bnts button {
+  padding: 14px 16px;
+}
+
+.function-mess .bottom-bnts button:not(:last-child) {
   margin-right: 16px;
 }
