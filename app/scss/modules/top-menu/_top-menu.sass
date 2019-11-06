@@ -6,6 +6,30 @@
   display: flex
   align-items: center
   transition: all 0.3s
+  position: relative
+  .arrow-btn
+    border-radius: 4px 0 0 4px
+    width: 24px
+    height: 24px
+    background: $blue
+    color: $white
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: all 0.3s
+    z-index: 99
+    flex-shrink: 0
+    position: absolute
+    top: 26px
+    left: 0
+    transform: rotate(180deg) translateX(2000%)
+    span
+      transition: all 0.3s
+      transform: rotate(90deg)
+      font-size: 11px
+    &.active
+      transform: rotate(180deg) translateX(0)
   .func-logo
     display: none
   &.func-active

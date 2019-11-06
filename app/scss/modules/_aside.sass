@@ -8,8 +8,11 @@
   flex-direction: column
   justify-content: space-between
   transform-origin: 0 100%
-  transition: all 0.7s
+  transition: all 0.3s
   transition-timing-function: ease-in-out
+  &.hide
+    width: 0
+    // overflow: hidden
   .link-body
     display: flex
     align-items: center
@@ -49,6 +52,13 @@
       align-items: center
       justify-content: center
       cursor: pointer
+      transition: all 0.3s
+      z-index: 99
+      flex-shrink: 0
+      span
+        transition: all 0.3s
+      &.open
+        // transform: translateX(-100%) rotate(180deg)
       span
         transform: rotate(90deg)
         font-size: 11px
@@ -93,4 +103,6 @@
             border-radius: 50%
             background: $gray
             margin-right: 8px
+
+
 

@@ -25,10 +25,18 @@ $(document).ready(function () {
     $('.js-video-edit video')[0].play();
   });
   $('.js-aside-hide').click(function (e) {
-    $('.js-aside').css({
-      width: 0,
-      overflow: 'hidden'
-    });
+    $(this).addClass('open');
+    $('.js-aside').addClass('hide');
+    setTimeout(function () {
+      $('.js-aside-show').addClass('active');
+    }, 300);
+  });
+  $('.js-aside-show').click(function (e) {
+    $('.js-aside-show').removeClass('active');
+    setTimeout(function () {
+      $('.js-aside-hide').removeClass('open');
+      $('.js-aside').removeClass('hide');
+    }, 300);
   });
   $(".js-select-menu").selectmenu({
     classes: {
