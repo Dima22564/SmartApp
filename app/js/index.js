@@ -73,7 +73,7 @@ $(document).ready(function () {
 
     function editFunc(btn, el){
       $(btn).click(function(e){
-        $(el).show(300, function(){
+        $(el).fadeIn(100, function(){
           $('.js-function-add-body').css({
             transform: 'translateX(0)'
           })
@@ -168,12 +168,6 @@ $(document).ready(function () {
       $('#text-block-2').css({
         textAlign: attr
       })
-    })
-    $('.js-text-style').click(function(e){
-      e.preventDefault();
-      var attr = $(this).attr('data-style')
-      $(this).toggleClass('active')
-      $('#text-block-2').toggleClass(attr)
     })
 
 

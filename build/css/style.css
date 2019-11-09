@@ -2289,9 +2289,6 @@ div:active {
   background: rgba(0, 0, 0, 0.24);
   z-index: 55555;
   display: none;
-  -webkit-transform-origin: 50% 50% !important;
-  -ms-transform-origin: 50% 50% !important;
-  transform-origin: 50% 50% !important;
 }
 
 .wrapper-function .function-body {
@@ -2997,6 +2994,9 @@ div:active {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+  opacity: 0.4;
+  color: #141029;
+  font-size: 12px;
 }
 
 .function-edit-text .textarea .text-settings .item:hover {
@@ -3005,6 +3005,7 @@ div:active {
 
 .function-edit-text .textarea .text-settings .item.active {
   color: #6b75ca;
+  opacity: 1;
 }
 
 .function-edit-text .textarea .text-settings .item:not(:last-child) {
@@ -4074,7 +4075,7 @@ div:active {
 
 .function-mess .input-wrapper .select-drop-mess {
   width: 96px !important;
-  padding: 16px 14px;
+  padding: 14px 14px;
 }
 
 .function-mess .bottom-bnts {

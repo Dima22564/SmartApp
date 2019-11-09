@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?enzytx');
-  src:  url('../fonts/icomoon.eot?enzytx#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?enzytx') format('truetype'),
-    url('../fonts/icomoon.woff?enzytx') format('woff'),
-    url('../fonts/icomoon.svg?enzytx#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?qpf5eb');
+  src:  url('../fonts/icomoon.eot?qpf5eb#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qpf5eb') format('truetype'),
+    url('../fonts/icomoon.woff?qpf5eb') format('woff'),
+    url('../fonts/icomoon.svg?qpf5eb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-night:before {
+  content: "\e90b";
+}
 .icon-blocks:before {
   content: "\e909";
 }
@@ -57,4 +60,25 @@
 }
 .icon-link-3:before {
   content: "\e903";
+}
+.icon-bold:before {
+  content: "\ea62";
+}
+.icon-underline:before {
+  content: "\ea63";
+}
+.icon-italic:before {
+  content: "\ea64";
+}
+.icon-paragraph-left:before {
+  content: "\ea77";
+}
+.icon-paragraph-center:before {
+  content: "\ea78";
+}
+.icon-paragraph-right:before {
+  content: "\ea79";
+}
+.icon-paragraph-justify:before {
+  content: "\ea7a";
 }
