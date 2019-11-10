@@ -1,0 +1,51 @@
+.wrapper-function.js-wrapper-add-user
+  .function-body.js-function-add-body
+    .function-add-user
+      .top  
+        .text
+          span.title Добавление пользователя
+          span.desc Стиль блока
+        img(src="./img/close.svg", alt="").close-func
+      .input-wrapper
+        span.placeholder Email пользователя
+        input(type="text").input
+      .input-wrapper
+        span.placeholder Название аккаунта/должность
+        input(type="text").input
+      .links-access
+        p.title Разрешить доступ:
+        .links-group
+          .link-wrapper
+            .shadow.emp
+              input#link-1(type="checkbox", name="")
+              label(for="link-1") Мультиссылка
+            span.icon-settings
+          .shadow.left
+            input#link-2(type="checkbox", name="")
+            label(for="link-2") Редактирование/добавление проекта
+          .shadow.left
+            input#link-3(type="checkbox", name="")
+            label(for="link-3") Редактирование/добавление проекта
+        .links-group
+          .link-wrapper
+            .shadow.emp
+              input#link-4(type="checkbox", name="")
+              label(for="link-4") Статистика
+            span.icon-settings
+          .shadow.left
+            input#link-5(type="checkbox", name="")
+            label(for="link-5") Статистика аккаунта
+          .shadow.left
+            input#link-6(type="checkbox", name="")
+            label(for="link-6") Статистика аккаунта
+        .links-group
+          .link-wrapper
+            .shadow.emp
+              input#link-7(type="checkbox", name="")
+              label(for="link-7") Контент план
+            span.icon-settings
+      .access-block
+        span Разрешить все
+        span Запретить все
+      .bottom-bnts
+        button.btn-blue Добавить администратора

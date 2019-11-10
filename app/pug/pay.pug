@@ -9,27 +9,32 @@
       .bg-pic
         .background.input-wrapper
           span.placeholder Фон проекта
-          input#color-4(type="color")
-          label(for="color-4") 
+          input#color-pay(type="color")
+          label(for="color-pay") 
             img(src="./img/bg.jpg", alt="")
         .background.input-wrapper
           span.placeholder Изображение
-          input#picture-4(type="file")
-          label(for="picture-4") 
+          input#picture-pay(type="file")
+          label(for="picture-pay") 
             img(src="./img/pic.jpg", alt="")
       .shadow
-        input#shadow-4(type="checkbox", name="")
-        label(for="shadow-4") Тень
+        input#shadow-pay(type="checkbox", name="")
+        label(for="shadow-pay") Тень
       .textarea
         p.subtitle Заголовок
         .text-settings
           .item.js-text-style(data-style="underline")
+            span.icon-underline
           .item.js-text-align(data-text="left")
+            spam.icon-paragraph-left
           .item.js-text-align(data-text="center")
+            span.icon-paragraph-center
           .item.js-text-align(data-text="right")
+            span.icon-paragraph-right
           .item.js-text-align(data-text="justify")
+            span.icon-paragraph-justify
         .input-wrapper
-          input#text-block-2(type="text").input.title-input
+          input.customize-text(type="text").input.title-input
         .input-wrapper
           span.placeholder Способ оплаты
           select(name="").js-select-menu

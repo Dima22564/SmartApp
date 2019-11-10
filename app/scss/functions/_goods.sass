@@ -1,4 +1,4 @@
-.function-edit-text
+.function-edit-goods
   background: $white
   height: calc(100% - 72px)
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06)
@@ -7,6 +7,35 @@
   width: 100%
   overflow-y: auto
   .textarea
+    .bottom-btns
+      width: 81%
+      display: flex
+      align-items: center
+      margin: 40px 0 100px 0
+      button:not(:last-child)
+        margin-right: 24px
+      .btn-white
+        padding: 12px 11px
+    .input-wrapper
+      width: 81%
+    .input-del
+      display: flex
+      align-items: center
+      .del
+        width: 52px
+        height: 48px
+        background: $white
+        cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: center
+        box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+        border-radius: 4px
+        margin-left: 24px
+        border: none
+    .select-drop-menu
+      font-weight: 600 !important
+      color: $d-gray !important
     .subtitle
       margin-bottom: 8px
       font-size: 12px
@@ -14,8 +43,8 @@
     .text-settings
       display: flex
       align-items: center
-      justify-content: flex-end
-      margin-bottom: 8px
+      justify-content: flex-start
+      margin-bottom: 16px
       .item
         box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
         width: 24px
@@ -38,25 +67,5 @@
         &:not(:last-child)
           margin-right: 8px
     .customize-text
-      width: 100%
-      background: #f4f5f8
-      border-radius: 4px
-      padding: 15px
-      min-height: 189px
-      resize: none
-      border: none
-      margin-bottom: 7px
-      &.bold
-        font-weight: bold !important
-      &.italic
-        font-style: italic
       &.underline
         text-decoration: underline
-    .symbols
-      text-align: right
-      font-size: 12px
-      line-height: 12px
-      margin-bottom: 13px
-    .btn-blue
-      margin-bottom: 100px
-    

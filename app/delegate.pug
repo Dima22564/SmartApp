@@ -1,0 +1,47 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'delegate';
+  -var title = 'Delegate';
+
+block content
+  section.main-delegate-header
+    .container
+      .content
+        .text
+          p.title Делегирование
+          p.desc Доступ к функциям без разглашения паролей
+        .btns
+          button.btn-blue.js-add-user Добавить пользователя
+  section.main-delegate-section
+    .container
+      .row
+        .col-xl-6
+          .delegate-item
+            img(src="./img/profile.jpg", alt="").delegate-img
+            .delegate-text
+              .title
+                p.name Алексей менеджер
+                .icons
+                  span.icon-settings
+                  span.icon-copy
+              p.email
+                i.fa.fa-envelope(aria-hidden="true")
+                span.text alexsmm@yandex.ru
+              p.access Мультиссылка, статистика
+        .col-xl-6
+          .delegate-item
+            img(src="./img/profile.jpg", alt="").delegate-img
+            .delegate-text
+              .title
+                p.name Алексей менеджер
+                .icons
+                  span.icon-settings
+                  span.icon-copy
+              p.email
+                i.fa.fa-envelope(aria-hidden="true")
+                span.text alexsmm@yandex.ru
+              p.access Мультиссылка, статистика
+
+  include ./pug/add-user.pug
+  

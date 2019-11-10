@@ -1,0 +1,82 @@
+.main-applications-section
+  padding: 0 0 162px
+  .table
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    border-radius: 12px
+    background: $white
+    padding: 76px 0 16px
+    &-titles
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 0 45px 11px
+      border-bottom: 1px solid rgba(20, 16, 41, 0.12)
+      color: $d-gray
+      margin-bottom: 8px
+      font-size: 14px
+      .title
+        width: 16.75%
+        &.short
+          width: 10%
+        &.status
+          width: 12%
+        &.date
+          width: 11%
+    &-lines
+      margin-bottom: 21px
+      .line
+        padding: 12px 45px
+        transition: all 0.2s
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &:hover
+          background-color: rgba(20, 16, 41, 0.02)
+        .cell
+          width: 16.75%
+          font-size: 14px
+          &.short
+            width: 10%
+          &.status
+            width: 12%
+            &.new
+              color: #ffaa00
+            &.account
+              color: #16b862
+            &.angry
+              color: #f54562
+          &.date
+            width: 11%
+            color: $d-gray
+    .pagination
+      display: flex
+      align-items: center
+      justify-content: center
+      .num
+        width: 36px
+        height: 36px
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        border-radius: 4px
+        cursor: pointer
+        transition: all 0.2s
+        &:not(:last-child)
+          margin-right: 8px
+        &.active
+          background: rgba(20, 16, 41, 0.03)
+        &:hover
+          background: rgba(20, 16, 41, 0.03)
+      .arrow
+        cursor: pointer
+        font-size: 13px
+        opacity: 0.4
+        transition: all 0.2s
+        &:hover
+          opacity: 1
+        &-prev
+          margin-right: 20px
+          transform: rotate(90deg)
+        &-next
+          margin-left: 20px
+          transform: rotate(-90deg)

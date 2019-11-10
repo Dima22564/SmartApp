@@ -1,0 +1,55 @@
+.function-add-user
+  background: $white
+  height: calc(100% - 72px)
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06)
+  padding: 38px 90px 115px 32px
+  max-width: 535px
+  width: 100%
+  overflow-y: auto
+  .links-group
+    margin-bottom: 36px
+    .link-wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      span
+        cursor: pointer
+        opacity: 0.7
+        transition: all 0.2s
+        &:hover
+          opacity: 1
+          color: $d-gray
+    .shadow
+      margin-bottom: 10px
+      label
+        &::before
+          width: 20px
+          height: 20px
+          margin-right: 8px
+      &.left
+        margin-left: 28px
+      &.emp
+        font-weight: 600
+        color: $d-gray
+  .access-block
+    display: flex
+    align-items: center
+    margin: 32px 0 48px
+    font-size: 14px
+    span
+      cursor: pointer
+      text-decoration: underline
+      transition: all 0.2s
+      &:not(:last-child)
+        margin-right: 24px
+      &:hover
+        color: $d-gray
+  .bottom-bnts
+    margin-bottom: 100px
+  .links-access
+    margin-top: 32px
+    .title
+      margin-bottom: 16px
+      font-weight: 600
+      font-size: 16px
+      color: $d-gray

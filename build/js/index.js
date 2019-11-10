@@ -62,6 +62,8 @@ $(document).ready(function () {
   editFunc('.js-edit-avatar-func', '.js-wrapper-avatar-function');
   editFunc('.js-edit-mess-func', '.js-wrapper-mess-function');
   editFunc('.js-edit-link-func', '.js-wrapper-link-function');
+  editFunc('.js-edit-goods-func', '.js-wrapper-goods-function');
+  editFunc('.js-add-user', '.js-wrapper-add-user');
 
   function editFunc(btn, el) {
     $(btn).click(function (e) {
@@ -132,7 +134,7 @@ $(document).ready(function () {
     $('.js-text-align').removeClass('active');
     $(this).addClass('active');
     var attr = $(this).attr('data-text');
-    $('#text-block').css({
+    $(this).parents('.textarea').find('.customize-text').css({
       textAlign: attr
     });
   });
@@ -140,16 +142,7 @@ $(document).ready(function () {
     e.preventDefault();
     var attr = $(this).attr('data-style');
     $(this).toggleClass('active');
-    $('#text-block').toggleClass(attr);
-  });
-  $('.js-text-align').click(function (e) {
-    e.preventDefault();
-    $('.js-text-align').removeClass('active');
-    $(this).addClass('active');
-    var attr = $(this).attr('data-text');
-    $('#text-block-2').css({
-      textAlign: attr
-    });
+    $(this).parents('.textarea').find('.customize-text').toggleClass(attr);
   });
   $.widget('app.selectmenu', $.ui.selectmenu, {
     _renderItem: function _renderItem(ul, item) {

@@ -1,0 +1,53 @@
+.wrapper-function.js-wrapper-goods-function
+  .function-body.js-function-add-body
+    .function-edit-goods
+      .top  
+        .text
+          span.title Товары
+          span.desc Стиль блока
+        img(src="./img/close.svg", alt="").close-func
+      .bg-pic
+        .background.input-wrapper
+          span.placeholder Фон проекта
+          input#color-goods(type="color")
+          label(for="color-goods") 
+            img(src="./img/bg.jpg", alt="")
+        .background.input-wrapper
+          span.placeholder Изображение
+          input#picture-goods(type="file")
+          label(for="picture-goods") 
+            img(src="./img/pic.jpg", alt="")
+      .shadow
+        input#shadow-goods(type="checkbox", name="")
+        label(for="shadow-goods") Тень
+      .textarea
+        p.subtitle Заголовок
+        .text-settings
+          .item.js-text-style(data-style="underline")
+            span.icon-underline
+          .item.js-text-align(data-text="left")
+            span.icon-paragraph-left
+          .item.js-text-align(data-text="center")
+            span.icon-paragraph-center
+          .item.js-text-align(data-text="right")
+            span.icon-paragraph-right
+          .item.js-text-align(data-text="justify")
+            .icon-paragraph-justify
+        .input-wrapper
+          input(type="text").input.customize-text
+        .input-wrapper
+          span.placeholder Категория товаров
+          select(name="").js-select-menu
+            option(value="") Розница
+            option(value="") Розница
+        .input-del
+          .input-wrapper
+            span.placeholder Расположение страницы
+            select(name="").js-select-menu
+              option(value="") Доставка цветов
+              option(value="") Доставка цветов
+          button.del 
+            span.icon-del
+        .bottom-btns
+          button.btn-white Добавить товар
+          button.btn-blue Сохранить

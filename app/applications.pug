@@ -1,0 +1,92 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'applications';
+  -var title = 'Applications';
+
+block content
+  section.main-applications-header
+    .container
+      .content
+        .text
+          p.title Мои заявки
+        .btns
+          button.btn-blue Смотреть заявки
+  section.main-applications-section
+    .container
+      .table
+        .table-titles
+          span.title.date Дата
+          span.title Товар
+          span.title.short Цена
+          span.title Покупатель
+          span.title Телефон
+          span.title Email
+          span.title.status Статус заказа
+        .table-lines
+          .line
+            span.cell.date 06/02/2019
+            span.cell Доставка цветов
+            span.cell.short 252 руб.
+            span.cell Мария Иванова
+            span.cell +79525821423
+            span.cell maria.love@mail.ru
+            span.cell.status.new Новая
+          .line
+            span.cell.date 06/02/2019
+            span.cell Доставка цветов
+            span.cell.short 252 руб.
+            span.cell Мария Иванова
+            span.cell +79525821423
+            span.cell maria.love@mail.ru
+            span.cell.status.account Выставлен счет
+          .line
+            span.cell.date 06/02/2019
+            span.cell Доставка цветов
+            span.cell.short 252 руб.
+            span.cell Мария Иванова
+            span.cell +79525821423
+            span.cell maria.love@mail.ru
+            span.cell.status.angry Недозвон
+          .line
+            span.cell.date 06/02/2019
+            span.cell Доставка цветов
+            span.cell.short 252 руб.
+            span.cell Мария Иванова
+            span.cell +79525821423
+            span.cell maria.love@mail.ru
+            span.cell.status.new Новая
+          .line
+            span.cell.date 06/02/2019
+            span.cell Доставка цветов
+            span.cell.short 252 руб.
+            span.cell Мария Иванова
+            span.cell +79525821423
+            span.cell maria.love@mail.ru
+            span.cell.status.account Выставлен счет
+          .line
+            span.cell.date 06/02/2019
+            span.cell Доставка цветов
+            span.cell.short 252 руб.
+            span.cell Мария Иванова
+            span.cell +79525821423
+            span.cell maria.love@mail.ru
+            span.cell.status.account Выставлен счет
+          .line
+            span.cell.date 06/02/2019
+            span.cell Доставка цветов
+            span.cell.short 252 руб.
+            span.cell Мария Иванова
+            span.cell +79525821423
+            span.cell maria.love@mail.ru
+            span.cell.status.angry Недозвон
+        .pagination
+          span.icon-arrow-d.arrow.arrow-prev
+          span.num 1
+          span.num 2
+          span.num 3
+          span.num ...
+          span.num 15
+          span.icon-arrow-d.arrow.arrow-next
+
+
