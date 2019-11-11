@@ -1,0 +1,87 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'deeplink-generate';
+  -var title = 'Deeplink-generate';
+
+block content
+  section.main-deeplink-generate-header
+    .container
+      .content
+        .text
+          p.title Генератор диплинков
+          p.desc Открытие ссылок через приложение
+  section.deeplink-type
+    .container
+      .content
+        p.desc Диплинк - это ссылка, которая позволяет осуществить переход напрямую в другое приложение. Переход на аккаунт или на кокнретный пост.
+        .type-select
+          .input-wrapper
+            span.placeholder Тип
+            select(name="").js-select-menu
+              option(value="") Аккаунт в Инстаграм
+              option(value="") Аккаунт в Инстаграм
+          .input-wrapper
+            span.placeholder Название аккаунта
+            input(type="text").input
+          button.btn-blue Создать
+  section.deeplink
+    .container
+      .content
+        p.title Готовая ссылка:
+        .input-wrapper
+          input(type="text", readonly="true").input
+          button.btn-copy 
+            span.icon-copy
+  section.my-deeplinks
+    .container
+      .content
+        .top
+          p.title Мои диплинки
+          p.total Всего кликов за месяц: #[span 100]/150
+        .table
+          .titles
+            span.link Ссылка
+            span Тип
+            span Диплинк
+            span Кликов
+          .lines
+            .line
+              span.cell.link instagram.com/dostavkacvetov
+              span.cell Аккаунт
+              span.cell spartapp.ru/dp/fge3
+              .cell.clicks 
+                span.text 121
+                .icons
+                  span.icon-copy
+                  span.icon-del
+            .line
+              span.cell.link instagram.com/dostavkacvetov
+              span.cell Аккаунт
+              span.cell spartapp.ru/dp/fge3
+              .cell.clicks 
+                span.text 121
+                .icons
+                  span.icon-copy
+                  span.icon-del
+            .line
+              span.cell.link instagram.com/dostavkacvetov
+              span.cell Аккаунт
+              span.cell spartapp.ru/dp/fge3
+              .cell.clicks 
+                span.text 121
+                .icons
+                  span.icon-copy
+                  span.icon-del
+            .line
+              span.cell.link instagram.com/dostavkacvetov
+              span.cell Аккаунт
+              span.cell spartapp.ru/dp/fge3
+              .cell.clicks 
+                span.text 121
+                .icons
+                  span.icon-copy
+                  span.icon-del
+            
+
+

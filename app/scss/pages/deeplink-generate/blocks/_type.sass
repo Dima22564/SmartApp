@@ -1,0 +1,86 @@
+.main-deeplink-generate
+  .input-wrapper
+    width: 41%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    position: relative
+    .select-drop-menu
+      width: 100%
+      background: #f4f5f8 !important
+      border-radius: 4px
+      box-shadow: none
+      padding: 14px 24px
+      color: $d-gray !important
+      font-weight: 600 !important
+    .custom-icon
+      background-image: url('../img/arrow-down.svg') !important
+      transition: all 0.3s
+      position: absolute
+      right: 14px
+      top: 36%
+      background-position: center center
+    &.link
+      position: relative
+      .copy
+        color: $black
+        position: absolute
+        top: 49%
+        right: 16px
+        cursor: pointer
+        font-size: 20px
+    .addition
+      margin-top: 16px
+      font-size: 12px
+      line-height: 12px
+      color: rgba(20, 16, 41, 0.8)
+      align-self: flex-end
+      cursor: pointer
+    .placeholder
+      margin: 0 0 7px 0
+      font-size: 12px
+      line-height: 12px
+    .input
+      padding: 12px 24px
+      border: none
+      border-radius: 4px
+      background-color: #f4f5f8
+      width: 100%
+      font-size: 16px
+      line-height: 24px
+      font-weight: 600
+      color: $black
+      border: 1px solid transparent
+      &.error
+        border: 1px solid #d50000
+        color: #d50000
+    .error-text
+      background: $white
+      box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+      color: #d50000
+      padding: 16px
+      position: absolute
+      background-repeat: no-repeat
+      font-size: 14px
+      line-height: 16px
+      font-weight: 600
+      right: 0
+      transform: translateX(109%)
+      background-position: center center
+  .deeplink-type
+    margin-bottom: 32px
+    .content
+      box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+      border-radius: 24px
+      background: $white
+      padding: 32px
+      .desc
+        font-size: 12px
+        line-height: 24px
+        margin-bottom: 24px
+      .type-select
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        
+        
