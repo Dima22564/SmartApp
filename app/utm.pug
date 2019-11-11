@@ -1,0 +1,104 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'utm';
+  -var title = 'Utm';
+
+block content
+  section.main-utm-header
+    .container
+      .content
+        .text
+          p.title Генератор UTM
+          p.desc Отслеживайте точную статистику
+  section.deeplink
+    .container
+      .content
+        p.title Готовая ссылка:
+        .input-wrapper
+          input(type="text", readonly="true").input
+          button.btn-copy 
+            span.icon-copy
+  section.utm-site-link
+    .container
+      .content
+        p.title Ссылка на сайт:
+        .input-wrapper
+          input(type="text", readonly="true").input
+        p.subtitle Источник трафика:
+        .checkboxes
+          .shadow
+            input#opt-1(type="checkbox", name="")
+            label(for="opt-1") Произвольный
+          .shadow
+            input#opt-2(type="checkbox", name="")
+            label(for="opt-2") Яндекс Директ
+          .shadow
+            input#opt-3(type="checkbox", name="")
+            label(for="opt-3") Вконтакте
+          .shadow
+            input#opt-4(type="checkbox", name="")
+            label(for="opt-4") Google Ad
+          .shadow
+            input#opt-5(type="checkbox", name="")
+            label(for="opt-5") Instagram
+          .shadow
+            input#opt-6(type="checkbox", name="")
+            label(for="opt-6") Facebook
+        .options
+          .opt-group
+            .option
+              p.subtitle Источник компании
+              .input-wrapper
+                .name utm_source
+                input(type="text").value.input
+            .option
+              p.subtitle Тип трафика
+              .input-wrapper
+                .name utm_medium
+                input(type="text").value.input
+            .option
+              p.subtitle Название кампании
+              .input-wrapper
+                .name utm_campaign
+                input(type="text").value.input
+              p.subtitle { * } - автоматическая подстановка ID кампании
+          .opt-group
+            .option
+              p.subtitle Идентификатор объявления
+              .input-wrapper
+                .name utm_source
+                input(type="text").value.input
+              p.subtitle { * } - автоматическая подстановка ID кампании              
+            .option
+              p.subtitle Ключевое слово
+              .input-wrapper
+                .name utm_term
+                input(type="text").value.input
+        button.btn-blue Добавить свое значение
+  section.deeplink
+    .container
+      .content
+        p.title Прошлые ссылки:
+        .input-wrapper
+          input(type="text", readonly="true").input
+          .btns
+            button.btn-copy 
+              span.icon-copy
+            button.btn-copy 
+              span.icon-del
+        .input-wrapper
+          input(type="text", readonly="true").input
+          .btns
+            button.btn-copy 
+              span.icon-copy
+            button.btn-copy 
+              span.icon-del
+        .input-wrapper
+          input(type="text", readonly="true").input
+          .btns
+            button.btn-copy 
+              span.icon-copy
+            button.btn-copy 
+              span.icon-del
+  

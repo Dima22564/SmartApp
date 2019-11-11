@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="base_asset_path" content="./">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&amp;display=swap" rel="stylesheet">
+        <link href="./libs/css/vendor.min.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+        <title>Utm</title>
+    </head>
+    <body>
+        <div class="page">
+            <aside class="aside js-aside">
+                <div class="aside-links">
+                    <div class="aside-logo"><a href=""><img class="logo" src="./img/logo.png" alt></a>
+                        <div class="arrow js-aside-hide"><span class="icon-arrow-up"></span></div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-1.svg" alt><span class="text">Рабочий стол</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-2.svg" alt><span class="text">Мультиссылка</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-3.svg" alt><span class="text">Статистика</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-4.svg" alt><span class="text">Контент план</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-5.svg" alt><span class="text">Делегирование</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a></div>
+                    </div>
+                </div>
+                <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
+            </aside>
+            <main class="main main-utm">
+                <header class="top-menu js-top-menu">
+                    <div class="arrow-btn js-aside-show"><span class="icon-arrow-up"></span></div><a class="func-logo" href><img src="./img/logo.png" alt></a>
+                    <div class="container">
+                        <div class="top-menu-content">
+                            <div class="links"><a class="top-link emp" href>Инструменты</a><a class="top-link" href>Биржа рекламы</a></div>
+                            <div class="right-panel">
+                                <div class="tariff">
+                                    <div class="top"><span class="emp">Тариф: Максимальный</span><span>365 дней</span></div>
+                                    <div class="progress-1"><span></span></div>
+                                </div>
+                                <div class="notices">
+                                    <div class="wrapper"><img src="./img/notice.svg" alt><span>2</span></div>
+                                </div>
+                                <div class="profile">
+                                    <div class="avatar"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <section class="main-utm-header">
+                    <div class="container">
+                        <div class="content">
+                            <div class="text">
+                                <p class="title">Генератор UTM</p>
+                                <p class="desc">Отслеживайте точную статистику</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="deeplink">
+                    <div class="container">
+                        <div class="content">
+                            <p class="title">Готовая ссылка:</p>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" readonly="true">
+                                <button class="btn-copy"> <span class="icon-copy"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="utm-site-link">
+                    <div class="container">
+                        <div class="content">
+                            <p class="title">Ссылка на сайт:</p>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" readonly="true">
+                            </div>
+                            <p class="subtitle">Источник трафика:</p>
+                            <div class="checkboxes">
+                                <div class="shadow">
+                                    <input id="opt-1" name type="checkbox">
+                                    <label for="opt-1">Произвольный</label>
+                                </div>
+                                <div class="shadow">
+                                    <input id="opt-2" name type="checkbox">
+                                    <label for="opt-2">Яндекс Директ</label>
+                                </div>
+                                <div class="shadow">
+                                    <input id="opt-3" name type="checkbox">
+                                    <label for="opt-3">Вконтакте</label>
+                                </div>
+                                <div class="shadow">
+                                    <input id="opt-4" name type="checkbox">
+                                    <label for="opt-4">Google Ad</label>
+                                </div>
+                                <div class="shadow">
+                                    <input id="opt-5" name type="checkbox">
+                                    <label for="opt-5">Instagram</label>
+                                </div>
+                                <div class="shadow">
+                                    <input id="opt-6" name type="checkbox">
+                                    <label for="opt-6">Facebook</label>
+                                </div>
+                            </div>
+                            <div class="options">
+                                <div class="opt-group">
+                                    <div class="option">
+                                        <p class="subtitle">Источник компании</p>
+                                        <div class="input-wrapper">
+                                            <div class="name">utm_source</div>
+                                            <input class="value input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <p class="subtitle">Тип трафика</p>
+                                        <div class="input-wrapper">
+                                            <div class="name">utm_medium</div>
+                                            <input class="value input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <p class="subtitle">Название кампании</p>
+                                        <div class="input-wrapper">
+                                            <div class="name">utm_campaign</div>
+                                            <input class="value input" type="text">
+                                        </div>
+                                        <p class="subtitle">{ * } - автоматическая подстановка ID кампании</p>
+                                    </div>
+                                </div>
+                                <div class="opt-group">
+                                    <div class="option">
+                                        <p class="subtitle">Идентификатор объявления</p>
+                                        <div class="input-wrapper">
+                                            <div class="name">utm_source</div>
+                                            <input class="value input" type="text">
+                                        </div>
+                                        <p class="subtitle">{ * } - автоматическая подстановка ID кампании </p>
+                                    </div>
+                                    <div class="option">
+                                        <p class="subtitle">Ключевое слово</p>
+                                        <div class="input-wrapper">
+                                            <div class="name">utm_term</div>
+                                            <input class="value input" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-blue">Добавить свое значение</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="deeplink">
+                    <div class="container">
+                        <div class="content">
+                            <p class="title">Прошлые ссылки:</p>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" readonly="true">
+                                <div class="btns">
+                                    <button class="btn-copy"> <span class="icon-copy"></span></button>
+                                    <button class="btn-copy"> <span class="icon-del"></span></button>
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" readonly="true">
+                                <div class="btns">
+                                    <button class="btn-copy"> <span class="icon-copy"></span></button>
+                                    <button class="btn-copy"> <span class="icon-del"></span></button>
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" readonly="true">
+                                <div class="btns">
+                                    <button class="btn-copy"> <span class="icon-copy"></span></button>
+                                    <button class="btn-copy"> <span class="icon-del"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+    <script src="./libs/js/vendor.min.js"></script>
+    <script src="./js/index.js"></script>
+</html>
