@@ -194,6 +194,17 @@ $(document).ready(function () {
 
     .selectmenu("menuWidget")
 
+    $('.js-close-reg').click(function(e){
+      $('.js-popup-wrapper-reg').fadeOut()
+    })
+
+    $('.js-popup-wrapper-reg').click(function(e){
+      if($(e.target).hasClass('js-popup-body')){
+        $(this).fadeOut()
+
+      }
+    })
+
 
 
 });

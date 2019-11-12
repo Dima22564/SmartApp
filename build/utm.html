@@ -191,9 +191,84 @@
                         </div>
                     </div>
                 </section>
+                <div class="popup-wrapper-reg js-popup-wrapper-reg">
+                    <div class="popup-body js-popup-body">
+                        <div class="popup-form popup-new-password">
+                            <div class="top">
+                                <p class="title">Задайте новый пароль</p><img class="js-close-reg" src="./img/close.svg" alt>
+                            </div>
+                            <p class="desc">Ваш пароль успешно сброшен. Задайте новый пароль для продолжения работы</p>
+                            <div class="input-wrapper"><span class="placeholder">Новый пароль</span>
+                                <input class="input" type="text">
+                            </div>
+                            <div class="input-wrapper"><span class="placeholder">Повторите пароль</span>
+                                <input class="input" type="text">
+                            </div>
+                            <button class="btn-blue btn-add">Перейти в почту (yandex.ru)</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-wrapper-reg js-popup-wrapper-reg">
+                    <div class="popup-body js-popup-body">
+                        <div class="popup-form popup-repair-password">
+                            <div class="top">
+                                <p class="title">Восстановление пароля</p><img class="js-close-reg" src="./img/close.svg" alt>
+                            </div>
+                            <div class="input-wrapper"><span class="placeholder">Email на который регистрировался аккаунт</span>
+                                <input class="input" type="text">
+                            </div>
+                            <p class="desc-2">Мы выслали ссылку для создания нового пароля вам на email</p>
+                            <button class="btn-blue btn-add">Перейти в почту (yandex.ru)</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-wrapper-reg js-popup-wrapper-reg">
+                    <div class="popup-body js-popup-body">
+                        <div class="popup-form popup-registration">
+                            <div class="top">
+                                <p class="title">Регистрация</p><img class="js-close-reg" src="./img/close.svg" alt>
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" placeholder="Электронная почта">
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" placeholder="Пароль">
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" placeholder="Повторите пароль">
+                            </div>
+                            <div class="shadow">
+                                <input id="reg" name type="checkbox">
+                                <label for="reg"><span>Cогласен с условиями <a href="#">политики конфиденциальности и Пользовательскому соглашению</a></span></label>
+                            </div>
+                            <button class="btn-blue btn-add">Войти</button><a class="hasAcc" href>Уже есть аккаунт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-wrapper-reg js-popup-wrapper-reg">
+                    <div class="popup-body js-popup-body">
+                        <div class="popup-form popup-log-in">
+                            <div class="top">
+                                <p class="title">Войти в систему </p><img class="js-close-reg" src="./img/close.svg" alt>
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" placeholder="Электронная почта">
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" placeholder="Пароль">
+                            </div>
+                            <div class="shadow">
+                                <input id="login" name type="checkbox">
+                                <label for="login">Запомнить меня</label>
+                            </div>
+                            <button class="btn-blue btn-add">Войти</button>
+                            <div class="bottom-links"><a class="hasAcc" href>Зарегистрироваться</a><a class="hasAcc" href>Забыли пароль?</a></div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
+        <script src="./libs/js/vendor.min.js"></script>
+        <script src="./js/index.js"></script>
     </body>
-    <script src="./libs/js/vendor.min.js"></script>
-    <script src="./js/index.js"></script>
 </html>

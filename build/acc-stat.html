@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&amp;display=swap" rel="stylesheet">
         <link href="./libs/css/vendor.min.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
-        <title>Projects</title>
+        <title>Statistics</title>
     </head>
     <body>
         <div class="page">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
             </aside>
-            <main class="main main-projects">
+            <main class="main main-acc-stats">
                 <header class="top-menu js-top-menu">
                     <div class="arrow-btn js-aside-show"><span class="icon-arrow-up"></span></div><a class="func-logo" href><img src="./img/logo.png" alt></a>
                     <div class="container">
@@ -61,46 +61,25 @@
                         </div>
                     </div>
                 </header>
-                <section class="active-projects">
+                <section class="main-acc-stats-header">
                     <div class="container">
-                        <div class="active-projects-top">
-                            <h1>Активные проекты:</h1>
-                            <div class="right-side">
-                                <div class="show"><span class="text">Показывать</span><span class="icon-row icon"></span><span class="icon-blocks icon"></span></div>
-                                <button class="btn-blue">Создать проект</button>
+                        <div class="content">
+                            <div class="text">
+                                <p class="title">Аккаунт</p>
+                                <p class="desc">Мультиссылка</p>
+                            </div>
+                            <div class="dates">
+                                <div class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i><span>2019-04-01</span></div><span class="sep">-</span>
+                                <div class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i><span>2019-04-01</span></div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3">
-                                <div class="project-item">
-                                    <div class="title"><span class="text">Доставка цветов опт</span><span class="icon-settings icon"></span></div><img src="./img/small-flower.jpg" alt>
-                                    <div class="bottom"><span>Обьем</span><span class="val">12 страниц</span></div>
-                                </div>
-                            </div>
+                    </div>
+                </section>
+                <section class="acc-stats-subscribers">
+                    <div class="container">
+                        <div class="content">
+                            <h2>Подписчики</h2>
+                            <div id="graph-subscribers"></div>
                         </div>
                     </div>
                 </section>
@@ -109,4 +88,8 @@
         <script src="./libs/js/vendor.min.js"></script>
         <script src="./js/index.js"></script>
     </body>
+    <script src="./libs/js/core.js"> </script>
+    <script src="./libs/js/charts.js"> </script>
+    <script src="./libs/js/animated.js"> </script>
+    <script src="./js/graphs.js"></script>
 </html>

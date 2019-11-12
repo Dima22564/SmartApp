@@ -1,0 +1,31 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'acc-stats';
+  -var title = 'Statistics';
+
+block content
+  section.main-acc-stats-header
+    .container
+      .content
+        .text
+          p.title Аккаунт
+          p.desc Мультиссылка
+        .dates
+          .date
+            i.fa.fa-calendar-o(aria-hidden="true")
+            span 2019-04-01
+          span.sep -
+          .date
+            i.fa.fa-calendar-o(aria-hidden="true")
+            span 2019-04-01
+  section.acc-stats-subscribers
+    .container
+      .content
+        h2 Подписчики
+        #graph-subscribers
+block script
+  script(src="./libs/js/core.js")  
+  script(src="./libs/js/charts.js")  
+  script(src="./libs/js/animated.js")  
+  script(src="./js/graphs.js")
