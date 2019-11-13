@@ -24,6 +24,53 @@ block content
       .content
         h2 Подписчики
         #graph-subscribers
+  section.demography
+    .container
+      .content
+        .text
+         h2 Демография
+         .btns
+          button.btn-white Страны
+          button.btn-white Города
+        .graph-info
+          #graph-demography
+          .info
+            .table
+              .titles
+                span.title Страна
+                span.title Подписчики
+                span.title.percent Процент
+              .lines
+                .line
+                  .cell
+                    span.color(style={background: '#2699cc'})
+                    span.c-text Россия
+                  span.cell 16 241
+                  span.cell.percent 54,3%
+                .line
+                  .cell
+                    span.color(style={background: '#00cd98'})
+                    span.c-text Украина
+                  span.cell 16 241
+                  span.cell.percent 54,3%
+                .line
+                  .cell
+                    span.color(style={background: '#f6b900'})
+                    span.c-text Казахстан
+                  span.cell 16 241
+                  span.cell.percent 54,3%
+                .line
+                  .cell
+                    span.color(style={background: '#00d0f6'}) 
+                    span.c-text США
+                  span.cell 16 241
+                  span.cell.percent 54,3%
+                .line
+                  .cell
+                    span.color(style={background: '#b767ef'}) 
+                    span.c-text Литва
+                  span.cell 16 241
+                  span.cell.percent 54,3%
 block script
   script(src="./libs/js/core.js")  
   script(src="./libs/js/charts.js")  

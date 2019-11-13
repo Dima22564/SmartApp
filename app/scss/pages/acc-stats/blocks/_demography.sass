@@ -1,0 +1,75 @@
+.demography
+  margin-bottom: 32px
+  .content
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    background: $white
+    border-radius: 24px
+    padding: 32px
+    h2
+      text-align: left
+      color: $d-gray
+    .text
+      display: flex
+      align-items: center
+      margin-bottom: 32px
+      justify-content: space-between
+      .btns
+        display: flex
+        align-items: center
+        button
+          border-radius: 4px
+          &:not(:last-child)
+            margin-right: 24px
+    .graph-info
+      display: flex
+      align-items: flex-start
+      margin-bottom: -76px
+      #graph-demography
+        height: 350px
+        width: 350px
+        flex-shrink: 0
+        transform: translateY(-45px)
+      .info
+        width: 100% 
+      .table
+        .titles
+          max-width: 446px
+          width: 100%
+          display: flex
+          align-items: center
+          justify-content: space-between
+          padding: 12px
+          background-color: #fcfcfc
+          font-size: 16px
+          line-height: 20px
+          color: $d-gray
+          font-weight: 600
+          margin-bottom: 24px
+          .title
+            width: 39%
+            &.percent
+              width: 22%
+        .lines
+          max-width: 446px
+          width: 100%
+        .line
+          display: flex
+          align-items: center
+          justify-content: space-between
+          &:not(:last-child)
+            margin-bottom: 16px
+          .cell
+            display: flex
+            line-height: 20px
+            width: 39%
+            font-size: 14px
+            align-items: center
+            &.percent
+              width: 22%
+            .color
+              margin-right: 8px
+              width: 10px
+              height: 10px
+              border-radius: 50%
+              flex-shrink: 0
+

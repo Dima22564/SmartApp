@@ -3342,6 +3342,152 @@ div:active {
   height: 400px;
 }
 
+.demography {
+  margin-bottom: 32px;
+}
+
+.demography .content {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.demography .content h2 {
+  text-align: left;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.demography .content .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 32px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.demography .content .text .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.demography .content .text .btns button {
+  border-radius: 4px;
+}
+
+.demography .content .text .btns button:not(:last-child) {
+  margin-right: 24px;
+}
+
+.demography .content .graph-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: -76px;
+}
+
+.demography .content .graph-info #graph-demography {
+  height: 350px;
+  width: 350px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transform: translateY(-45px);
+  -ms-transform: translateY(-45px);
+  transform: translateY(-45px);
+}
+
+.demography .content .graph-info .info {
+  width: 100%;
+}
+
+.demography .content .graph-info .table .titles {
+  max-width: 446px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #fcfcfc;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(20, 16, 41, 0.8);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.demography .content .graph-info .table .titles .title {
+  width: 39%;
+}
+
+.demography .content .graph-info .table .titles .title.percent {
+  width: 22%;
+}
+
+.demography .content .graph-info .table .lines {
+  max-width: 446px;
+  width: 100%;
+}
+
+.demography .content .graph-info .table .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.demography .content .graph-info .table .line:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.demography .content .graph-info .table .line .cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 20px;
+  width: 39%;
+  font-size: 14px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.demography .content .graph-info .table .line .cell.percent {
+  width: 22%;
+}
+
+.demography .content .graph-info .table .line .cell .color {
+  margin-right: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
 .wrapper-function .bg-pic {
   display: -webkit-box;
   display: -ms-flexbox;
