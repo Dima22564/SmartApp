@@ -3257,6 +3257,10 @@ div:active {
   margin-bottom: -21px;
 }
 
+.main-acc-stats {
+  padding-bottom: 65px;
+}
+
 .main-acc-stats-header {
   padding: 63px 0 32px;
 }
@@ -3486,6 +3490,284 @@ div:active {
   border-radius: 50%;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+
+.activity {
+  margin-bottom: 32px;
+}
+
+.activity .content {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.activity .content .c-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.activity .content h2 {
+  text-align: left;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.activity .content .likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto 0 73px;
+}
+
+.activity .content .likes .item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.activity .content .likes span {
+  font-size: 16px;
+  margin-left: 10px;
+  line-height: 20px;
+}
+
+.activity .content .indicator {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.activity .content #graph-bars {
+  height: 500px;
+}
+
+.acc-posts {
+  margin-bottom: 32px;
+}
+
+.acc-posts .post {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.acc-posts .c-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.acc-posts .c-top h2 {
+  text-align: left;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.acc-posts .c-top span {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.acc-posts .c-top .title {
+  width: 33.3%;
+}
+
+.acc-posts .c-values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.acc-posts .cell {
+  width: 33.3%;
+  font-size: 42px;
+  line-height: 52px;
+  color: rgba(20, 16, 41, 0.8);
+  text-align: center;
+}
+
+.acc-popular h2 {
+  color: rgba(20, 16, 41, 0.8);
+  text-align: left;
+  margin-bottom: 32px;
+  padding: 0 32px;
+}
+
+.acc-popular .content {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px 0;
+}
+
+.acc-popular .table {
+  margin-bottom: 23px;
+}
+
+.acc-popular .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 11px 32px;
+  border-bottom: 1px solid rgba(20, 16, 41, 0.12);
+}
+
+.acc-popular .titles .title {
+  cursor: pointer;
+  width: 14.8%;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.acc-popular .titles .title.popular-post {
+  width: 26%;
+  margin-right: 25px;
+}
+
+.acc-popular .titles i {
+  margin-left: 3px;
+}
+
+.acc-popular .line {
+  padding: 12px 27px;
+  border-bottom: 1px solid rgba(20, 16, 41, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.acc-popular .line .img {
+  width: 66px;
+  height: 66px;
+}
+
+.acc-popular .line .cell {
+  width: 14.8%;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.acc-popular .line .cell.popular-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 26%;
+  margin-right: 25px;
+}
+
+.acc-popular .line .cell.popular-post .c-text {
+  margin-left: 12px;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.acc-popular .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.acc-popular .pagination .num {
+  width: 36px;
+  height: 36px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.acc-popular .pagination .num:not(:last-child) {
+  margin-right: 8px;
+}
+
+.acc-popular .pagination .num.active {
+  background: rgba(20, 16, 41, 0.03);
+}
+
+.acc-popular .pagination .num:hover {
+  background: rgba(20, 16, 41, 0.03);
+}
+
+.acc-popular .pagination .arrow {
+  cursor: pointer;
+  font-size: 13px;
+  opacity: 0.4;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.acc-popular .pagination .arrow:hover {
+  opacity: 1;
+}
+
+.acc-popular .pagination .arrow-prev {
+  margin-right: 20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.acc-popular .pagination .arrow-next {
+  margin-left: 20px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .wrapper-function .bg-pic {

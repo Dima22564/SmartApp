@@ -71,6 +71,108 @@ block content
                     span.c-text Литва
                   span.cell 16 241
                   span.cell.percent 54,3%
+  section.activity
+    .container
+      .content
+        .c-top
+          h2 Активность
+          .likes
+            .item
+              i.fa.fa-eye(aria-hidden="true")
+              span 42 412
+            .item
+              i.fa.fa-heart(aria-hidden="true")
+              span 4 147
+            .item
+              i.fa.fa-comment(aria-hidden="true")
+              span 3 125
+          span.indicator 25% Показатель вовлеченности
+        #graph-bars
+  section.acc-posts
+    .container
+      .row
+        .col-xl-6
+          .post
+            .c-top
+              h2.title Посты
+              span.title Опубликовано
+              span.title Запланированно
+            .c-values
+              span.cell 
+              span.cell 152
+              span.cell 14
+        .col-xl-6
+          .post
+            .c-top
+              h2.title Сториз
+              span.title Опубликовано
+              span.title Запланированно
+            .c-values
+              span.cell 
+              span.cell 152
+              span.cell 14
+  section.acc-popular
+    .container
+      .content
+        h2 Популярное
+        .table
+          .titles
+            .title.popular-post
+              span Пост
+            .title
+              span Просмотров
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Лайков
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Репостов
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Комментариев
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Вовлеченность
+              i.fa.fa-angle-down(aria-hidden="true")
+          .lines
+            .line
+              .cell.popular-post
+                img(src="./img/post.jpg", alt="").img
+                p.c-text Поздравляем милых дам с Международным женским днем!...
+              span.cell 34 214
+              span.cell 23 212
+              span.cell 12 123
+              span.cell 10 125
+              span.cell 12,42%
+            .line
+              .cell.popular-post
+                img(src="./img/post.jpg", alt="").img
+                p.c-text Поздравляем милых дам с Международным женским днем!...
+              span.cell 34 214
+              span.cell 23 212
+              span.cell 12 123
+              span.cell 10 125
+              span.cell 12,42%
+            .line
+              .cell.popular-post
+                img(src="./img/post.jpg", alt="").img
+                p.c-text Поздравляем милых дам с Международным женским днем!...
+              span.cell 34 214
+              span.cell 23 212
+              span.cell 12 123
+              span.cell 10 125
+              span.cell 12,42%
+        .pagination
+          span.icon-arrow-d.arrow.arrow-prev
+          span.num.active 1
+          span.num 2
+          span.num 3
+          span.num ...
+          span.num 15
+          span.icon-arrow-d.arrow.arrow-next
+          
+
+
 block script
   script(src="./libs/js/core.js")  
   script(src="./libs/js/charts.js")  

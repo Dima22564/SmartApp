@@ -1,0 +1,85 @@
+.acc-popular
+  h2 
+    color: $d-gray
+    text-align: left
+    margin-bottom: 32px
+    padding: 0 32px
+  .content
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    background: $white
+    border-radius: 24px
+    padding: 32px 0
+  .table
+    margin-bottom: 23px
+  .titles
+    display: flex
+    align-items: center
+    font-size: 14px
+    line-height: 24px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 11px 32px
+    border-bottom: 1px solid rgba(20, 16, 41, 0.12)
+    .title
+      cursor: pointer
+      width: 14.8%
+      color: $d-gray
+      &.popular-post
+        width: 26%
+        margin-right: 25px
+    i
+      margin-left: 3px
+  .line
+    padding: 12px 27px
+    border-bottom: 1px solid rgba(20, 16, 41, 0.12)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .img
+      width: 66px
+      height: 66px
+    .cell
+      width: 14.8%
+      font-size: 14px
+      line-height: 16px
+      &.popular-post
+        display: flex
+        align-items: center
+        width: 26%
+        margin-right: 25px
+        .c-text
+          margin-left: 12px
+          color: $d-gray
+  .pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    .num
+      width: 36px
+      height: 36px
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      border-radius: 4px
+      cursor: pointer
+      transition: all 0.2s
+      &:not(:last-child)
+        margin-right: 8px
+      &.active
+        background: rgba(20, 16, 41, 0.03)
+      &:hover
+        background: rgba(20, 16, 41, 0.03)
+    .arrow
+      cursor: pointer
+      font-size: 13px
+      opacity: 0.4
+      transition: all 0.2s
+      &:hover
+        opacity: 1
+      &-prev
+        margin-right: 20px
+        transform: rotate(90deg)
+      &-next
+        margin-left: 20px
+        transform: rotate(-90deg)
