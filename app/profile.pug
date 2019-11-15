@@ -1,0 +1,91 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'page-profile';
+  -var title = 'Profile';
+
+block content
+  section.main-page-profile-header
+    .container
+      .content
+        .text
+          p.title Профиль пользователя
+  section.personal-info
+    .container
+      .row
+        .col-xl-7
+          .personal-data
+            p.title Персональные данные
+            .main-content
+              .left
+                .img
+                  img(src="./img/profile.jpg", alt="")
+                  .icons
+                    span.icon-settings
+                    span.icon-del
+                p.tariff Тариф: #[span Free]
+                .progress
+                  span
+                p.status Осталось: 265 дней
+              .right
+                .input-wrapper
+                  span.placeholder Имя
+                  input(type="text").input
+                .input-wrapper
+                  span.placeholder Фамилия
+                  input(type="text").input
+                .input-wrapper
+                  span.placeholder День рождения
+                  input(type="text").input
+                  i.fa.fa-calendar-o.icon
+                .input-wrapper
+                  span.placeholder Email
+                  input(type="text").input
+                .input-wrapper
+                  span.placeholder Телефон
+                  input(type="text").input
+
+        .col-xl-5
+          .accounts
+            .content
+              p.title Привязанные аккаунты
+              .account-item 
+                img(src="./img/profile.jpg", alt="").img
+                .text-block
+                  .sett
+                    a(href="").acc @dostavkacvotov
+                    .icons
+                      span.icon-settings
+                      span.icon-del
+                  a(href="").inst instagram.com/kim_roobin/
+              .account-item 
+                img(src="./img/profile.jpg", alt="").img
+                .text-block
+                  .sett
+                    a(href="").acc @dostavkacvotov
+                    .icons
+                      span.icon-settings
+                      span.icon-del
+                  a(href="").inst instagram.com/kim_roobin/
+              .account-item 
+                img(src="./img/profile.jpg", alt="").img
+                .text-block
+                  .sett
+                    a(href="").acc @dostavkacvotov
+                    .icons
+                      span.icon-settings
+                      span.icon-del
+                  a(href="").inst instagram.com/kim_roobin/
+            button.btn-blue.add Добавить аккаунт
+  section.change-password-sec
+    .container
+      .content
+        p.title Смена пароля
+        .inputs-block
+          .input-wrapper
+            span.placeholder Новый пароль
+            input(type="text").input
+          .input-wrapper
+            span.placeholder Подтвердите пароль
+            input(type="text").input
+          button.btn-blue Сменить пароль

@@ -1,0 +1,93 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'acc-stats';
+  -var title = 'Statistics';
+
+block content
+  section.main-acc-stats-header
+    .container
+      .content
+        .text
+          p.title Аккаунт
+          p.desc Мультиссылка
+        .dates
+          .date
+            i.fa.fa-calendar-o(aria-hidden="true")
+            span 2019-04-01
+          span.sep -
+          .date
+            i.fa.fa-calendar-o(aria-hidden="true")
+            span 2019-04-01
+  section.acc-stats-subscribers
+    .container
+      .content
+        h2 Подписчики
+        #graph-subscribers
+  section.acc-popular
+    .container
+      .content
+        h2 Популярное
+        .table
+          .titles
+            .title.popular-post
+              span Пост
+            .title
+              span Просмотров
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Лайков
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Репостов
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Комментариев
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Вовлеченность
+              i.fa.fa-angle-down(aria-hidden="true")
+          .lines
+            .line
+              .cell.popular-post
+                img(src="./img/post.jpg", alt="").img
+                p.c-text Поздравляем милых дам с Международным женским днем!...
+              span.cell 34 214
+              span.cell 23 212
+              span.cell 12 123
+              span.cell 10 125
+              span.cell 12,42%
+            .line
+              .cell.popular-post
+                img(src="./img/post.jpg", alt="").img
+                p.c-text Поздравляем милых дам с Международным женским днем!...
+              span.cell 34 214
+              span.cell 23 212
+              span.cell 12 123
+              span.cell 10 125
+              span.cell 12,42%
+            .line
+              .cell.popular-post
+                img(src="./img/post.jpg", alt="").img
+                p.c-text Поздравляем милых дам с Международным женским днем!...
+              span.cell 34 214
+              span.cell 23 212
+              span.cell 12 123
+              span.cell 10 125
+              span.cell 12,42%
+        .pagination
+          span.icon-arrow-d.arrow.arrow-prev
+          span.num.active 1
+          span.num 2
+          span.num 3
+          span.num ...
+          span.num 15
+          span.icon-arrow-d.arrow.arrow-next
+          
+
+
+block script
+  script(src="./libs/js/core.js")  
+  script(src="./libs/js/charts.js")  
+  script(src="./libs/js/animated.js")  
+  script(src="./js/graphs.js")

@@ -6,6 +6,15 @@
     'Контент план',
     'Делегирование'
   ];
+
+- 
+  var links1 = {
+    'Рабочий стол': [],
+    'Мультиссылка': ['Создание мультиссылки', 'Товары', 'Прием платежей'],
+    'Статистика': ['Статистика', 'Генератор UTM меток', 'Генератор диплинков'],
+    'Контент план': [],
+    'Делегирование': []
+  }
 aside.aside.js-aside
   .aside-links
     .aside-logo
@@ -14,17 +23,16 @@ aside.aside.js-aside
       .arrow.js-aside-hide
         span.icon-arrow-up
     -var i = 0;
-    each item in links
+    each item, index in links1
       -i++;
       .drop-link.js-drop-link
         .link-body
           img(src=`./img/aside-${i}.svg`, alt="").icon
-          span.text= item
+          span.text= index
           img(src="./img/arrow-down.svg", alt="").arrow
         .drop-menu.js-drop-menu
-          a(href="") Создание мультиссылки
-          a(href="") Товары
-          a(href="") Прием платежей
+          each link in item
+            a(href="")= link
   .bottom-links
     a(href="").link-body
       span.icon-settings

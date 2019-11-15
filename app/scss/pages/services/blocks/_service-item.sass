@@ -1,0 +1,84 @@
+.service-item
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+  border-radius: 4px
+  background: $white
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &.blue-item
+    background: $blue
+    .line
+      background: $white !important
+    .title
+      color: $white !important
+    .desc
+      color: rgba(255, 255, 255, 0.6)
+    .add
+      color: $blue
+      background: $white
+    .offers
+      li
+        color: rgba(255, 255, 255, 0.8) !important
+        &.inactive
+          color: rgba(255, 255, 255, 0.6) !important
+    .month-price
+      color: rgba(255, 255, 255, 0.8) !important
+      span
+        color: rgba(255, 255, 255, 0.6) !important
+        &.rub
+          color: rgba(255, 255, 255, 0.8) !important
+  .content
+    padding: 16px
+    .line
+      width: 40px
+      height: 6px
+      border-radius: 4px
+      background: $blue
+      margin-bottom: 16px
+    .title
+      font-size: 24px
+      line-height: 24px
+      color: $d-gray
+      font-weight: 600
+      margin-bottom: 4px
+    .desc
+      font-size: 14px
+    .month-price
+      font-size: 42px
+      line-height: 48px
+      font-weight: 600
+      color: $d-gray
+      margin-bottom: 11px
+      span 
+        font-size: 18px
+        line-height: 24px
+        color: $gray
+        &.rub
+          color: $d-gray
+    .offers
+      font-size: 14px
+      line-height: 20px
+      li
+        transition: all 0.2s
+        display: flex
+        align-items: center
+        color: $d-gray
+        &.inactive
+          color: rgba(20, 16, 41, 0.6)
+        &::before
+          content: '-'
+          margin-right: 3px
+        // &:hover
+        //   color: $d-gray
+        //   cursor: pointer
+        &:not(:last-child)
+          margin-bottom: 8px
+  .add
+    width: 100%
+    display: inline-flex
+    margin-top: 8px
+    border-radius: 0
+    align-items: center
+    justify-content: center
+    border-radius: 0 0 4px 4px

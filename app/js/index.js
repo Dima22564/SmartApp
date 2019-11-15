@@ -205,6 +205,18 @@ $(document).ready(function () {
       }
     })
 
+    $('.js-idea').click(function(e){
+      console.log($(e.target).hasClass('js-idea'))
+      if($(e.target).hasClass('js-idea')){
+        $('.js-idea-card').find('.js-actions').hide()
+        $(this).parents('.line').find('.js-actions').show()
+
+      }
+      else if($(e.target).hasClass('js-idea') != true) {
+        $('.js-idea-card').find('.js-actions').hide()
+      }
+    })
+
 
 
 });

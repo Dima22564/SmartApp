@@ -1,0 +1,94 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'price-list';
+  -var title = 'Price';
+
+block content
+  section.main-price-list-header
+    .container
+      .content
+        .text
+          p.title Тарифы
+          p.desc Соберите свой функционал самостоятельно
+        .btns
+          button.btn-white Вернуться к инструментам
+      .btns
+        button.btn-white Пакеты услуг
+        button.btn-blue Конструктор
+
+  section.price-block
+    .container
+      .row
+        .col-xl-4
+          .price-item
+            .content
+              p.title Мультиссылка
+              ul.offers
+                li.inactive Модуль "Мессенджеры"
+                li.inactive Модуль "Каталог товаров"
+                li.inactive Модуль "Видео"
+                li.inactive Модуль "Facebook pixel"
+                li.inactive Модуль "Онлайн-оплата"
+                li.inactive Модуль "Изображения"
+                li Расширенная статистика аккаунта
+            button.btn-blue.add Добавить (250 руб/мес)
+          .monthly
+            p.title За месяц:
+            p.month-price 899 #[span.rub ₽] #[span /месяц]
+            button.btn-blue Оплатить
+        .col-xl-4
+          .price-item
+            .content
+              p.title Автопостинг
+              ul.offers
+                li.inactive Посты (Безлимит)
+                li.inactive Сториз (Безлимит)
+                li.inactive Видео
+                li.inactive Фото
+            button.btn-blue.add Убрать (250 руб/мес)
+          .price-item
+            .content
+              p.title Генератор контента
+            button.btn-blue.add Убрать (250 руб/мес)
+          .monthly.blue-block
+            p.title За месяц:
+            .content
+              p.month-price 899 #[span.rub ₽] #[span /месяц]
+              button.btn-blue Оплатить
+        .col-xl-4
+          .price-item
+            .content
+              p.title Диплинк
+              p.desc Выберите количество переходов в месяц
+              .options
+                .shadow
+                  input#opt-1(type="checkbox", name="")
+                  label(for="opt-1") 1000 (99 руб./мес.)
+                .shadow
+                  input#opt-2(type="checkbox", name="")
+                  label(for="opt-2") 2000 (159 руб./мес.)
+                .shadow
+                  input#opt-3(type="checkbox", name="")
+                  label(for="opt-3") 5000 (299 руб./мес.)
+                .shadow
+                  input#opt-4(type="checkbox", name="")
+                  label(for="opt-4") 10000 (599 руб./мес.)
+                .shadow
+                  input#opt-5(type="checkbox", name="")
+                  label(for="opt-5") 15000 (699 руб./мес.)
+                .shadow
+                  input#opt-6(type="checkbox", name="")
+                  label(for="opt-6") 20000 (859 руб./мес.)
+                .shadow
+                  input#opt-7(type="checkbox", name="")
+                  label(for="opt-7") 30000 (1099 руб./мес.)
+            button.btn-blue.add Добавить (250 руб/мес)
+          .price-item
+            .content
+              p.title Управление комментариями
+            button.btn-blue.add Убрать (250 руб/мес)
+  section.sale-sec
+    .container
+      p Выгодно: получите выбранные функции и еще 4 функции в тарифе "Бизнес" за 1 299 руб/мес
+
