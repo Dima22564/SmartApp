@@ -1,4 +1,4 @@
-.main-ideas
+.main-comments
   background: #f4f5f8
   padding: 0 0 35px
   &-header
@@ -33,13 +33,27 @@
           top: 15px
           right: 25px
           color: $d-gray
-        
   &-btns
-    padding-bottom: 30px
-    .btns
-      display: flex
+    padding-bottom: 16px
+    .btns-wrapper
+      display: flex  
       align-items: center
-      justify-content: flex-end
-    button
-      &:not(:last-child)
-        margin-right: 16px
+      justify-content: space-between
+      .select
+        width: 30%
+        .ui-selectmenu-button
+          font-weight: 600 !important
+          color: $black
+        .custom-icon
+          background-image: url('../img/arrow-down.svg') !important
+          transition: all 0.3s
+          position: absolute
+          right: 14px
+          top: 36%
+          background-position: center center
+      .btns
+        button
+          &:not(:last-child)
+            margin-right: 16px     
+        
+  

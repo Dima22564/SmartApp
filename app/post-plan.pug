@@ -1,0 +1,23 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'post-plan';
+  -var title = 'Post plan';
+
+block content
+  section.main-post-plan-header
+    .container
+      .content
+        .text
+          p.title Планирование поста
+  section.acc-plan
+    .container
+      .content  
+        p.title Контент план аккаунта
+        .acc-item
+          .item-content
+            img(src="./img/profile.jpg", alt="")
+            .text
+              span.name @dostavkacvotov
+              a(href="").link instagram.com/kim_roobin/
+            i.fa.fa-angle-down(aria-hidden="true")

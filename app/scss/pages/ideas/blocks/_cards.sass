@@ -14,6 +14,39 @@
     color: $black
   .content
     padding: 24px
+    .pagination
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-top: 25px
+      .num
+        width: 36px
+        height: 36px
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        border-radius: 4px
+        cursor: pointer
+        transition: all 0.2s
+        &:not(:last-child)
+          margin-right: 8px
+        &.active
+          background: rgba(20, 16, 41, 0.03)
+        &:hover
+          background: rgba(20, 16, 41, 0.03)
+      .arrow
+        cursor: pointer
+        font-size: 13px
+        opacity: 0.4
+        transition: all 0.2s
+        &:hover
+          opacity: 1
+        &-prev
+          margin-right: 20px
+          transform: rotate(90deg)
+        &-next
+          margin-left: 20px
+          transform: rotate(-90deg)
     .line
       display: flex
       align-items: center

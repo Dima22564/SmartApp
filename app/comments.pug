@@ -1,0 +1,113 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'comments';
+  -var title = 'Comments';
+
+block content
+  section.main-comments-header
+    .container
+      .content
+        .text
+          p.title Управление комментариями
+          p.desc Отслеживайте последние комментарии
+        .search
+          input(type="text", placeholder="Поиск по комментариям")
+          i.fa.fa-search(aria-hidden="true")
+  section.main-comments-btns
+    .container
+      .btns-wrapper
+        .select
+          select(name="").js-select-menu
+            option(value="") Все комментарии
+            option(value="") Все комментарии
+        .btns
+          button.btn-blue Сначала новые
+          button.btn-white Сначала неотвеченные
+  section.acc-comments
+    .container
+      .row
+        .col-xl-4
+          .acc-item
+            span.acc-placeholder Комментарии аккаунта
+            .item-content
+              img(src="./img/profile.jpg", alt="")
+              .text
+                span.name @dostavkacvotov
+                a(href="").link instagram.com/kim_roobin/
+      .user-comment
+        .comment-item
+          .left
+            .preview
+              span.placeholder Превью
+              .img-wrapper
+                img(src="./img/profile.jpg", alt="")
+            .acc-item
+              span.acc-placeholder Пользователь
+              .item-content
+                img(src="./img/profile.jpg", alt="")
+                .text
+                  .name 
+                    span @dostavkacvotov
+                    span.date 12:21 22.12.2019
+                  a(href="").link Написать в директ
+          .right
+            .comment-text
+              span.acc-placeholder Комментарий
+              p.comment-body Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!
+            .edit-comment
+              button Ответить
+              button Удалить
+              button Заблокировать
+        .comment-item
+          .left
+            .preview
+              span.placeholder Превью
+              .img-wrapper
+                img(src="./img/profile.jpg", alt="")
+            .acc-item
+              span.acc-placeholder Пользователь
+              .item-content
+                img(src="./img/profile.jpg", alt="")
+                .text
+                  .name 
+                    span @dostavkacvotov
+                    span.date 12:21 22.12.2019
+                  a(href="").link Написать в директ
+          .right
+            .comment-text
+              span.acc-placeholder.emp Ответ на сообщение:
+              p.comment-body.emp Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? 
+              p.comment-body.answer Мне тоже актуально! Мне тоже ответьте, пожалуйста 
+            .edit-comment
+              button Ответить
+              button Удалить
+              button Заблокировать
+      .user-comment
+        .comment-item
+          .left
+            .preview
+              span.placeholder Превью
+              .img-wrapper
+                img(src="./img/profile.jpg", alt="")
+            .acc-item
+              span.acc-placeholder Пользователь
+              .item-content
+                img(src="./img/profile.jpg", alt="")
+                .text
+                  .name 
+                    span @dostavkacvotov
+                    span.date 12:21 22.12.2019
+                  a(href="").link Написать в директ
+          .right
+            .comment-text
+              span.acc-placeholder Комментарий
+              p.comment-body Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!
+            .edit-comment
+              button Ответить
+              button Удалить
+              button Заблокировать
+
+
+
+        

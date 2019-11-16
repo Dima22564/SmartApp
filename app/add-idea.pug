@@ -1,0 +1,61 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'add-idea';
+  -var title = 'Add idea';
+
+block content
+  section.main-add-idea-header
+    .container
+      .content
+        .text
+          p.title Добавление идеи
+  section.replace
+    .container
+      .content
+        p.title что может заменить пиццу
+        .inputs
+          .input-wrapper
+            span.placeholder Категория идеи
+            select(name="").js-select-menu
+              option(value="") Розница
+              option(value="") Розница
+          .input-wrapper.input-date
+            span.placeholder Планируемая дата публикации
+            input#date-1(type="date", name="").js-date
+            label(for="date-1").input.js-label fghfdh
+            i.fa.fa-calendar(aria-hidden="true")
+          button.btn-blue Сохранить
+  section.news
+    .container
+      h2 Материалл по теме
+      .content
+        article.article
+          .img-wrapper
+            img(src="./img/food.jpg", alt="")
+          .text
+            .wrap
+              p.title В китае придумали заменитель пиццы
+              a(href="").link https://chinanews.com/pizza-zamenitel-izobreten
+              p.desc В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы.
+            a(href="").link-open.link Открыть в новой вкладке
+        article.article
+          .img-wrapper
+            img(src="./img/food.jpg", alt="")
+          .text
+            .wrap
+              p.title В китае придумали заменитель пиццы
+              a(href="").link https://chinanews.com/pizza-zamenitel-izobreten
+              p.desc В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы.
+            a(href="").link-open.link Открыть в новой вкладке
+        article.article
+          .img-wrapper
+            img(src="./img/food.jpg", alt="")
+          .text
+            .wrap
+              p.title В китае придумали заменитель пиццы
+              a(href="").link https://chinanews.com/pizza-zamenitel-izobreten
+              p.desc В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы.
+            a(href="").link-open.link Открыть в новой вкладке
+
+

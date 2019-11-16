@@ -1,0 +1,70 @@
+.news-items
+  .article
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    background: $white
+    border-radius: 4px
+    padding: 32px
+    display: flex
+    margin-bottom: 30px
+    &:not(:last-child)
+      margin-bottom: 30px
+    .top-c
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .publish-date
+        font-size: 12px
+        line-height: 12px
+    .img-wrapper
+      box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06)
+      width: 162px
+      height: 162px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 4px
+      background: $white
+      flex-shrink: 0
+      margin-right: 32px
+      img
+        width: 126px
+        height: 126px
+        border-radius: 4px
+    .btns
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      button
+        font-size: 12px
+        line-height: 12px
+        text-decoration: underline
+        transition: all 0.2s
+        border: none
+        background: none
+        cursor: pointer
+        color: $gray
+        &:not(:last-child)
+          margin-right: 16px
+        &:hover
+          color: $blue
+    .text
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .title
+        margin-bottom: 4px
+        font-size: 18px
+        line-height: 20px
+        font-weight: 600
+        color: $black
+      .link
+        display: inline-flex
+        margin-bottom: 13px
+        font-size: 12px
+        line-height: 12px
+        text-decoration: underline
+        color: $blue
+      .desc
+        font-size: 14px
+        line-height: 20px
+      

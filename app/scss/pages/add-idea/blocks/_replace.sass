@@ -1,0 +1,35 @@
+.replace
+  padding-bottom: 48px
+  .content
+    box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06)
+    background: $white
+    border-radius: 4px
+    padding: 32px
+    .title
+      font-size: 18px
+      font-weight: 600
+      line-height: 20px
+      margin-bottom: 13px
+      color: $black
+    .placeholder
+      margin-left: 0
+    .inputs
+      display: flex
+      align-items: flex-end
+      button
+        margin-left: auto
+      .input-wrapper
+        margin-bottom: 0
+        width: 30%
+        &:not(:last-child)
+          margin-right: 32px
+        &.input-date
+          input
+            position: absolute
+            opacity: 0
+        i
+          position: absolute
+          bottom: 16px
+          right: 13px
+          font-size: 18px
+          color: $d-gray
