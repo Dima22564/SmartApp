@@ -1,0 +1,328 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'dashboard';
+  -var title = 'Dashboard';
+
+block content
+  section.main-dashboard-header
+    .container
+      .content
+        .text
+          p.title Данные за последние 7 дней
+  section.acc-plan
+    .container
+      .content  
+        .acc-item
+          .item-content
+            img(src="./img/profile.jpg", alt="")
+            .text
+              span.name @dostavkacvotov
+              a(href="").link instagram.com/kim_roobin/
+            i.fa.fa-angle-down(aria-hidden="true")
+  section.dashboard-graphs
+    .container
+      .row
+        .col-xl-6
+          .graph
+            .top
+              .left
+                i.fa.fa-eye(aria-hidden="true")
+                span 42 412
+              .right
+                span -15,11%
+                img(src="./img/grow.svg", alt="")
+            .graph-wrap
+              #graph-d-1.graph-h
+        .col-xl-6
+          .graph
+            .top
+              .left
+                i.fa.fa-heart(aria-hidden="true")
+                span 42 412
+              .right
+                span -15,11%
+                img(src="./img/grow.svg", alt="")
+            .graph-wrap
+              #graph-d-2.graph-h
+        .col-xl-6
+          .graph
+            .top
+              .left
+                i.fa.fa-users(aria-hidden="true")
+                span 42 412
+              .right
+                span -15,11%
+                img(src="./img/grow.svg", alt="")
+            .graph-wrap
+              #graph-d-3.graph-h
+        .col-xl-6
+          .graph
+            .top
+              .left
+                i.fa.fa-comment(aria-hidden="true")
+                span 42 412
+              .right
+                span -15,11%
+                img(src="./img/grow.svg", alt="")
+            .graph-wrap
+              #graph-d-4.graph-h
+  section.acc-comments
+    .container
+      .user-comment
+        .comment-item
+          .left
+            .preview
+              span.placeholder Превью
+              .img-wrapper
+                img(src="./img/profile.jpg", alt="")
+            .acc-item
+              span.acc-placeholder Пользователь
+              .item-content
+                img(src="./img/profile.jpg", alt="")
+                .text
+                  .name 
+                    span @dostavkacvotov
+                    span.date 12:21 22.12.2019
+                  a(href="").link Написать в директ
+          .right
+            .comment-text
+              span.acc-placeholder Комментарий
+              p.comment-body Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!
+            .edit-comment
+              button Ответить
+              button Удалить
+              button Заблокировать
+      .user-comment
+        .comment-item
+          .left
+            .preview
+              span.placeholder Превью
+              .img-wrapper
+                img(src="./img/profile.jpg", alt="")
+            .acc-item
+              span.acc-placeholder Пользователь
+              .item-content
+                img(src="./img/profile.jpg", alt="")
+                .text
+                  .name 
+                    span @dostavkacvotov
+                    span.date 12:21 22.12.2019
+                  a(href="").link Написать в директ
+          .right
+            .comment-text
+              span.acc-placeholder Комментарий
+              p.comment-body Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!
+            .edit-comment
+              button Ответить
+              button Удалить
+              button Заблокировать
+      .user-comment
+        .comment-item
+          .left
+            .preview
+              span.placeholder Превью
+              .img-wrapper
+                img(src="./img/profile.jpg", alt="")
+            .acc-item
+              span.acc-placeholder Пользователь
+              .item-content
+                img(src="./img/profile.jpg", alt="")
+                .text
+                  .name 
+                    span @dostavkacvotov
+                    span.date 12:21 22.12.2019
+                  a(href="").link Написать в директ
+          .right
+            .comment-text
+              span.acc-placeholder Комментарий
+              p.comment-body Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!
+            .edit-comment
+              button Ответить
+              button Удалить
+              button Заблокировать
+      .user-comment
+        .comment-item
+          .left
+            .preview
+              span.placeholder Превью
+              .img-wrapper
+                img(src="./img/profile.jpg", alt="")
+            .acc-item
+              span.acc-placeholder Пользователь
+              .item-content
+                img(src="./img/profile.jpg", alt="")
+                .text
+                  .name 
+                    span @dostavkacvotov
+                    span.date 12:21 22.12.2019
+                  a(href="").link Написать в директ
+          .right
+            .comment-text
+              span.acc-placeholder Комментарий
+              p.comment-body Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!
+            .edit-comment
+              button Ответить
+              button Удалить
+              button Заблокировать
+  section.dashboard-new
+    .container
+      .row
+        .col-xl-5
+          .new-applies
+            p.title Новые заявки
+            .contact
+              .top
+                p.subtitle Букет для невесты
+                span.date 12:24 12.09.2019
+              p.name Елена Алексеева
+              .bottom
+                .tel
+                  i.fa.fa-phone(aria-hidden="true")
+                  a(href="") 89525125252
+                .tel
+                  i.fa.fa-envelope(aria-hidden="true")
+                  a(href="mailto:") elena.sem@yandex.ru
+            .contact
+              .top
+                p.subtitle Букет для невесты
+                span.date 12:24 12.09.2019
+              p.name Елена Алексеева
+              .bottom
+                .tel
+                  i.fa.fa-phone(aria-hidden="true")
+                  a(href="") 89525125252
+                .tel
+                  i.fa.fa-envelope(aria-hidden="true")
+                  a(href="mailto:") elena.sem@yandex.ru
+            .contact
+              .top
+                p.subtitle Букет для невесты
+                span.date 12:24 12.09.2019
+              p.name Елена Алексеева
+              .bottom
+                .tel
+                  i.fa.fa-phone(aria-hidden="true")
+                  a(href="") 89525125252
+                .tel
+                  i.fa.fa-envelope(aria-hidden="true")
+                  a(href="mailto:") elena.sem@yandex.ru
+            a(href="").show Посмотреть все
+        .col-xl-7
+          .new-orders
+            .main-content
+              p.title Новые заявки
+              .table-c
+                .titles
+                  span.title Дата
+                  span.title Товар
+                  span.title.price Цена
+                  span.title Покупатель
+                .lines
+                  .line
+                    span 12:21 12.09.2019
+                    span Доставка цветов
+                    span.price 252 руб
+                    span Мария Иванова
+                  .line
+                    span 12:21 12.09.2019
+                    span Доставка цветов
+                    span.price 252 руб
+                    span Мария Иванова
+                  .line
+                    span 12:21 12.09.2019
+                    span Доставка цветов
+                    span.price 252 руб
+                    span Мария Иванова
+                  .line
+                    span 12:21 12.09.2019
+                    span Доставка цветов
+                    span.price 252 руб
+                    span Мария Иванова
+                  .line
+                    span 12:21 12.09.2019
+                    span Доставка цветов
+                    span.price 252 руб
+                    span Мария Иванова
+                  .line
+                    span 12:21 12.09.2019
+                    span Доставка цветов
+                    span.price 252 руб
+                    span Мария Иванова
+                  .line
+                    span 12:21 12.09.2019
+                    span Доставка цветов
+                    span.price 252 руб
+                    span Мария Иванова
+            a(href="").show Посмотреть все
+      .btn-manage
+        button.btn-blue Управление комментариями
+  
+  section.acc-popular.dash-projects
+    .container
+      .content
+        h2 Проекты
+        .table
+          .titles
+            .title.popular-post
+              span 
+            .title
+              span Просмотров
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Переходов
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Заказов
+              i.fa.fa-angle-down(aria-hidden="true")
+            .title
+              span Сумма заказов
+              i.fa.fa-angle-down(aria-hidden="true")
+          .lines
+            .line
+              .cell.popular-post
+                img(src="./img/post.jpg", alt="").img
+                .d-text
+                  p.c-text Доставка цветов розница
+                  p.c-text-num 15 страниц
+              span.cell 34 214
+              span.cell 23 212
+              span.cell 12 123
+              span.cell 10 125
+            .line
+              .cell.popular-post
+                img(src="./img/post.jpg", alt="").img
+                .d-text
+                  p.c-text Доставка цветов розница
+                  p.c-text-num 15 страниц
+              span.cell 34 214
+              span.cell 23 212
+              span.cell 12 123
+              span.cell 10 125
+            .line
+              .cell.popular-post
+                img(src="./img/post.jpg", alt="").img
+                .d-text
+                  p.c-text Доставка цветов розница
+                  p.c-text-num 15 страниц
+              span.cell 34 214
+              span.cell 23 212
+              span.cell 12 123
+              span.cell 10 125
+        .pagination
+          span.icon-arrow-d.arrow.arrow-prev
+          span.num.active 1
+          span.num 2
+          span.num 3
+          span.num ...
+          span.num 15
+          span.icon-arrow-d.arrow.arrow-next
+
+
+
+
+block script
+  script(src="./libs/js/core.js")  
+  script(src="./libs/js/charts.js")  
+  script(src="./libs/js/animated.js")  
+  script(src="./js/graphs-2.js")

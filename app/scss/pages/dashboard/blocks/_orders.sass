@@ -1,0 +1,60 @@
+.dashboard-new
+  .btn-manage
+    display: inline-flex
+    margin-top: 30px
+    justify-content: flex-end
+    width: 100%
+  .new-orders
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    padding: 24px
+    background: $white
+    border-radius: 12px
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .show
+      display: inline-flex
+      text-decoration: underline
+      font-size: 16px
+      margin-top: 24px
+      justify-content: center
+      line-height: 12px
+      color: $blue
+      width: 100%
+    .title
+      font-size: 18px
+      line-height: 20px
+      font-weight: 600
+      margin-bottom: 13px
+      color: $black
+    .table-c
+      box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06)
+      background: $white
+      border-radius: 4px
+      .titles
+        display: flex
+        align-items: center
+        padding: 16px
+        .title
+          font-size: 14px
+          color: $d-gray
+          line-height: 24px
+          width: 27.666%
+          &.price
+            width: 17%
+      .line
+        padding: 12px 16px
+        transition: all 0.2s
+        display: flex
+        align-items: center
+        &:hover
+          background: rgba(20, 16, 41, 0.03)
+          cursor: pointer
+          span
+            color: $d-gray
+        span
+          width: 27.666%
+          font-size: 14px
+          &.price
+            width: 17%

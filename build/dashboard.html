@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="base_asset_path" content="./">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&amp;display=swap" rel="stylesheet">
+        <link href="./libs/css/vendor.min.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="page">
+            <aside class="aside js-aside">
+                <div class="aside-links">
+                    <div class="aside-logo"><a href=""><img class="logo" src="./img/logo.png" alt></a>
+                        <div class="arrow js-aside-hide"><span class="icon-arrow-up"></span></div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-1.svg" alt><span class="text">Рабочий стол</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu">
+                        </div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-2.svg" alt><span class="text">Мультиссылка</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu"><a href="">Создание мультиссылки</a><a href="">Товары</a><a href="">Прием платежей</a>
+                        </div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-3.svg" alt><span class="text">Статистика</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu"><a href="">Статистика</a><a href="">Генератор UTM меток</a><a href="">Генератор диплинков</a>
+                        </div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-4.svg" alt><span class="text">Контент план</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu">
+                        </div>
+                    </div>
+                    <div class="drop-link js-drop-link">
+                        <div class="link-body"><img class="icon" src="./img/aside-5.svg" alt><span class="text">Делегирование</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                        <div class="drop-menu js-drop-menu">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
+            </aside>
+            <main class="main main-dashboard">
+                <div class="wrapper-notices"></div>
+                <header class="top-menu js-top-menu">
+                    <div class="arrow-btn js-aside-show"><span class="icon-arrow-up"></span></div><a class="func-logo" href><img src="./img/logo.png" alt></a>
+                    <div class="container">
+                        <div class="top-menu-content">
+                            <div class="links"><a class="top-link emp" href>Инструменты</a><a class="top-link" href>Биржа рекламы</a></div>
+                            <div class="right-panel">
+                                <div class="tariff">
+                                    <div class="top"><span class="emp">Тариф: Максимальный</span><span>365 дней</span></div>
+                                    <div class="progress-1"><span></span></div>
+                                </div>
+                                <div class="notices">
+                                    <div class="wrapper js-notices"><img src="./img/notice.svg" alt><span>2</span></div>
+                                    <div class="notices-drop js-notices-drop">
+                                        <div class="top">
+                                            <p class="title">7 Уведомлений</p><img class="close js-close-notice" src="./img/close.svg" alt>
+                                        </div>
+                                        <div class="notice-item"><img src="./img/photo.jpg" alt>
+                                            <div class="text"><a href="">История одного кота: Внезапно этот кот споймал мышь…..</a><span>27 Ноября 2019 </span></div>
+                                        </div>
+                                        <div class="notice-item inactive"><img src="./img/photo.jpg" alt>
+                                            <div class="text"><a href="">История одного кота: Внезапно этот кот споймал мышь…..</a><span>27 Ноября 2019 </span></div>
+                                        </div>
+                                        <div class="notice-item"><img src="./img/photo.jpg" alt>
+                                            <div class="text"><a href="">История одного кота: Внезапно этот кот споймал мышь…..</a><span>27 Ноября 2019 </span></div>
+                                        </div>
+                                        <div class="notice-item"><img src="./img/photo.jpg" alt>
+                                            <div class="text"><a href="">История одного кота: Внезапно этот кот споймал мышь…..</a><span>27 Ноября 2019 </span></div>
+                                        </div><a class="more" href>Еще уведомления</a>
+                                    </div>
+                                </div>
+                                <div class="profile">
+                                    <div class="avatar"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <section class="main-dashboard-header">
+                    <div class="container">
+                        <div class="content">
+                            <div class="text">
+                                <p class="title">Данные за последние 7 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="acc-plan">
+                    <div class="container">
+                        <div class="content">
+                            <div class="acc-item">
+                                <div class="item-content"><img src="./img/profile.jpg" alt>
+                                    <div class="text"><span class="name">@dostavkacvotov</span><a class="link" href>instagram.com/kim_roobin/</a></div><i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="dashboard-graphs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="graph">
+                                    <div class="top">
+                                        <div class="left"><i class="fa fa-eye" aria-hidden="true"></i><span>42 412</span></div>
+                                        <div class="right"><span>-15,11%</span><img src="./img/grow.svg" alt></div>
+                                    </div>
+                                    <div class="graph-wrap">
+                                        <div class="graph-h" id="graph-d-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="graph">
+                                    <div class="top">
+                                        <div class="left"><i class="fa fa-heart" aria-hidden="true"></i><span>42 412</span></div>
+                                        <div class="right"><span>-15,11%</span><img src="./img/grow.svg" alt></div>
+                                    </div>
+                                    <div class="graph-wrap">
+                                        <div class="graph-h" id="graph-d-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="graph">
+                                    <div class="top">
+                                        <div class="left"><i class="fa fa-users" aria-hidden="true"></i><span>42 412</span></div>
+                                        <div class="right"><span>-15,11%</span><img src="./img/grow.svg" alt></div>
+                                    </div>
+                                    <div class="graph-wrap">
+                                        <div class="graph-h" id="graph-d-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="graph">
+                                    <div class="top">
+                                        <div class="left"><i class="fa fa-comment" aria-hidden="true"></i><span>42 412</span></div>
+                                        <div class="right"><span>-15,11%</span><img src="./img/grow.svg" alt></div>
+                                    </div>
+                                    <div class="graph-wrap">
+                                        <div class="graph-h" id="graph-d-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="acc-comments">
+                    <div class="container">
+                        <div class="user-comment">
+                            <div class="comment-item">
+                                <div class="left">
+                                    <div class="preview"><span class="placeholder">Превью</span>
+                                        <div class="img-wrapper"><img src="./img/profile.jpg" alt></div>
+                                    </div>
+                                    <div class="acc-item"><span class="acc-placeholder">Пользователь</span>
+                                        <div class="item-content"><img src="./img/profile.jpg" alt>
+                                            <div class="text">
+                                                <div class="name"> <span>@dostavkacvotov</span><span class="date">12:21 22.12.2019</span></div><a class="link" href>Написать в директ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="comment-text"><span class="acc-placeholder">Комментарий</span>
+                                        <p class="comment-body">Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!</p>
+                                    </div>
+                                    <div class="edit-comment">
+                                        <button>Ответить</button>
+                                        <button>Удалить</button>
+                                        <button>Заблокировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-comment">
+                            <div class="comment-item">
+                                <div class="left">
+                                    <div class="preview"><span class="placeholder">Превью</span>
+                                        <div class="img-wrapper"><img src="./img/profile.jpg" alt></div>
+                                    </div>
+                                    <div class="acc-item"><span class="acc-placeholder">Пользователь</span>
+                                        <div class="item-content"><img src="./img/profile.jpg" alt>
+                                            <div class="text">
+                                                <div class="name"> <span>@dostavkacvotov</span><span class="date">12:21 22.12.2019</span></div><a class="link" href>Написать в директ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="comment-text"><span class="acc-placeholder">Комментарий</span>
+                                        <p class="comment-body">Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!</p>
+                                    </div>
+                                    <div class="edit-comment">
+                                        <button>Ответить</button>
+                                        <button>Удалить</button>
+                                        <button>Заблокировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-comment">
+                            <div class="comment-item">
+                                <div class="left">
+                                    <div class="preview"><span class="placeholder">Превью</span>
+                                        <div class="img-wrapper"><img src="./img/profile.jpg" alt></div>
+                                    </div>
+                                    <div class="acc-item"><span class="acc-placeholder">Пользователь</span>
+                                        <div class="item-content"><img src="./img/profile.jpg" alt>
+                                            <div class="text">
+                                                <div class="name"> <span>@dostavkacvotov</span><span class="date">12:21 22.12.2019</span></div><a class="link" href>Написать в директ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="comment-text"><span class="acc-placeholder">Комментарий</span>
+                                        <p class="comment-body">Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!</p>
+                                    </div>
+                                    <div class="edit-comment">
+                                        <button>Ответить</button>
+                                        <button>Удалить</button>
+                                        <button>Заблокировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-comment">
+                            <div class="comment-item">
+                                <div class="left">
+                                    <div class="preview"><span class="placeholder">Превью</span>
+                                        <div class="img-wrapper"><img src="./img/profile.jpg" alt></div>
+                                    </div>
+                                    <div class="acc-item"><span class="acc-placeholder">Пользователь</span>
+                                        <div class="item-content"><img src="./img/profile.jpg" alt>
+                                            <div class="text">
+                                                <div class="name"> <span>@dostavkacvotov</span><span class="date">12:21 22.12.2019</span></div><a class="link" href>Написать в директ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="comment-text"><span class="acc-placeholder">Комментарий</span>
+                                        <p class="comment-body">Добрый день! Как можно заказать доставку на конкретную дату? И есть ли какие-то скидки от объема? Мы хотим заказать цветы для дома престарелых на 200 человек. Ждем скорейшего ответа, сегодня-завтра уже нужно определиться с поставщиком!</p>
+                                    </div>
+                                    <div class="edit-comment">
+                                        <button>Ответить</button>
+                                        <button>Удалить</button>
+                                        <button>Заблокировать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="dashboard-new">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="new-applies">
+                                    <p class="title">Новые заявки</p>
+                                    <div class="contact">
+                                        <div class="top">
+                                            <p class="subtitle">Букет для невесты</p><span class="date">12:24 12.09.2019</span>
+                                        </div>
+                                        <p class="name">Елена Алексеева</p>
+                                        <div class="bottom">
+                                            <div class="tel"><i class="fa fa-phone" aria-hidden="true"></i><a href="">89525125252</a></div>
+                                            <div class="tel"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:">elena.sem@yandex.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="contact">
+                                        <div class="top">
+                                            <p class="subtitle">Букет для невесты</p><span class="date">12:24 12.09.2019</span>
+                                        </div>
+                                        <p class="name">Елена Алексеева</p>
+                                        <div class="bottom">
+                                            <div class="tel"><i class="fa fa-phone" aria-hidden="true"></i><a href="">89525125252</a></div>
+                                            <div class="tel"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:">elena.sem@yandex.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="contact">
+                                        <div class="top">
+                                            <p class="subtitle">Букет для невесты</p><span class="date">12:24 12.09.2019</span>
+                                        </div>
+                                        <p class="name">Елена Алексеева</p>
+                                        <div class="bottom">
+                                            <div class="tel"><i class="fa fa-phone" aria-hidden="true"></i><a href="">89525125252</a></div>
+                                            <div class="tel"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:">elena.sem@yandex.ru</a></div>
+                                        </div>
+                                    </div><a class="show" href>Посмотреть все</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-7">
+                                <div class="new-orders">
+                                    <div class="main-content">
+                                        <p class="title">Новые заявки</p>
+                                        <div class="table-c">
+                                            <div class="titles"><span class="title">Дата</span><span class="title">Товар</span><span class="title price">Цена</span><span class="title">Покупатель</span></div>
+                                            <div class="lines">
+                                                <div class="line"><span>12:21 12.09.2019</span><span>Доставка цветов</span><span class="price">252 руб</span><span>Мария Иванова</span></div>
+                                                <div class="line"><span>12:21 12.09.2019</span><span>Доставка цветов</span><span class="price">252 руб</span><span>Мария Иванова</span></div>
+                                                <div class="line"><span>12:21 12.09.2019</span><span>Доставка цветов</span><span class="price">252 руб</span><span>Мария Иванова</span></div>
+                                                <div class="line"><span>12:21 12.09.2019</span><span>Доставка цветов</span><span class="price">252 руб</span><span>Мария Иванова</span></div>
+                                                <div class="line"><span>12:21 12.09.2019</span><span>Доставка цветов</span><span class="price">252 руб</span><span>Мария Иванова</span></div>
+                                                <div class="line"><span>12:21 12.09.2019</span><span>Доставка цветов</span><span class="price">252 руб</span><span>Мария Иванова</span></div>
+                                                <div class="line"><span>12:21 12.09.2019</span><span>Доставка цветов</span><span class="price">252 руб</span><span>Мария Иванова</span></div>
+                                            </div>
+                                        </div>
+                                    </div><a class="show" href>Посмотреть все</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-manage">
+                            <button class="btn-blue">Управление комментариями</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="acc-popular dash-projects">
+                    <div class="container">
+                        <div class="content">
+                            <h2>Проекты</h2>
+                            <div class="table">
+                                <div class="titles">
+                                    <div class="title popular-post"><span> </span></div>
+                                    <div class="title"><span>Просмотров</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    <div class="title"><span>Переходов</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    <div class="title"><span>Заказов</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    <div class="title"><span>Сумма заказов</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="lines">
+                                    <div class="line">
+                                        <div class="cell popular-post"><img class="img" src="./img/post.jpg" alt>
+                                            <div class="d-text">
+                                                <p class="c-text">Доставка цветов розница</p>
+                                                <p class="c-text-num">15 страниц</p>
+                                            </div>
+                                        </div><span class="cell">34 214</span><span class="cell">23 212</span><span class="cell">12 123</span><span class="cell">10 125</span>
+                                    </div>
+                                    <div class="line">
+                                        <div class="cell popular-post"><img class="img" src="./img/post.jpg" alt>
+                                            <div class="d-text">
+                                                <p class="c-text">Доставка цветов розница</p>
+                                                <p class="c-text-num">15 страниц</p>
+                                            </div>
+                                        </div><span class="cell">34 214</span><span class="cell">23 212</span><span class="cell">12 123</span><span class="cell">10 125</span>
+                                    </div>
+                                    <div class="line">
+                                        <div class="cell popular-post"><img class="img" src="./img/post.jpg" alt>
+                                            <div class="d-text">
+                                                <p class="c-text">Доставка цветов розница</p>
+                                                <p class="c-text-num">15 страниц</p>
+                                            </div>
+                                        </div><span class="cell">34 214</span><span class="cell">23 212</span><span class="cell">12 123</span><span class="cell">10 125</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination"><span class="icon-arrow-d arrow arrow-prev"></span><span class="num active">1</span><span class="num">2</span><span class="num">3</span><span class="num">...</span><span class="num">15</span><span class="icon-arrow-d arrow arrow-next"></span></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="./libs/js/vendor.min.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+    <script src="./libs/js/core.js"> </script>
+    <script src="./libs/js/charts.js"> </script>
+    <script src="./libs/js/animated.js"> </script>
+    <script src="./js/graphs-2.js"></script>
+</html>
