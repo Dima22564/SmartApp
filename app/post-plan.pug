@@ -21,3 +21,86 @@ block content
               span.name @dostavkacvotov
               a(href="").link instagram.com/kim_roobin/
             i.fa.fa-angle-down(aria-hidden="true")
+  section.download-files
+    .container
+      .content
+        p.title Загруженные файлы
+        .files-images
+          .item
+            img(src="./img/food.jpg", alt="")
+          .item
+            img(src="./img/food.jpg", alt="")
+          .item
+            img(src="./img/food.jpg", alt="")
+          .item.video
+            img(src="./img/food.jpg", alt="")
+        .bottom
+          .btn
+            label(for="file").btn-blue Выбрать файл
+            input#file(type="file", name="")
+          .input-wrapper
+            span.placeholder Добавить файл по ссылке
+            input(type="text").input
+  section.edit-post
+    .container
+      .row
+        .col-xl-6
+          .edit-post-item
+            .top-c
+              p.title Редактирование поста
+              .btns
+                button Пост
+                button Сторис
+            .textarea
+              .top-t
+                .comment-desc
+                  button Описание
+                  button Комментарий
+                .text-settings
+                  .item.js-text-style(data-style="bold")
+                    span.icon-bold
+                  .item.js-text-style(data-style="italic")
+                    span.icon-italic
+                  .item.js-text-style(data-style="underline")
+                    span.icon-underline
+                  .item.js-text-align(data-text="left")
+                    span.icon-paragraph-left
+                  .item.js-text-align(data-text="center")
+                    span.icon-paragraph-center
+                  .item.js-text-align(data-text="right")
+                    span.icon-paragraph-right
+                  .item.js-text-align(data-text="justify")
+                    .icon-paragraph-justify
+              textarea.customize-text(name="")
+              p.symbols 0 / 299
+              .place
+                .input-wrapper.input-date
+                  input#date-1(type="date", name="").js-date
+                  label(for="date-1").input.js-label fghfdh
+                  i.fa.fa-calendar(aria-hidden="true")
+                .input-wrapper.input-place
+                  input(type="text", name="").input
+                  i.fa.fa-map-marker(aria-hidden="true")
+              button.btn-blue.post-button Запланировать пост
+
+        
+        .col-xl-6
+          .view-mode
+            .top-c
+              p.title Режим просмотра:
+              .btns
+                button Пост
+                button Лента
+            img(src="./img/food-big.jpg", alt="").img-post
+            p.alt Замечательный букет для нашего постоянного клиента.
+            a(href="").hashtag #букет #доставка цветов
+            .place
+              i.fa.fa-map-marker(aria-hidden="true")
+              span.text Санкт-Петербург
+              
+
+
+        
+
+
+

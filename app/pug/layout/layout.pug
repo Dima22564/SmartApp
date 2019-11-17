@@ -17,7 +17,6 @@ html(lang="ru")
     title= title
 
   body
-
     .page(class='')
   
       //- Aside
@@ -26,6 +25,7 @@ html(lang="ru")
   
   
       main.main(class= `main-${page}`)
+        .wrapper-notices
   
         //- Top menu
         include ../top-menu.pug

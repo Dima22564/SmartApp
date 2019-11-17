@@ -1,0 +1,133 @@
+extends ./pug/layout/layout.pug
+
+block vars
+  -var page = 'calendar';
+  -var title = 'Calendar';
+
+block content
+  section.main-calendar-header
+    .container
+      .content
+        .text
+          p.title Отложенный постинг
+          button.btn-white Запланировать
+        .btns
+          .btn-block
+            button.btn-white Все рубрики
+            button.btn-white Праздники
+            button.btn-white Букеты
+          .btn-block
+            button.btn-blue Календарь
+            button.btn-white Список
+  section.acc-plan
+    .container
+      .content  
+        p.title Контент план аккаунта
+        .acc-item
+          .item-content
+            img(src="./img/profile.jpg", alt="")
+            .text
+              span.name @dostavkacvotov
+              a(href="").link instagram.com/kim_roobin/
+            i.fa.fa-angle-down(aria-hidden="true")
+  section.publish-ideas
+    .container
+      .content
+        p.title Избранное
+        .ideas-list
+          a(href="").item - Как собрать букет (213)
+          a(href="").item - Как собрать букет (213)
+          a(href="").item - Где купить авторский букет (14)
+          a(href="").item - Когда собирать цветы для букета (93)
+          a(href="").item - Какие букеты самые красивые (24)
+          a(href="").item - Зачем перевязывать букет (14)
+          a(href="").item - Как собрать букет (213)
+  section.calendar-body
+    .container
+      .content
+        .top
+          .slider
+            i.fa.fa-angle-left(aria-hidden="true")
+            span Сентябрь 2019
+            i.fa.fa-angle-right(aria-hidden="true")
+          .select
+            select(name="").js-select-menu
+              option(value="") Сентябрь
+              option(value="") Сентябрь
+        .titles
+          span.title Пн 
+          span.title Вт
+          span.title Ср
+          span.title Чт 
+          span.title Пт
+          span.title Сб 
+          span.title Вс
+        .days
+          .day
+          .day
+          .day
+          .day
+          .day
+          .day
+          .day
+            .top-d
+              span.plus +
+              span.num 1
+            .day-comment
+              p.text Какие цветы п... 11:00
+          .day
+            .top-d
+              span.plus +
+              span.num 2
+            .day-comment
+              p.text Какие цветы п... 11:00
+          .day
+            .top-d
+              span.plus +
+              span.num 3
+            .day-comment
+              p.text Какие цветы п... 11:00
+          .day
+            .top-d
+              span.plus +
+              span.num 4
+            .day-comment
+              p.text Какие цветы п... 11:00
+          .day
+            .top-d
+              span.plus +
+              span.num 5
+            .day-comment
+              p.text Какие цветы п... 11:00
+          .day
+            .top-d
+              span.plus +
+              span.num 6
+            .day-comment
+              p.text Какие цветы п... 11:00
+          .day
+            .top-d
+              span.plus +
+              span.num 7
+            .day-comment
+              p.text Какие цветы п... 11:00
+          .day
+            .top-d
+              span.plus +
+              span.num 8
+            .day-comment
+              p.text Какие цветы п... 11:00
+          .day
+            .top-d
+              span.plus +
+              span.num 9
+            .day-comment
+              p.text Какие цветы п... 11:00
+          .day
+            .top-d
+              span.plus +
+              span.num 10
+            .day-comment
+              p.text Какие цветы п... 11:00
+          
+

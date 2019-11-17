@@ -1,0 +1,69 @@
+.download-files
+  padding-bottom: 30px
+  .content
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    background: $white
+    border-radius: 12px
+    padding: 32px
+    .title
+      font-size: 18px
+      line-height: 20px
+      color: $black
+      font-weight: 600
+      margin-bottom: 13px
+    .files-images
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+    .item
+      box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06)
+      width: 162px
+      height: 162px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 4px
+      background: $white
+      flex-shrink: 0
+      margin-bottom: 16px
+      position: relative
+      &:not(:last-child)
+        margin-right: 16px
+      &.video
+        &::before
+          content: ''
+          width: 126px
+          height: 126px
+          position: absolute
+          top: 18px
+          left: 18px
+          background-color: rgba(0, 0, 0, 0.4)
+          border-radius: 4px
+        &::after
+          content: url('../img/play.svg')
+          position: absolute
+          top: 59px
+          left: 62px
+          z-index: 6
+          cursor: pointer
+      img
+        width: 126px
+        height: 126px
+        border-radius: 4px
+    .bottom
+      display: flex
+      align-items: flex-end
+      margin-top: 8px
+      .input-wrapper
+        margin-bottom: 0
+        width: initial
+        .placeholder
+          margin-left: 0
+      .btn
+        position: relative
+        margin-right: 40px
+        label
+          display: inline-flex
+        input
+          position: absolute
+          opacity: 0

@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&amp;display=swap" rel="stylesheet">
         <link href="./libs/css/vendor.min.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
-        <title>Table</title>
+        <title>Calendar</title>
     </head>
     <body>
         <div class="page">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
             </aside>
-            <main class="main main-table-page">
+            <main class="main main-calendar">
                 <div class="wrapper-notices"></div>
                 <header class="top-menu js-top-menu">
                     <div class="arrow-btn js-aside-show"><span class="icon-arrow-up"></span></div><a class="func-logo" href><img src="./img/logo.png" alt></a>
@@ -84,23 +84,24 @@
                         </div>
                     </div>
                 </header>
-                <section class="main-table-page-header">
+                <section class="main-calendar-header">
                     <div class="container">
                         <div class="content">
                             <div class="text">
                                 <p class="title">Отложенный постинг</p>
+                                <button class="btn-white">Запланировать</button>
                             </div>
                             <div class="btns">
-                                <button class="btn-blue">Запланировать</button>
+                                <div class="btn-block">
+                                    <button class="btn-white">Все рубрики</button>
+                                    <button class="btn-white">Праздники</button>
+                                    <button class="btn-white">Букеты</button>
+                                </div>
+                                <div class="btn-block">
+                                    <button class="btn-blue">Календарь</button>
+                                    <button class="btn-white">Список</button>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="main-table-page-btns">
-                    <div class="container">
-                        <div class="btns">
-                            <button class="btn-white">Календарь</button>
-                            <button class="btn-white">Список</button>
                         </div>
                     </div>
                 </section>
@@ -119,58 +120,93 @@
                 <section class="publish-ideas">
                     <div class="container">
                         <div class="content">
-                            <p class="title">Идеи для публикацией</p>
+                            <p class="title">Избранное</p>
                             <div class="ideas-list"><a class="item" href>- Как собрать букет (213)</a><a class="item" href>- Как собрать букет (213)</a><a class="item" href>- Где купить авторский букет (14)</a><a class="item" href>- Когда собирать цветы для букета (93)</a><a class="item" href>- Какие букеты самые красивые (24)</a><a class="item" href>- Зачем перевязывать букет (14)</a><a class="item" href>- Как собрать букет (213)</a></div>
                         </div>
                     </div>
                 </section>
-                <section class="news-items">
+                <section class="calendar-body">
                     <div class="container">
-                        <article class="article">
-                            <div class="img-wrapper"><img src="./img/food.jpg" alt></div>
-                            <div class="text">
-                                <div class="wrap">
-                                    <div class="top-c">
-                                        <p class="title">В китае придумали заменитель пиццы</p><span class="publish-date">Публикация: 11:00 12.09.2019</span>
-                                    </div><a class="link" href>https://chinanews.com/pizza-zamenitel-izobreten</a>
-                                    <p class="desc">В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы.</p>
-                                </div>
-                                <div class="btns">
-                                    <button>Редактировать</button>
-                                    <button>Удалить</button>
+                        <div class="content">
+                            <div class="top">
+                                <div class="slider"><i class="fa fa-angle-left" aria-hidden="true"></i><span>Сентябрь 2019</span><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                                <div class="select">
+                                    <select class="js-select-menu" name>
+                                        <option value="">Сентябрь</option>
+                                        <option value="">Сентябрь</option>
+                                    </select>
                                 </div>
                             </div>
-                        </article>
-                        <article class="article">
-                            <div class="img-wrapper"><img src="./img/food.jpg" alt></div>
-                            <div class="text">
-                                <div class="wrap">
-                                    <div class="top-c">
-                                        <p class="title">В китае придумали заменитель пиццы</p><span class="publish-date">Публикация: 11:00 12.09.2019</span>
-                                    </div><a class="link" href>https://chinanews.com/pizza-zamenitel-izobreten</a>
-                                    <p class="desc">В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы.</p>
+                            <div class="titles"><span class="title">Пн </span><span class="title">Вт</span><span class="title">Ср</span><span class="title">Чт </span><span class="title">Пт</span><span class="title">Сб </span><span class="title">Вс</span></div>
+                            <div class="days">
+                                <div class="day"></div>
+                                <div class="day"></div>
+                                <div class="day"></div>
+                                <div class="day"></div>
+                                <div class="day"></div>
+                                <div class="day"></div>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">1</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
                                 </div>
-                                <div class="btns">
-                                    <button>Редактировать</button>
-                                    <button>Удалить</button>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">2</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
+                                </div>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">3</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
+                                </div>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">4</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
+                                </div>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">5</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
+                                </div>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">6</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
+                                </div>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">7</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
+                                </div>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">8</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
+                                </div>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">9</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
+                                </div>
+                                <div class="day">
+                                    <div class="top-d"><span class="plus">+</span><span class="num">10</span></div>
+                                    <div class="day-comment">
+                                        <p class="text">Какие цветы п... 11:00</p>
+                                    </div>
                                 </div>
                             </div>
-                        </article>
-                        <article class="article">
-                            <div class="img-wrapper"><img src="./img/food.jpg" alt></div>
-                            <div class="text">
-                                <div class="wrap">
-                                    <div class="top-c">
-                                        <p class="title">В китае придумали заменитель пиццы</p><span class="publish-date">Публикация: 11:00 12.09.2019</span>
-                                    </div><a class="link" href>https://chinanews.com/pizza-zamenitel-izobreten</a>
-                                    <p class="desc">В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы. В Китай придумали как можно заменить привычнуй вкус итальянской пиццы.</p>
-                                </div>
-                                <div class="btns">
-                                    <button>Редактировать</button>
-                                    <button>Удалить</button>
-                                </div>
-                            </div>
-                        </article>
+                        </div>
                     </div>
                 </section>
             </main>

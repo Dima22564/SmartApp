@@ -228,4 +228,20 @@ $(document).ready(function () {
       $(this).parent().find('.js-label').text($(this).val())
     })
 
+    $('.js-notices').click(function(e){
+      $('.js-notices-drop').slideToggle();
+      $('.wrapper-notices').toggleClass('active')
+
+    })
+
+    $('.js-close-notice').click(function(){
+      $('.js-notices-drop').slideUp();
+      $('.wrapper-notices').removeClass('active')
+    })
+
+    $('.wrapper-notices').click(function(){
+      $('.js-notices-drop').slideUp();
+      $(this).removeClass('active')
+    })
+
 });

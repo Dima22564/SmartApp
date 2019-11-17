@@ -10,6 +10,16 @@ body
   min-height: 100vh
 .main
   width: 100%
+  position: relative
+  .wrapper-notices
+    position: absolute
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.24)
+    z-index: 10
+    display: none
+    &.active
+      display: block
 .ui-selectmenu-open
   z-index: 6666666
 

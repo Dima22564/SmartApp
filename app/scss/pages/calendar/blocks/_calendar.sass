@@ -1,0 +1,86 @@
+.calendar-body
+  padding-bottom: 65px
+  .content
+    padding: 32px
+    background: $white
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    border-radius: 4px
+    .top
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 35px
+      .slider
+        display: flex
+        align-items: center
+        span
+          font-size: 24px
+          font-weight: 600
+          line-height: 20px
+          color: $black
+          margin: 0 10px
+        i
+          color: $black
+          cursor: pointer
+          font-size: 18px
+      .select
+        width: 25%
+      .select-drop-menu
+        border-radius: 4px
+        // width: 30% !important
+        font-weight: 600
+        .custom-icon
+          background-image: url('../img/arrow-down.svg') !important
+          transition: all 0.3s
+          position: absolute
+          right: 14px
+          top: 36%
+          background-position: center center
+    .titles
+      display: flex
+      align-items: center
+      margin-bottom: 4px
+      .title
+        width: 145px
+        font-size: 12px
+        line-height: 12px
+    .days
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      .day
+        border: 1px solid rgba(20, 16, 41, 0.12)
+        border-radius: 4px
+        box-shadow: 4px 0 2px rgba(20, 16, 41, 0.02)
+        width: 135px
+        height: 135px
+        margin-bottom: 10px
+        padding: 17px
+        &:not(:last-child)
+          margin-right: 10px
+        .top-d
+          display: flex
+          align-items: center
+          justify-content: space-between
+          margin-bottom: 15px
+          .plus
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 14px
+            height: 14px
+            border-radius: 50%
+            color: $white
+            background: $blue
+            cursor: pointer
+          .num
+            font-size: 16px
+            line-height: 12px
+        .day-comment
+          padding: 8px
+          background: $white
+          border-radius: 2px
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12)
+          .text
+            font-size: 12px
+            line-height: 13px

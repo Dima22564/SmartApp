@@ -87,8 +87,10 @@
             border-radius: 24px
       .notices
         margin-left: 65px
+        position: relative
         .wrapper
           position: relative
+          cursor: pointer
           span
             position: absolute
             top: -4px
@@ -103,6 +105,63 @@
             background: $blue
             font-size: 12px
             line-height: 12px
+        &-drop
+          background: $white
+          border-radius: 4px
+          padding: 16px
+          position: absolute
+          bottom: 0
+          right: 0
+          z-index: 11
+          min-width: 328px
+          transform: translateY(100%)
+          display: none
+          .top
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 24px
+            .close
+              cursor: pointer
+            .title
+              font-size: 18px
+              line-height: 18px
+              font-weight: 600
+              color: $d-gray
+          .more
+            display: inline-flex
+            justify-content: center
+            color: $blue
+            font-size: 12px
+            line-height: 14px
+            text-decoration: underline
+            margin-top: 24px
+            width: 100%
+          .notice-item
+            display: flex
+            align-items: flex-start
+            &:not(:last-child)
+              margin-bottom: 16px
+            &.inactive
+              opacity: 0.24
+            .text
+              display: flex
+              flex-direction: column
+              font-size: 12px
+              line-height: 14px
+              color: $d-gray
+              span 
+                margin-top: 7px
+                color: $gray
+              a
+                text-decoration: underline
+                max-height: 28px
+                overflow: hidden
+            img
+              width: 48px
+              height: 48px
+              border-radius: 4px
+              margin-right: 16px
       .profile
         margin-left: 24px
         .avatar

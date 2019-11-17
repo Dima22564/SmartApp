@@ -1,0 +1,132 @@
+.edit-post
+  &-item
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    background: $white
+    border-radius: 12px
+    padding: 32px
+    .top-c
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 41px
+      .title
+        font-size: 18px
+        line-height: 20px
+        color: $black
+        font-weight: 600
+      .btns
+        display: flex
+        align-items: center
+        button
+          border: none
+          background: none
+          font-size: 12px
+          line-height: 12px
+          transition: all 0.2s
+          color: $gray
+          padding: 0
+          &:hover
+            text-decoration: underline
+            color: $blue
+            cursor: pointer
+          &:not(:last-child)
+            margin-right: 16px
+          &.active
+            color: $blue
+            text-decoration: underline
+    .textarea
+      .top-t
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 8px
+      .place
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin-bottom: 40px
+        .post-button
+          display: inline-flex
+          margin-top: 40px
+        .input-wrapper
+          margin-bottom: 0
+          // width: 30%
+          &:not(:last-child)
+            margin-right: 16px
+          &.input-place
+            i
+              position: absolute
+              bottom: 16px
+              right: 13px
+              font-size: 18px
+              color: $d-gray
+          &.input-date
+            input
+              position: absolute
+              opacity: 0
+          i
+            position: absolute
+            bottom: 16px
+            right: 13px
+            font-size: 18px
+            color: $d-gray
+      .comment-desc
+        display: flex
+        align-items: center
+        button
+          box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+          background: $white
+          padding: 6px 12px 6px 6px
+          border-radius: 4px
+          font-size: 12px
+          line-height: 12px
+          color: $gray
+          border: none
+          cursor: pointer
+          &:not(:last-child)
+            margin-right: 8px
+      .text-settings
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        .item
+          box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+          width: 24px
+          height: 24px
+          border-radius: 4px
+          background: $white
+          display: flex
+          align-items: center
+          justify-content: center
+          cursor: pointer
+          transition: all 0.2s
+          opacity: 0.4
+          color: #141029
+          font-size: 12px
+          &:hover
+            background: #f4f5f8
+          &.active
+            color: $blue
+            opacity: 1
+          &:not(:last-child)
+            margin-right: 8px
+      .customize-text
+        width: 100%
+        background: #f4f5f8
+        border-radius: 4px
+        padding: 15px
+        min-height: 189px
+        resize: none
+        border: none
+        margin-bottom: 7px
+        &.bold
+          font-weight: bold !important
+        &.italic
+          font-style: italic
+        &.underline
+          text-decoration: underline
+      .symbols
+        text-align: right
+        font-size: 12px
+        line-height: 12px
+        margin-bottom: 13px

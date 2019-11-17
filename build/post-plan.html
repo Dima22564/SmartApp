@@ -46,6 +46,7 @@
                 <div class="bottom-links"><a class="link-body" href><span class="icon-settings"></span><span class="text">Настройки</span></a><a class="link-body" href><img src="./img/exit.svg" alt><span class="text">Выход</span></a></div>
             </aside>
             <main class="main main-post-plan">
+                <div class="wrapper-notices"></div>
                 <header class="top-menu js-top-menu">
                     <div class="arrow-btn js-aside-show"><span class="icon-arrow-up"></span></div><a class="func-logo" href><img src="./img/logo.png" alt></a>
                     <div class="container">
@@ -57,7 +58,24 @@
                                     <div class="progress-1"><span></span></div>
                                 </div>
                                 <div class="notices">
-                                    <div class="wrapper"><img src="./img/notice.svg" alt><span>2</span></div>
+                                    <div class="wrapper js-notices"><img src="./img/notice.svg" alt><span>2</span></div>
+                                    <div class="notices-drop js-notices-drop">
+                                        <div class="top">
+                                            <p class="title">7 Уведомлений</p><img class="close js-close-notice" src="./img/close.svg" alt>
+                                        </div>
+                                        <div class="notice-item"><img src="./img/photo.jpg" alt>
+                                            <div class="text"><a href="">История одного кота: Внезапно этот кот споймал мышь…..</a><span>27 Ноября 2019 </span></div>
+                                        </div>
+                                        <div class="notice-item inactive"><img src="./img/photo.jpg" alt>
+                                            <div class="text"><a href="">История одного кота: Внезапно этот кот споймал мышь…..</a><span>27 Ноября 2019 </span></div>
+                                        </div>
+                                        <div class="notice-item"><img src="./img/photo.jpg" alt>
+                                            <div class="text"><a href="">История одного кота: Внезапно этот кот споймал мышь…..</a><span>27 Ноября 2019 </span></div>
+                                        </div>
+                                        <div class="notice-item"><img src="./img/photo.jpg" alt>
+                                            <div class="text"><a href="">История одного кота: Внезапно этот кот споймал мышь…..</a><span>27 Ноября 2019 </span></div>
+                                        </div><a class="more" href>Еще уведомления</a>
+                                    </div>
                                 </div>
                                 <div class="profile">
                                     <div class="avatar"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
@@ -82,6 +100,89 @@
                             <div class="acc-item">
                                 <div class="item-content"><img src="./img/profile.jpg" alt>
                                     <div class="text"><span class="name">@dostavkacvotov</span><a class="link" href>instagram.com/kim_roobin/</a></div><i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="download-files">
+                    <div class="container">
+                        <div class="content">
+                            <p class="title">Загруженные файлы</p>
+                            <div class="files-images">
+                                <div class="item"><img src="./img/food.jpg" alt></div>
+                                <div class="item"><img src="./img/food.jpg" alt></div>
+                                <div class="item"><img src="./img/food.jpg" alt></div>
+                                <div class="item video"><img src="./img/food.jpg" alt></div>
+                            </div>
+                            <div class="bottom">
+                                <div class="btn">
+                                    <label class="btn-blue" for="file">Выбрать файл</label>
+                                    <input id="file" name type="file">
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">Добавить файл по ссылке</span>
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="edit-post">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="edit-post-item">
+                                    <div class="top-c">
+                                        <p class="title">Редактирование поста</p>
+                                        <div class="btns">
+                                            <button>Пост</button>
+                                            <button>Сторис</button>
+                                        </div>
+                                    </div>
+                                    <div class="textarea">
+                                        <div class="top-t">
+                                            <div class="comment-desc">
+                                                <button>Описание</button>
+                                                <button>Комментарий</button>
+                                            </div>
+                                            <div class="text-settings">
+                                                <div class="item js-text-style" data-style="bold"><span class="icon-bold"></span></div>
+                                                <div class="item js-text-style" data-style="italic"><span class="icon-italic"></span></div>
+                                                <div class="item js-text-style" data-style="underline"><span class="icon-underline"></span></div>
+                                                <div class="item js-text-align" data-text="left"><span class="icon-paragraph-left"></span></div>
+                                                <div class="item js-text-align" data-text="center"><span class="icon-paragraph-center"></span></div>
+                                                <div class="item js-text-align" data-text="right"><span class="icon-paragraph-right"></span></div>
+                                                <div class="item js-text-align" data-text="justify">
+                                                    <div class="icon-paragraph-justify"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <textarea class="customize-text" name></textarea>
+                                        <p class="symbols">0 / 299</p>
+                                        <div class="place">
+                                            <div class="input-wrapper input-date">
+                                                <input class="js-date" id="date-1" name type="date">
+                                                <label class="input js-label" for="date-1">fghfdh</label><i class="fa fa-calendar" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="input-wrapper input-place">
+                                                <input class="input" name type="text"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <button class="btn-blue post-button">Запланировать пост</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="view-mode">
+                                    <div class="top-c">
+                                        <p class="title">Режим просмотра:</p>
+                                        <div class="btns">
+                                            <button>Пост</button>
+                                            <button>Лента</button>
+                                        </div>
+                                    </div><img class="img-post" src="./img/food-big.jpg" alt>
+                                    <p class="alt">Замечательный букет для нашего постоянного клиента.</p><a class="hashtag" href>#букет #доставка цветов</a>
+                                    <div class="place"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="text">Санкт-Петербург</span></div>
                                 </div>
                             </div>
                         </div>
