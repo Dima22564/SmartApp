@@ -206,4 +206,10 @@ $(document).ready(function () {
     $('.js-notices-drop').slideUp();
     $(this).removeClass('active');
   });
+  $('.js-btn-multilink-set').click(function (e) {
+    $('.js-mutlilink-sett').show();
+  });
+  $('.js-btn-multilink-set-2').click(function (e) {
+    $('.js-mutlilink-sett-2').show();
+  });
 });
