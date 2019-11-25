@@ -12,6 +12,8 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
+    autoplay: true,
+    speed: 1000,
     appendDots: $('.main-review-slider .controls')
   });
   $('.js-video .play').click(function (e) {

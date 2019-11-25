@@ -3584,12 +3584,14 @@ div:active {
   font-size: 21px;
 }
 
-.main-acc-stats-header .content .dates .date span {
+.main-acc-stats-header .content .dates .date .datepicker-here {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 24px;
   background-color: rgba(20, 16, 41, 0.03);
   border-radius: 4px;
+  border: none;
+  max-width: 100px;
 }
 
 .acc-stats-subscribers {
@@ -7412,6 +7414,10 @@ div:active {
   width: 100%;
 }
 
+.wrapper-function .select-drop-menu {
+  padding: 15px 24px;
+}
+
 .wrapper-function .function-link {
   max-width: 425px;
   width: 100%;
@@ -7442,6 +7448,23 @@ div:active {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+
+.wrapper-function .function-link .content .addition {
+  width: 100%;
+  margin: 0 0 16px 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(20, 16, 41, 0.8);
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  cursor: pointer;
+  text-align: right;
+  padding-right: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .wrapper-function .function-link .content .input-wrapper {
@@ -7481,19 +7504,6 @@ div:active {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.wrapper-function .function-link .invisible-part .addition {
-  width: 100%;
-  margin-top: 38px;
-  font-size: 12px;
-  line-height: 12px;
-  color: rgba(20, 16, 41, 0.8);
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  cursor: pointer;
-  text-align: right;
-  padding-right: 40px;
 }
 
 .wrapper-function .function-link .invisible-part .font {
@@ -8380,6 +8390,10 @@ div:active {
   margin-bottom: 0;
 }
 
+.function-mess .input-wrapper .input {
+  padding: 12px 24px 11px 24px;
+}
+
 .function-mess .input-wrapper.input-name {
   width: 259% !important;
   margin: 0 8px;
@@ -8391,7 +8405,7 @@ div:active {
 
 .function-mess .input-wrapper .select-drop-mess {
   width: 96px !important;
-  padding: 14px 14px;
+  padding: 15px 14px 14px 14px;
 }
 
 .function-mess .bottom-bnts {
