@@ -6,6 +6,9 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $(this).find('.js-drop-menu').slideToggle();
   });
+  $('.js-drop-menu a').click(function (e) {
+    e.stopPropagation();
+  });
   $('.js-slider').slick({
     prevArrow: $('.main-review-slider .js-prev-btn'),
     nextArrow: $('.main-review-slider .js-next-btn'),
@@ -161,7 +164,8 @@ $(document).ready(function () {
     classes: {
       "ui-selectmenu-button-closed": "select-drop-menu select-drop-mess",
       "ui-selectmenu-button-open": "select-drop-menu select-drop-mess",
-      "ui-menu-item-wrapper": "select-drop-menu-wrapper select-drop-mess"
+      "ui-menu-item-wrapper": "select-drop-menu-wrapper select-drop-mess",
+      "ui-selectmenu-menu": "select-menu-mess"
     },
     icons: {
       button: "custom-icon"
@@ -213,5 +217,25 @@ $(document).ready(function () {
   });
   $('.js-btn-multilink-set-2').click(function (e) {
     $('.js-mutlilink-sett-2').show();
+  });
+  $('.js-drop-link-2').click(function (e) {
+    $('.js-drop-menu-2').slideToggle();
+    $('.nav-drop-link').toggleClass('active');
+  });
+  $('.js-drop-menu-2').hover(function (e) {
+    $(this).show();
+  }, function (e) {
+    $(this).slideUp();
+    $('.nav-drop-link').removeClass('active');
+  });
+  $('.js-avatar-drop-btn').click(function (e) {
+    $('.js-avatar-drop').slideToggle();
+    $(this).toggleClass('active');
+  });
+  $('.js-avatar-drop').hover(function (e) {
+    $(this).show();
+  }, function (e) {
+    $(this).slideUp();
+    $('.js-avatar-drop-btn').removeClass('active');
   });
 });

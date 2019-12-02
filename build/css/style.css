@@ -877,6 +877,7 @@ div:active {
 
 .top-menu-content .right-panel .profile {
   margin-left: 24px;
+  position: relative;
 }
 
 .top-menu-content .right-panel .profile .avatar {
@@ -889,6 +890,12 @@ div:active {
   cursor: pointer;
 }
 
+.top-menu-content .right-panel .profile .avatar.active .arrow {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .top-menu-content .right-panel .profile .avatar .icon {
   width: 48px;
   height: 48px;
@@ -896,10 +903,47 @@ div:active {
 }
 
 .top-menu-content .right-panel .profile .avatar .arrow {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-left: 14px;
+}
+
+.top-menu-content .right-panel .profile-drop {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 207px;
+  background: #ffffff;
+  padding: 40px;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 12px 24px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 12px 24px rgba(20, 16, 41, 0.12);
+  border-radius: 4px;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  z-index: 55;
+  display: none;
+}
+
+.top-menu-content .right-panel .profile .drop-btn:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.top-menu-content .right-panel .profile .drop-btn button {
+  width: 100%;
+  font-weight: 500;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  margin-left: 14px;
+}
+
+.top-menu-content .right-panel .profile .drop-btn button:hover {
+  background: #6b75ca;
+  color: #ffffff;
 }
 
 .edit-item {
@@ -1147,6 +1191,7 @@ div:active {
 
 .main-review-header .nav-drop-link {
   margin-right: 24px;
+  position: relative;
 }
 
 .main-review-header .nav-drop-link .wrapper {
@@ -1167,22 +1212,60 @@ div:active {
 
 .main-review-header .nav-drop-link .wrapper img {
   margin-left: 25px;
-  -webkit-transition: all 03s;
-  -o-transition: all 03s;
-  transition: all 03s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.main-review-header .nav-drop-link .wrapper.active .arrow {
+.main-review-header .nav-drop-link.active .arrow {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.main-review-header .nav-drop-link .wrapper .drop-menu {
+.main-review-header .nav-drop-link .drop-menu {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  z-index: 55;
+  border-radius: 4px;
+  background: #ffffff;
+  display: none;
+}
+
+.main-review-header .nav-drop-link .drop-menu .nav-link {
+  margin-right: 0;
+  width: 100%;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main-review-header .nav-drop-link .drop-menu .nav-link:hover {
+  background: rgba(20, 16, 41, 0.1);
+}
+
+.main-review-header .nav-drop-link .drop-menu .nav-link:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.main-review-header .nav-drop-link .drop-menu .drop-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-radius: 4px;
 }
 
 .main-review-contact {
@@ -8340,6 +8423,10 @@ div:active {
   margin-right: 16px;
 }
 
+.select-menu-mess img {
+  width: 17px !important;
+}
+
 .function-mess {
   background: #ffffff;
   height: calc(100% - 72px);
@@ -8363,6 +8450,10 @@ div:active {
   -ms-flex-align: end;
   align-items: flex-end;
   margin-bottom: 32px;
+}
+
+.function-mess .input-mess .select-drop-mess img {
+  width: 16px !important;
 }
 
 .function-mess .input-mess .del {

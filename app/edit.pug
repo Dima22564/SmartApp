@@ -25,10 +25,16 @@ block content
           .nav-links
             a(href="").nav-link Главная
             .nav-drop-link
-              .wrapper
+              .wrapper.js-drop-link-2
                 span Товары
                 img(src="./img/arrow-down.svg", alt="").arrow
-              .drop-menu
+              .drop-menu.js-drop-menu-2
+                .drop-links
+                  a(href="").nav-link Item
+                  a(href="").nav-link Item
+                  a(href="").nav-link Item
+                  a(href="").nav-link Item
+
             a(href="").nav-link Отзывы
             a(href="").nav-link Фотогаллерея
             a(href="").nav-link Контакты
@@ -181,7 +187,6 @@ block content
     //- Add custom block  adapted = 
     +customBlock
 
-
     //- Cards  adapted = 
     section.main-review-cards.main-edit-cards
       .container
@@ -189,7 +194,7 @@ block content
           .top-edit
             +editors('left')
             h2 Товары
-            +editors('right')
+            +editors('right', 'js-edit-goods-func')
           p.edit-text Розница
           .cards
             .item
