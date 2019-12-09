@@ -89,9 +89,9 @@ $(document).ready(function () {
           overflow: 'hidden'
         })
         $('main').css({
-          paddingTop: '72px'
+          // paddingTop: '72px'
         })
-        $('.js-top-menu').addClass('func-active')
+        // $('.js-top-menu').addClass('func-active')
       })
     })
   }

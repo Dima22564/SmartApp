@@ -582,7 +582,7 @@ div:active {
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   background: #ffffff;
   padding: 12px 0;
-  z-index: 9999999999;
+  z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7221,7 +7221,7 @@ div:active {
 
 .wrapper-function .function-body .function-add {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -7753,7 +7753,7 @@ div:active {
 
 .function-edit-text {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -7855,7 +7855,7 @@ div:active {
 
 .function-image {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -7951,7 +7951,7 @@ div:active {
 
 .function-video {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -8073,7 +8073,7 @@ div:active {
 
 .function-pixel {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -8092,7 +8092,7 @@ div:active {
 
 .function-edit-menu {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -8170,7 +8170,7 @@ div:active {
 
 .function-edit-pay {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -8264,7 +8264,7 @@ div:active {
 
 .function-avatar {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -8329,7 +8329,7 @@ div:active {
 
 .function-link-3 {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -8429,7 +8429,7 @@ div:active {
 
 .function-mess {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -8513,7 +8513,7 @@ div:active {
 
 .function-edit-goods {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;

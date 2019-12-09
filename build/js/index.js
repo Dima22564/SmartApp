@@ -79,10 +79,8 @@ $(document).ready(function () {
         $('body').css({
           overflow: 'hidden'
         });
-        $('main').css({
-          paddingTop: '72px'
-        });
-        $('.js-top-menu').addClass('func-active');
+        $('main').css({// paddingTop: '72px'
+        }); // $('.js-top-menu').addClass('func-active')
       });
     });
   }
