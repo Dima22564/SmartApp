@@ -22,9 +22,9 @@ block content
               option(value="") Розница
           .input-wrapper.input-date
             span.placeholder Планируемая дата публикации
-            input#date-1(type="date", name="").js-date
-            label(for="date-1").input.js-label 2020-01-22
-            i.fa.fa-calendar(aria-hidden="true")
+            .date
+              i.fa.fa-calendar-o(aria-hidden="true")
+              input(type="text").datepicker-here
           button.btn-blue Сохранить
   section.news
     .container

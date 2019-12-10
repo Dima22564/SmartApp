@@ -23,7 +23,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.24);
-  z-index: 10;
+  z-index: 9;
   display: none;
 }
 
@@ -2882,7 +2882,7 @@ div:active {
 
 .function-add-user {
   background: #ffffff;
-  height: calc(100% - 72px);
+  height: 100%;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06);
   padding: 38px 90px 115px 32px;
@@ -3038,6 +3038,7 @@ div:active {
   -ms-flex-align: start;
   align-items: flex-start;
   position: relative;
+  margin-bottom: 0;
 }
 
 .main-deeplink-generate .input-wrapper .select-drop-menu {
@@ -5177,9 +5178,22 @@ div:active {
   margin-right: 32px;
 }
 
-.replace .content .inputs .input-wrapper.input-date input {
-  position: absolute;
-  opacity: 0;
+.replace .content .inputs .input-wrapper.input-date .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.replace .content .inputs .input-wrapper.input-date .datepicker-here {
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  background-color: rgba(20, 16, 41, 0.03);
+  border-radius: 4px;
+  border: none;
+  height: 47.2px;
 }
 
 .replace .content .inputs .input-wrapper i {
