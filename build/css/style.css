@@ -5190,6 +5190,10 @@ div:active {
   color: rgba(20, 16, 41, 0.8);
 }
 
+.replace .content .inputs .input-wrapper .js-label {
+  height: 47px;
+}
+
 .news h2 {
   font-size: 24px;
   line-height: 24px;
