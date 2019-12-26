@@ -44,9 +44,15 @@
     display: flex
     align-items: center
     justify-content: space-between
+    .logo_mobile
+      display: none
+      +lg
+        display: block
     .links
       display: flex
       align-items: center
+      +md
+        display: none
       a
         &.emp
           color: $d-gray
@@ -56,9 +62,13 @@
       display: flex
       align-items: center
       width: 67%
+      +lg
+        width: initial
       .tariff
         max-width: 540px
         width: 100%
+        +lg
+          display: none
         .top
           display: flex
           align-items: center
@@ -162,9 +172,17 @@
               height: 48px
               border-radius: 4px
               margin-right: 16px
+      .burger
+        display: none
+        +md
+          display: block
+          margin-left: 24px
+          cursor: pointer
       .profile
         margin-left: 24px
         position: relative
+        +md
+          display: none
         .avatar
           display: flex
           align-items: center

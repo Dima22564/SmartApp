@@ -1,6 +1,10 @@
 .main-review
   .text
     color: $d-gray
+    +md
+      font-size: 14px
+      line-height: 18px
+      text-align: center
   .profile-sec
     display: flex
     align-items: center
@@ -18,20 +22,54 @@
       background: $white
       border-radius: 24px
       margin-bottom: 40px 
+      +xl
+        flex-wrap: wrap
+        justify-content: space-between
+      +md
+        padding: 15px
       &-links
         display: flex
         align-items: center
         justify-content: center
+        +xl
+          order: 5
+          margin-top: 12px
+          flex-wrap: wrap
+          width: 100%
       &-link
         padding: 12px 24px
         box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
         background: $white
         border-radius: 4px
+        &_50
+          +md
+            width: 48.5%
+            padding: 11px 0
+            text-align: center
+        &_30
+          +md
+            width: 32%
+            padding: 11px 0
+            text-align: center
+        +lg
+          margin-bottom: 5px
+        +md
+          font-size: 14px
+          line-height: 24px
         &:not(:last-child)
           margin-right: 24px
+          +lg
+            margin-right: 5px
       &-drop-link
         margin-right: 24px
         position: relative
+        +lg
+          margin: 0 5px 5px 0
+        +md
+          font-size: 14px
+          line-height: 24px
+          margin: 0 0 5px 0
+          padding: 0
         .wrapper
           padding: 12px 24px
           box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
@@ -41,6 +79,9 @@
           display: flex
           align-items: center
           cursor: pointer
+          +md
+            padding: 11px 0
+            justify-content: center
           img
             margin-left: 25px
             transition: all 0.3s

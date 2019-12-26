@@ -49,16 +49,44 @@
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     background: $white
     border-radius: 24px
+    +md
+      padding: 14px
     .top-edit
       display: flex
       align-items: center
       justify-content: center
       width: 100%
       margin: 15px 0 36px 0
+      +lg
+        margin: 0 0 13px 0
+        flex-wrap: wrap
+        justify-content: space-between
+      h2
+        +lg
+          width: 100%
+          order: 10
+          margin-top: 22px
+        +sm
+          font-size: 18px
+          line-height: 24px
     .edit-text
       font-size: 12px
       line-height: 24px
       text-align: center
+      +sm
+        display: none
+      &_pixel
+        +md
+          display: flex
+          flex-direction: column
+          align-items: center
+          font-size: 14px
+          line-height: 19px
+      &_module
+        +sm
+          display: block
+          font-size: 14px
+          line-height: 16px
   &-header
     padding-bottom: 0
     .text-block
@@ -93,19 +121,37 @@
     position: relative
     .profile-icon
       display: flex
+      +lg
+        flex-direction: column
+        align-items: center
       .profile-img
         width: 96px
         height: 96px
         border-radius: 4px
         margin-right: 24px
+        +lg
+          margin: 23px 0 15px 0
       .desc
         display: flex
         flex-direction: column
         align-items: flex-start
         justify-content: space-between
+        &_mobile
+          display: none
+          +lg
+            display: block
+        +lg
+          text-align: center
+          align-items: center
+          justify-content: center
         .text
           font-size: 14px
           line-height: 20px 
+          +sm
+            font-size: 12px
+          &_desktop
+            +lg
+              display: none
         input
           display: none
         label
@@ -133,9 +179,14 @@
     margin-bottom: 16px
     .content
       padding: 24px 47px
+      +md
+        padding: 24px 0
     .add-items
       display: flex
       align-items: center
       justify-content: space-between
       margin-top: 15px
+      +lg
+        flex-wrap: wrap
+
     

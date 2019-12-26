@@ -2,13 +2,40 @@
   .wrapper-for-bg
     background: url('../img/bg-review.jpg')
     background-size: cover
+    +md
+      background:  #f4f5f8
   .top-btns
     padding: 63px 0 52px
     background: #f4f5f8
+    +md
+      padding: 14px 0 10px
+    .btn-desktop
+      +lg
+        display: none
+    .btn-mobile
+      display: none
+      +lg
+        display: flex
+        font-size: 25px
+        transition: all 0.2s
+        &:hover
+          color: $d-gray
+      &_check
+        width: 26px
+        height: 26px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: $blue
+        border-radius: 50%
     .content
       display: flex
       align-items: center
       justify-content: space-between
+      +md
+        padding: 0
+      +lg
+        align-items: flex-start
     .title
       display: flex
       align-items: center
@@ -28,3 +55,5 @@
       a
         &:not(:last-child)
           margin-right: 24px
+          +sm
+            margin-right: 8px

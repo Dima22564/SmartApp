@@ -236,4 +236,13 @@ $(document).ready(function () {
     $(this).slideUp();
     $('.js-avatar-drop-btn').removeClass('active');
   });
+  $('.js-slider-wrapper').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    dots: false,
+    arrows: false,
+    variableWidth: true,
+    infinite: false
+  });
 });

@@ -5,6 +5,14 @@ block vars
   -var title = 'Edit';
 
 block content
+  section.mobile-slider
+    .slider-wrapper.js-slider-wrapper
+      a(href="").item Создание мультиссылки
+      a(href="").item.item_active Товары
+      a(href="").item Прием платежей
+
+
+
   section.top-btns.edit-top-btns
     .container
       .content
@@ -12,9 +20,15 @@ block content
           p.emp Мультиссылка
           span Конструктор мини-сайта
         .btns
-          a(href="").btn-white Просмотр
-          a(href="").btn-white Редактировать
-          a(href="").btn-blue Сохранить
+          a(href="").btn-white.btn-desktop Просмотр
+          a(href="").btn-white.btn-desktop Редактировать
+          a(href="").btn-blue.btn-desktop Сохранить
+          a(href="").btn-mobile 
+            i.fa.fa-pencil(aria-hidden="true")
+          a(href="").btn-mobile 
+            i.fa.fa-eye(aria-hidden="true")
+          a(href="").btn-mobile.btn-mobile_check
+            img(src="./img/check.svg", alt="")
 
   .wrapper-for-bg
     section.main-review-header.main-edit-header
@@ -23,8 +37,8 @@ block content
           .edit-item
             span.icon-del
           .nav-links
-            a(href="").nav-link Главная
-            .nav-drop-link
+            a(href="").nav-link.nav-link_50 Главная
+            .nav-drop-link.nav-link_50
               .wrapper.js-drop-link-2
                 span Товары
                 img(src="./img/arrow-down.svg", alt="").arrow
@@ -35,9 +49,9 @@ block content
                   a(href="").nav-link Item
                   a(href="").nav-link Item
 
-            a(href="").nav-link Отзывы
-            a(href="").nav-link Фотогаллерея
-            a(href="").nav-link Контакты
+            a(href="").nav-link.nav-link_30 Отзывы
+            a(href="").nav-link.nav-link_30 Фото
+            a(href="").nav-link.nav-link_30 Контакты
           .edit-items-wrapper
             .edit-item.js-edit-menu-func
               span.icon-settings
@@ -51,9 +65,11 @@ block content
           .row.justify-content-center
             .col-xl-7
               .profile-icon
-                img(src="./img/profile.jpg", alt="").profile-img
-                .desc
+                .desc.desc_mobile
                   p.text Загрузите квадратное изображение выбрав его на компьютере или перетищите картинку в эту область
+                img(src="./img/profile.jpg", alt="").profile-img
+                .desc.desc_desktop
+                  p.text.text_desktop Загрузите квадратное изображение выбрав его на компьютере или перетищите картинку в эту область
                   input#icon(type="file", name="")
                   label(for="icon") Загрузить
 
@@ -70,7 +86,7 @@ block content
 
         +addBlock
 
-    //- Contact us  adapted = 
+    //- Contact us  adapted = true
     section.main-review-contact.main-edit-contact 
       .container
         .content.edit-section
@@ -80,7 +96,7 @@ block content
             +editors('right', 'js-edit-mess-func')
           .social-icons
             -var i = 1;
-            while i < 7
+            while i < 8
               a(href="").social-link
                 img(src=`./img/social-${i}.svg`, alt="")
               -i++
@@ -97,7 +113,7 @@ block content
         +addBlock
             
           
-    //- Slider  adapted = 
+    //- Slider  adapted = true
     section.main-review-slider.main-edit-slider
       .container
         .content.edit-section
@@ -127,7 +143,7 @@ block content
 
         +addBlock
 
-    //- Video  adapted = 
+    //- Video  adapted = true
     section.main-review-video.main-edit-video
       .container
         .content.edit-section
@@ -144,7 +160,7 @@ block content
 
         +addBlock
 
-    //- Pixel  adapted = 
+    //- Pixel  adapted = true
     section.main-review-pixel.main-edit-pixel
       .container
         .content.edit-section
@@ -152,12 +168,12 @@ block content
             +editors('left')
             h2 Пиксель FB*
             +editors('right', 'js-edit-pixel-func')
-          p.edit-text Счетчик id5163262 установлен и работает
+          p.edit-text.edit-text_pixel #[span Счетчик id5163262] #[span установлен и работает]
 
         +addBlock
 
 
-    //- Sell  adapted = 
+    //- Sell  adapted = true
     section.main-review-sell.main-edit-sell
       .container
         .content.edit-section
@@ -167,7 +183,20 @@ block content
             +editors('right', 'js-edit-goods-func')
           p.edit-text Розница
           .row.justify-content-center
-            .col-xl-6
+            .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-6
+              .item
+                .img
+                  img(src="./img/flower.jpg", alt="")
+                .text-block
+                  p.title Доставка цветов опт
+                  p.text.
+                    Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.
+                  .order
+                    a(href="").btn-order Заказать
+                    .price
+                      span.old 500₽
+                      span.new 500₽
+            .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-6
               .item
                 .img
                   img(src="./img/flower.jpg", alt="")
@@ -184,7 +213,7 @@ block content
         +addBlock
 
 
-    //- Add custom block  adapted = 
+    //- Add custom block  adapted = true
     +customBlock
 
     //- Cards  adapted = 
@@ -196,35 +225,48 @@ block content
             h2 Товары
             +editors('right', 'js-edit-goods-func')
           p.edit-text Розница
-          .cards
-            .item
-              img(src="./img/small-flower.jpg", alt="")
-              p.title Доставка цветов опт
-              .price
-                span.old 500₽
-                span.new 500₽
-              a(href="").btn-order Заказать
-            .item
-              img(src="./img/small-flower.jpg", alt="")
-              p.title Доставка цветов опт
-              .price
-                span.old 500₽
-                span.new 500₽
-              a(href="").btn-order Заказать
-            .item
-              img(src="./img/small-flower.jpg", alt="")
-              p.title Доставка цветов опт
-              .price
-                span.old 500₽
-                span.new 500₽
-              a(href="").btn-order Заказать
-            .item
-              img(src="./img/small-flower.jpg", alt="")
-              p.title Доставка цветов опт
-              .price
-                span.old 500₽
-                span.new 500₽
-              a(href="").btn-order Заказать
+          .row
+            .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+              .item
+                img(src="./img/small-flower.jpg", alt="")
+                p.title Доставка цветов опт
+                .price
+                  span.old 500₽
+                  span.new 500₽
+                a(href="").btn-order Заказать
+            .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+              .item
+                img(src="./img/small-flower.jpg", alt="")
+                p.title Доставка цветов опт
+                .price
+                  span.old 500₽
+                  span.new 500₽
+                a(href="").btn-order Заказать
+            .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+              .item
+                img(src="./img/small-flower.jpg", alt="")
+                p.title Доставка цветов опт
+                .price
+                  span.old 500₽
+                  span.new 500₽
+                a(href="").btn-order Заказать
+            .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+              .item
+                img(src="./img/small-flower.jpg", alt="")
+                p.title Доставка цветов опт
+                .price
+                  span.old 500₽
+                  span.new 500₽
+                a(href="").btn-order Заказать
+            .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+              .item
+                img(src="./img/small-flower.jpg", alt="")
+                p.title Доставка цветов опт
+                .price
+                  span.old 500₽
+                  span.new 500₽
+                a(href="").btn-order Заказать
+            
 
         +addBlock
 
@@ -259,7 +301,7 @@ block content
         +addBlock
 
 
-    //- Messengers  adapted = 
+    //- Messengers  adapted = true
     section.messengers
       .container
         .content.edit-section.blue
@@ -267,12 +309,12 @@ block content
             +editors('left')
             h2 Мессенджеры
             +editors('right')
-          p.edit-text Модуль "Мессенджеры" не отображается. Завершите настройку
+          p.edit-text.edit-text_module Модуль "Мессенджеры" не отображается. Завершите настройку
           button.sett Настроить
 
         +addBlock
 
-    //- Messengers  adapted = 
+    //- Messengers  adapted = true
     section.messengers
       .container
         .content.edit-section.red
@@ -280,13 +322,13 @@ block content
             +editors('left')
             h2 Сменить тариф
             +editors('right')
-          p.edit-text Модуль "Мессенджеры" не отображается. Завершите настройку
+          p.edit-text.edit-text_module Модуль "Мессенджеры" не отображается. Завершите настройку
           button.sett Настроить
 
         +addBlock
 
 
-    //- Add custom block  adapted = 
+    //- Add custom block  adapted = true
     +customBlock
 
 

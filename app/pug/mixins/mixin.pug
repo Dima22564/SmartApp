@@ -33,15 +33,15 @@ mixin customBlock
             .add-item
               img(src="./img/add-6.svg", alt="")
             span.desc Ссылка
-          .add-item-wrapper
+          .add-item-wrapper.add-item-wrapper_mobile
             .add-item
               img(src="./img/add-7.svg", alt="")
             span.desc Пиксель FB
-          .add-item-wrapper
+          .add-item-wrapper.add-item-wrapper_mobile
             .add-item
               img(src="./img/add-8.svg", alt="")
             span.desc Заявка
-          .add-item-wrapper
+          .add-item-wrapper.add-item-wrapper_mobile
             .add-item
               img(src="./img/add-9.svg", alt="")
             span.desc Меню
@@ -50,9 +50,9 @@ mixin customBlock
 mixin editors(orientation, func)
   if orientation=='left'
     .edit-items-wrapper.left
-      .edit-item
+      .edit-item.edit-item_mobile
         span.icon-arrow-d
-      .edit-item
+      .edit-item.edit-item_mobile
         span.icon-arrow-up
       .edit-item
         span.icon-del  

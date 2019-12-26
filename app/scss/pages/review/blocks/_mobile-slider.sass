@@ -1,0 +1,21 @@
+.mobile-slider
+  height: 0
+  overflow: hidden
+  background: #f4f5f8
+  +md
+    height: auto
+    overflow: visible
+    padding-top: 24px
+  .slick-track
+    padding-bottom: 10px
+  .item
+    padding: 11px 16px
+    background: $white
+    border-radius: 20px
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06)
+    font-weight: 500
+    font-size: 14px
+    margin-right: 9px
+    &_active
+      background: $blue
+      color: $white

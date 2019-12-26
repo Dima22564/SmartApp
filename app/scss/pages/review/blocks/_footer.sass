@@ -7,6 +7,8 @@
     align-items: center
     justify-content: space-around
     margin-bottom: 40px
+    +md
+      margin-bottom: 0
     input
       border: none
       background: #f4f5f8
@@ -15,6 +17,15 @@
       line-height: 20px
       color: $gray
       width: 70%
+      +sm
+        width: 59%
+    &_review
+      justify-content: space-between
+      input
+        background: $white
+        +xl
+          width: 88%
+
     button
       padding: 16px 25px
       color: $white
@@ -34,3 +45,6 @@
     color: $white
     border-radius: 4px
     padding: 14px 
+    &_review
+      +md
+        margin-top: 50px

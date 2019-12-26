@@ -10,16 +10,36 @@
     align-items: center
     justify-content: space-between
     margin-bottom: 32px
+    .create_desktop
+      +md
+        display: none
+    .create_mobile
+      display: none
+      background: $blue
+      border-radius: 50%
+      width: 40px
+      height: 40px
+      align-items: center
+      justify-content: center
+      border: none
+      cursor: pointer
+      padding: 0
+      +md
+        display: flex
     .show
       display: flex
       align-items: center
       margin-right: 50px
+      +sm
+        margin-right: 24px
       .text
         font-size: 14px
         line-height: 14px
         color: $black
         margin-right: 72px
         font-weight: 600
+        +lg
+          display: none
       .icon
         cursor: pointer
         &.active
@@ -35,6 +55,8 @@
     flex-direction: column
     align-items: center
     margin-bottom: 30px
+    +sm
+      margin-bottom: 10px
     .title
       width: 100%
       display: flex

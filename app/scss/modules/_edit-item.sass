@@ -10,6 +10,9 @@
   cursor: pointer
   &:not(:last-child)
     margin-right: 8px
+  &_mobile
+    +sm
+      display: none
   .icon-arrow-up
     transform: rotate(180deg)
 .edit-items-wrapper
@@ -19,7 +22,11 @@
     position: absolute
     top: 24px
     left: 24px
+    +lg
+      position: initial
   &.right
     position: absolute
     top: 24px
     right: 24px
+    +lg
+      position: initial

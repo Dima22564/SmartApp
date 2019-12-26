@@ -50,7 +50,7 @@
                 <header class="top-menu js-top-menu">
                     <div class="arrow-btn js-aside-show"><span class="icon-arrow-up"></span></div><a class="func-logo" href><img src="./img/logo.png" alt></a>
                     <div class="container">
-                        <div class="top-menu-content">
+                        <div class="top-menu-content"><a class="logo_mobile" href><img src="./img/logo.png" alt></a>
                             <div class="links"><a class="top-link emp" href>Инструменты</a><a class="top-link" href>Биржа рекламы</a></div>
                             <div class="right-panel">
                                 <div class="tariff">
@@ -77,6 +77,7 @@
                                         </div><a class="more" href>Еще уведомления</a>
                                     </div>
                                 </div>
+                                <div class="burger"><img src="./img/burger.svg" alt></div>
                                 <div class="profile">
                                     <div class="avatar js-avatar-drop-btn"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
                                     <div class="profile-drop js-avatar-drop">
@@ -95,13 +96,16 @@
                         </div>
                     </div>
                 </header>
+                <section class="mobile-slider">
+                    <div class="slider-wrapper js-slider-wrapper"><a class="item" href>Создание мультиссылки</a><a class="item item_active" href>Товары</a><a class="item" href>Прием платежей</a></div>
+                </section>
                 <section class="top-btns edit-top-btns">
                     <div class="container">
                         <div class="content">
                             <div class="title">
                                 <p class="emp">Мультиссылка</p><span>Конструктор мини-сайта</span>
                             </div>
-                            <div class="btns"><a class="btn-white" href>Просмотр</a><a class="btn-white" href>Редактировать</a><a class="btn-blue" href>Сохранить</a></div>
+                            <div class="btns"><a class="btn-white btn-desktop" href>Просмотр</a><a class="btn-white btn-desktop" href>Редактировать</a><a class="btn-blue btn-desktop" href>Сохранить</a><a class="btn-mobile" href> <i class="fa fa-pencil" aria-hidden="true"></i></a><a class="btn-mobile" href> <i class="fa fa-eye" aria-hidden="true"></i></a><a class="btn-mobile btn-mobile_check" href><img src="./img/check.svg" alt></a></div>
                         </div>
                     </div>
                 </section>
@@ -110,13 +114,13 @@
                         <div class="container">
                             <div class="nav">
                                 <div class="edit-item"><span class="icon-del"></span></div>
-                                <div class="nav-links"><a class="nav-link" href>Главная</a>
-                                    <div class="nav-drop-link">
+                                <div class="nav-links"><a class="nav-link nav-link_50" href>Главная</a>
+                                    <div class="nav-drop-link nav-link_50">
                                         <div class="wrapper js-drop-link-2"><span>Товары</span><img class="arrow" src="./img/arrow-down.svg" alt></div>
                                         <div class="drop-menu js-drop-menu-2">
                                             <div class="drop-links"><a class="nav-link" href>Item</a><a class="nav-link" href>Item</a><a class="nav-link" href>Item</a><a class="nav-link" href>Item</a></div>
                                         </div>
-                                    </div><a class="nav-link" href>Отзывы</a><a class="nav-link" href>Фотогаллерея</a><a class="nav-link" href>Контакты</a>
+                                    </div><a class="nav-link nav-link_30" href>Отзывы</a><a class="nav-link nav-link_30" href>Фото</a><a class="nav-link nav-link_30" href>Контакты</a>
                                 </div>
                                 <div class="edit-items-wrapper">
                                     <div class="edit-item js-edit-menu-func"><span class="icon-settings"></span></div>
@@ -126,8 +130,8 @@
                             <div class="main-edit-icon edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Аватарка мини-сайта</h2>
@@ -138,9 +142,12 @@
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-xl-7">
-                                        <div class="profile-icon"><img class="profile-img" src="./img/profile.jpg" alt>
-                                            <div class="desc">
+                                        <div class="profile-icon">
+                                            <div class="desc desc_mobile">
                                                 <p class="text">Загрузите квадратное изображение выбрав его на компьютере или перетищите картинку в эту область</p>
+                                            </div><img class="profile-img" src="./img/profile.jpg" alt>
+                                            <div class="desc desc_desktop">
+                                                <p class="text text_desktop">Загрузите квадратное изображение выбрав его на компьютере или перетищите картинку в эту область</p>
                                                 <input id="icon" name type="file">
                                                 <label for="icon">Загрузить</label>
                                             </div>
@@ -154,8 +161,8 @@
                             <div class="text-block edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Текстовый блок</h2>
@@ -179,8 +186,8 @@
                             <div class="content edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Мессенджеры</h2>
@@ -189,7 +196,7 @@
                                         <div class="edit-item"><span class="icon-copy"></span></div>
                                     </div>
                                 </div>
-                                <div class="social-icons"><a class="social-link" href><img src="./img/social-1.svg" alt></a><a class="social-link" href><img src="./img/social-2.svg" alt></a><a class="social-link" href><img src="./img/social-3.svg" alt></a><a class="social-link" href><img src="./img/social-4.svg" alt></a><a class="social-link" href><img src="./img/social-5.svg" alt></a><a class="social-link" href><img src="./img/social-6.svg" alt></a>
+                                <div class="social-icons"><a class="social-link" href><img src="./img/social-1.svg" alt></a><a class="social-link" href><img src="./img/social-2.svg" alt></a><a class="social-link" href><img src="./img/social-3.svg" alt></a><a class="social-link" href><img src="./img/social-4.svg" alt></a><a class="social-link" href><img src="./img/social-5.svg" alt></a><a class="social-link" href><img src="./img/social-6.svg" alt></a><a class="social-link" href><img src="./img/social-7.svg" alt></a>
                                 </div>
                             </div>
                             <div class="add-block">
@@ -198,8 +205,8 @@
                             <div class="separator-wrapper edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Разделить</h2>
@@ -220,8 +227,8 @@
                             <div class="content edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Изображение</h2>
@@ -258,8 +265,8 @@
                             <div class="content edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Видео</h2>
@@ -287,8 +294,8 @@
                             <div class="content edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Пиксель FB*</h2>
@@ -297,7 +304,7 @@
                                         <div class="edit-item"><span class="icon-copy"></span></div>
                                     </div>
                                 </div>
-                                <p class="edit-text">Счетчик id5163262 установлен и работает</p>
+                                <p class="edit-text edit-text_pixel"><span>Счетчик id5163262</span> <span>установлен и работает</span></p>
                             </div>
                             <div class="add-block">
                                 <div class="add"><img src="./img/plus.svg" alt></div>
@@ -309,8 +316,8 @@
                             <div class="content edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Товары</h2>
@@ -321,7 +328,19 @@
                                 </div>
                                 <p class="edit-text">Розница</p>
                                 <div class="row justify-content-center">
-                                    <div class="col-xl-6">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <div class="item">
+                                            <div class="img"><img src="./img/flower.jpg" alt></div>
+                                            <div class="text-block">
+                                                <p class="title">Доставка цветов опт</p>
+                                                <p class="text">Доставка цветов в любой район города Москвы. Поможем собрать букет и дополнить его уникальным подарком, который никого не оставит равнодушным.</p>
+                                                <div class="order"><a class="btn-order" href>Заказать</a>
+                                                    <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                                         <div class="item">
                                             <div class="img"><img src="./img/flower.jpg" alt></div>
                                             <div class="text-block">
@@ -363,13 +382,13 @@
                                     <div class="add-item-wrapper">
                                         <div class="add-item"><img src="./img/add-6.svg" alt></div><span class="desc">Ссылка</span>
                                     </div>
-                                    <div class="add-item-wrapper">
+                                    <div class="add-item-wrapper add-item-wrapper_mobile">
                                         <div class="add-item"><img src="./img/add-7.svg" alt></div><span class="desc">Пиксель FB</span>
                                     </div>
-                                    <div class="add-item-wrapper">
+                                    <div class="add-item-wrapper add-item-wrapper_mobile">
                                         <div class="add-item"><img src="./img/add-8.svg" alt></div><span class="desc">Заявка</span>
                                     </div>
-                                    <div class="add-item-wrapper">
+                                    <div class="add-item-wrapper add-item-wrapper_mobile">
                                         <div class="add-item"><img src="./img/add-9.svg" alt></div><span class="desc">Меню</span>
                                     </div>
                                 </div>
@@ -381,8 +400,8 @@
                             <div class="content edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Товары</h2>
@@ -392,22 +411,36 @@
                                     </div>
                                 </div>
                                 <p class="edit-text">Розница</p>
-                                <div class="cards">
-                                    <div class="item"><img src="./img/small-flower.jpg" alt>
-                                        <p class="title">Доставка цветов опт</p>
-                                        <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                                        <div class="item"><img src="./img/small-flower.jpg" alt>
+                                            <p class="title">Доставка цветов опт</p>
+                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                        </div>
                                     </div>
-                                    <div class="item"><img src="./img/small-flower.jpg" alt>
-                                        <p class="title">Доставка цветов опт</p>
-                                        <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                                        <div class="item"><img src="./img/small-flower.jpg" alt>
+                                            <p class="title">Доставка цветов опт</p>
+                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                        </div>
                                     </div>
-                                    <div class="item"><img src="./img/small-flower.jpg" alt>
-                                        <p class="title">Доставка цветов опт</p>
-                                        <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                                        <div class="item"><img src="./img/small-flower.jpg" alt>
+                                            <p class="title">Доставка цветов опт</p>
+                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                        </div>
                                     </div>
-                                    <div class="item"><img src="./img/small-flower.jpg" alt>
-                                        <p class="title">Доставка цветов опт</p>
-                                        <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                                        <div class="item"><img src="./img/small-flower.jpg" alt>
+                                            <p class="title">Доставка цветов опт</p>
+                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                                        <div class="item"><img src="./img/small-flower.jpg" alt>
+                                            <p class="title">Доставка цветов опт</p>
+                                            <div class="price"><span class="old">500₽</span><span class="new">500₽</span></div><a class="btn-order" href>Заказать</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -421,8 +454,8 @@
                             <div class="content edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Оплата</h2>
@@ -451,8 +484,8 @@
                             <div class="content edit-section">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Ссылка</h2>
@@ -472,8 +505,8 @@
                             <div class="content edit-section blue">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Мессенджеры</h2>
@@ -482,7 +515,7 @@
                                         <div class="edit-item"><span class="icon-copy"></span></div>
                                     </div>
                                 </div>
-                                <p class="edit-text">Модуль "Мессенджеры" не отображается. Завершите настройку</p>
+                                <p class="edit-text edit-text_module">Модуль "Мессенджеры" не отображается. Завершите настройку</p>
                                 <button class="sett">Настроить</button>
                             </div>
                             <div class="add-block">
@@ -495,8 +528,8 @@
                             <div class="content edit-section red">
                                 <div class="top-edit">
                                     <div class="edit-items-wrapper left">
-                                        <div class="edit-item"><span class="icon-arrow-d"></span></div>
-                                        <div class="edit-item"><span class="icon-arrow-up"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-d"></span></div>
+                                        <div class="edit-item edit-item_mobile"><span class="icon-arrow-up"></span></div>
                                         <div class="edit-item"><span class="icon-del"> </span></div>
                                     </div>
                                     <h2>Сменить тариф</h2>
@@ -505,7 +538,7 @@
                                         <div class="edit-item"><span class="icon-copy"></span></div>
                                     </div>
                                 </div>
-                                <p class="edit-text">Модуль "Мессенджеры" не отображается. Завершите настройку</p>
+                                <p class="edit-text edit-text_module">Модуль "Мессенджеры" не отображается. Завершите настройку</p>
                                 <button class="sett">Настроить</button>
                             </div>
                             <div class="add-block">
@@ -536,13 +569,13 @@
                                     <div class="add-item-wrapper">
                                         <div class="add-item"><img src="./img/add-6.svg" alt></div><span class="desc">Ссылка</span>
                                     </div>
-                                    <div class="add-item-wrapper">
+                                    <div class="add-item-wrapper add-item-wrapper_mobile">
                                         <div class="add-item"><img src="./img/add-7.svg" alt></div><span class="desc">Пиксель FB</span>
                                     </div>
-                                    <div class="add-item-wrapper">
+                                    <div class="add-item-wrapper add-item-wrapper_mobile">
                                         <div class="add-item"><img src="./img/add-8.svg" alt></div><span class="desc">Заявка</span>
                                     </div>
-                                    <div class="add-item-wrapper">
+                                    <div class="add-item-wrapper add-item-wrapper_mobile">
                                         <div class="add-item"><img src="./img/add-9.svg" alt></div><span class="desc">Меню</span>
                                     </div>
                                 </div>

@@ -8,6 +8,34 @@
     button
       &:not(:last-child)
         margin-right: 32px
+        +lg
+          margin-right: 5px
+        +md
+          margin-right: 10px
+    .btn-desktop
+      +md
+        display: none
+    .btn_mobile
+      display: none
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      border: none
+      cursor: pointer
+      width: 40px
+      height: 40px
+      +md
+        display: flex
+      &_edit
+        background: $white
+        box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1)
+        color: $d-gray
+      &_view
+        background: $blue
+    .btns
+      +md
+        display: flex
+        align-items: center
   .custom
     &-links
       display: flex
@@ -15,13 +43,22 @@
     &-link
       display: flex
       align-items: center
+      +sm
+        margin-right: 10px
       &:not(:last-child)
         margin-bottom: 24px
       &.sub-link
         margin-left: 48px
+        +md
+          margin-top: -22px
+        +sm
+          margin-left: 10px
+          margin-right: 0
       .arrows
         display: flex
         align-items: center
+        +md
+          display: none
         .arrow
           box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 12px 0 24px rgba(20, 16, 41, 0.06)
           display: flex
@@ -55,6 +92,17 @@
       width: 100%
       justify-content: space-between
       margin-right: 16px
+      +md
+        margin-right: 0
+        width: 100%
+        max-width: 100%
+        padding: 0 18px 0 0
+      .grab
+        display: none
+        +md
+          display: flex
+          cursor: grab
+          margin-right: 12px
       .text
         font-size: 16px
         line-height: 24px
@@ -63,6 +111,8 @@
         &:hover
           color: $black
           cursor: pointer
+        +sm
+          margin-right: auto
       .settings
         display: flex
         align-items: center
