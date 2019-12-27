@@ -1077,6 +1077,10 @@ div:active {
   margin-top: 8px;
 }
 
+.main-review {
+  width: calc(100% - 310px) !important;
+}
+
 .main-review .wrapper-for-bg {
   background: url("../img/bg-review.jpg");
   background-size: cover;
@@ -1094,9 +1098,6 @@ div:active {
 .main-review .top-btns .btn-mobile_check {
   width: 26px;
   height: 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -9023,6 +9024,10 @@ div:active {
     left: 0;
     height: 100%;
     z-index: 222;
+  }
+
+  .main-review {
+    width: 100% !important;
   }
 }
 

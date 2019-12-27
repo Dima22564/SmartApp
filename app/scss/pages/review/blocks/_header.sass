@@ -1,4 +1,7 @@
 .main-review
+  width: calc(100% - 310px) !important
+  +media-b(1375)
+    width: 100% !important
   .wrapper-for-bg
     background: url('../img/bg-review.jpg')
     background-size: cover
@@ -23,7 +26,6 @@
       &_check
         width: 26px
         height: 26px
-        display: flex
         align-items: center
         justify-content: center
         background: $blue
