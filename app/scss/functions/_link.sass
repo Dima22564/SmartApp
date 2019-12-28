@@ -6,6 +6,8 @@
   max-width: 535px
   width: 100%
   overflow-y: auto
+  +md
+    padding: 22px 22px 115px 14px
   .top
     margin-bottom: 48px !important  
   .input-download
@@ -31,6 +33,8 @@
         border-radius: 4px
         margin-top: 16px
         text-align: center
+        +sm
+          width: calc(100% + 60px)
     .icon
       margin: 18px 0 0 24px
       width: 52px
@@ -42,12 +46,21 @@
       align-items: center
       justify-content: center
       cursor: pointer
+      +sm
+        margin: 18px 0 0 8px
   .bottom-bnts
     margin: 32px 0 100px 0
     display: flex
     align-items: center 
+    +sm
+      flex-direction: column
     .btn-blue
       padding: 14px 16px
+      +sm
+        width: 100%
     .btn-white
       padding: 14px 16px
       margin-right: 16px
+      +sm
+        width: 100%
+        margin: 0 0 16px 0

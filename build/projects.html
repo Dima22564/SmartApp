@@ -163,23 +163,51 @@
                                             <input class="input js-copy-text" type="text" readonly="true"><span class="copy icon-copy js-copy"></span>
                                         </div><span class="addition js-add-settings">Дополнительные настройки</span>
                                     </div>
-                                    <button class="btn-blue save">Сохранить</button>
+                                    <button class="btn-blue save js-btn-save-form">Сохранить</button>
                                 </div>
                                 <div class="invisible-part-wrapper js-invisible-part-wrapper">
                                     <div class="invisible-part">
                                         <div class="font">
-                                            <div class="input-wrapper"><span class="placeholder">Шрифт заголовков</span>
+                                            <div class="input-wrapper font-family"><span class="placeholder">Шрифт заголовков</span>
                                                 <select class="js-select-menu" name>
                                                     <option value="">Proxima Nova</option>
                                                     <option value="">Proxima Nova</option>
                                                 </select>
                                             </div>
-                                            <div class="input-wrapper"><span class="placeholder">Шрифт основного текста</span>
+                                            <div class="input-wrapper font-weight"><span class="placeholder">Начертание</span>
+                                                <select class="js-select-menu" name>
+                                                    <option value="">Regular</option>
+                                                    <option value="">Regular</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-wrapper font-size"><span class="placeholder">Размер</span>
+                                                <select class="js-select-menu" name>
+                                                    <option value="">42</option>
+                                                    <option value="">42</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="font">
+                                            <div class="input-wrapper font-family"><span class="placeholder">Шрифт заголовков</span>
                                                 <select class="js-select-menu" name>
                                                     <option value="">Proxima Nova</option>
                                                     <option value="">Proxima Nova</option>
                                                 </select>
                                             </div>
+                                            <div class="input-wrapper font-weight"><span class="placeholder">Начертание</span>
+                                                <select class="js-select-menu" name>
+                                                    <option value="">Regular</option>
+                                                    <option value="">Regular</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-wrapper font-size"><span class="placeholder">Размер</span>
+                                                <select class="js-select-menu" name>
+                                                    <option value="">42</option>
+                                                    <option value="">42</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="font">
                                             <div class="bg-pic">
                                                 <div class="background input-wrapper"><span class="placeholder">Фон проекта</span>
                                                     <input id="color" type="color">
@@ -190,35 +218,8 @@
                                                     <label for="picture"> <img src="./img/pic.jpg" alt></label>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="font font-weight">
-                                            <div class="input-wrapper"><span class="placeholder">Начертание</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">Regular</option>
-                                                    <option value="">Regular</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-wrapper"><span class="placeholder">Начертание</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">Regular</option>
-                                                    <option value="">Regular</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="font font-size">
-                                            <div class="input-wrapper"><span class="placeholder">Размер</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">42</option>
-                                                    <option value="">42</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-wrapper"><span class="placeholder">Размер</span>
-                                                <select class="js-select-menu" name>
-                                                    <option value="">42</option>
-                                                    <option value="">42</option>
-                                                </select>
-                                            </div>
                                         </div><span class="addition js-hide-settings">Скрыть дополнительные настройки</span>
+                                        <button class="btn-blue save">Сохранить</button>
                                     </div>
                                 </div>
                             </div>

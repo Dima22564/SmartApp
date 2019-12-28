@@ -136,13 +136,18 @@ $(document).ready(function () {
       $('.js-invisible-part-wrapper').show()
     }, 200)
     $(this).hide();
+    if(screen.width < 991){
+      $('.js-btn-save-form').hide()
+    }
   })
 
   $('.js-hide-settings').click(function (e) {
     $('.js-invisible-part-wrapper').hide(200, function () {
       $('.js-function-link').removeClass('active');
       $('.js-add-settings').show();
-
+      if(screen.width < 991){
+        $('.js-btn-save-form').show()
+      }
     })
   })
 

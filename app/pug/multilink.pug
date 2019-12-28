@@ -19,20 +19,43 @@
               input(type="text", readonly="true").input.js-copy-text
               span.copy.icon-copy.js-copy
             span.addition.js-add-settings Дополнительные настройки
-          button.btn-blue.save Сохранить
+          button.btn-blue.save.js-btn-save-form Сохранить
         .invisible-part-wrapper.js-invisible-part-wrapper
           .invisible-part
             .font
-              .input-wrapper
+              .input-wrapper.font-family
                 span.placeholder Шрифт заголовков
                 select(name="").js-select-menu
                   option(value="") Proxima Nova
                   option(value="") Proxima Nova
-              .input-wrapper
-                span.placeholder Шрифт основного текста
+              .input-wrapper.font-weight
+                span.placeholder Начертание
+                select(name="").js-select-menu
+                  option(value="") Regular
+                  option(value="") Regular
+              .input-wrapper.font-size
+                span.placeholder Размер
+                select(name="").js-select-menu
+                  option(value="") 42
+                  option(value="") 42
+              
+            .font
+              .input-wrapper.font-family
+                span.placeholder Шрифт заголовков
                 select(name="").js-select-menu
                   option(value="") Proxima Nova
                   option(value="") Proxima Nova
+              .input-wrapper.font-weight
+                span.placeholder Начертание
+                select(name="").js-select-menu
+                  option(value="") Regular
+                  option(value="") Regular
+              .input-wrapper.font-size
+                span.placeholder Размер
+                select(name="").js-select-menu
+                  option(value="") 42
+                  option(value="") 42
+            .font
               .bg-pic
                 .background.input-wrapper
                   span.placeholder Фон проекта
@@ -44,28 +67,7 @@
                   input#picture(type="file")
                   label(for="picture") 
                     img(src="./img/pic.jpg", alt="")
-            .font.font-weight
-              .input-wrapper
-                span.placeholder Начертание
-                select(name="").js-select-menu
-                  option(value="") Regular
-                  option(value="") Regular
-              .input-wrapper
-                span.placeholder Начертание
-                select(name="").js-select-menu
-                  option(value="") Regular
-                  option(value="") Regular
-            .font.font-size
-              .input-wrapper
-                span.placeholder Размер
-                select(name="").js-select-menu
-                  option(value="") 42
-                  option(value="") 42
-              .input-wrapper
-                span.placeholder Размер
-                select(name="").js-select-menu
-                  option(value="") 42
-                  option(value="") 42
             span.addition.js-hide-settings Скрыть дополнительные настройки
+            button.btn-blue.save Сохранить
 
 

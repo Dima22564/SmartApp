@@ -7,6 +7,9 @@
   background: rgba(0, 0, 0, 0.24)
   z-index: 55555
   display: none
+  +lg
+    height: calc(100% - 67px)
+    top: 67px
   .function-body
     display: flex
     align-items: flex-end
@@ -21,6 +24,8 @@
       margin-bottom: 48px
       img
         cursor: pointer
+      +sm
+        margin-bottom: 24px
       .text
         display: flex
         flex-direction: column

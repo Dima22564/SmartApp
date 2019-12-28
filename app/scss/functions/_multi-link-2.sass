@@ -15,9 +15,27 @@
     border-radius: 24px
     display: flex
     flex-direction: column
+    max-height: 90vh
+    overflow-y: auto
+    +sm
+      max-width: calc(100% - 40px)
+      padding: 40px 10px
+    .error-text
+      box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+      +xl
+        right: initial
+        left: 0
+        transform: translate(0, 0)
+        position: initial
+        margin-top: 10px
     .save
       width: 100%
-      margin-top: 32px
+      margin: 32px 0 23px 0
+      +sm
+        padding: 12 24px 
+        width: initial
+        margin: auto auto 20px auto
+        display: block
     .select-drop-menu
       width: 100%
       background: #f4f5f8 !important
@@ -31,6 +49,11 @@
       margin-bottom: 25px
       img
         cursor: pointer
+        +lg
+          align-self: flex-end
+      +lg
+        flex-direction: column-reverse
+        align-items: center
       .title
         color: $black
         font-size: 24px
@@ -40,4 +63,5 @@
       font-size: 24px
       line-height: 24px
       margin-bottom: 25px
-    
+      +md
+        text-align: center

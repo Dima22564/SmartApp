@@ -5,6 +5,7 @@
     height: 100%
     justify-content: center
     width: 100%
+    
   .select-drop-menu
     padding: 15px 24px
   .function-link
@@ -16,14 +17,25 @@
     border-radius: 24px
     // display: flex
     align-items: flex-start
+    max-height: 90vh
+    overflow-y: auto
+    +sm
+      max-width: calc(100% - 40px)
+      padding: 40px 10px
     &.active
-      max-width: 1095px
+      max-width: calc(100% - 40px)
       .visible-part
         max-width: 35%
         width: 100%
+        +lg
+          max-width: 50%
+        +md
+          max-width: 100%
     .content
       display: flex
-      align-items: flex-start
+      align-items: center
+      +lg
+        flex-direction: column
       .addition
         width: 100%
         margin: 0 0 16px 0
@@ -34,8 +46,10 @@
         justify-content: flex-end
         cursor: pointer
         text-align: right
-        padding-right: 40px
         display: inline-flex
+        text-decoration: underline
+        +lg
+          justify-content: center
       .input-wrapper
         width: 100%
         display: flex
@@ -49,19 +63,40 @@
       width: 100%
     .invisible-part-wrapper
       display: none
-    .invisible-part
-      margin-left: 40px
       width: 100%
-      display: flex
-      flex-wrap: wrap
-      .font
-        max-width: 39.5%
-        &:not(:last-child)
-          margin-right: 16px
+    .invisible-part
+      padding: 0 40px
+      width: 100%
+      +md
+        padding: 0
+      .save
+        padding: 12 24px 
+        width: initial
+        display: none
+        margin: auto auto 26px auto
+        +lg
+          display: block
+      .input-wrapper
         &.font-weight
-          width: 24%
+          width: 23%
+          +sm
+            width: 48%
         &.font-size
-          width: 24%
+          width: 23%
+          +sm
+            width: 48%
+        &.font-family
+          width: 45%
+          +sm
+            width: 100%
+      .font
+        display: flex
+        justify-content: space-between
+        +sm
+          flex-wrap: wrap
+          border-top: 3px solid #f4f5f8
+          padding: 18px 0
+
       .bg-pic
         display: flex
         align-items: flex-start
@@ -82,6 +117,11 @@
       margin-bottom: 25px
       img
         cursor: pointer
+        +lg
+          align-self: flex-end
+      +lg
+        flex-direction: column-reverse
+        align-items: center
       .title
         color: $black
         font-size: 24px
@@ -91,9 +131,16 @@
       font-size: 24px
       line-height: 24px
       margin-bottom: 25px
+      +lg
+        text-align: center
     .inputs
       display: flex
       flex-direction: column
     .save
       width: 100%
       margin-top: 4px
+      +md
+        padding: 12px 24px
+        width: initial
+        display: block
+        margin: 4px auto 0 auto

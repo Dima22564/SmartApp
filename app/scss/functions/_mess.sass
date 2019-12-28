@@ -9,13 +9,19 @@
   max-width: 535px
   width: 100%
   overflow-y: auto
+  +md
+    padding: 22px 22px 115px 14px
   .top
     margin-bottom: 48px !important  
   .input-mess
     display: flex
     align-items: flex-end
     margin-bottom: 32px
+    +md
+      flex-wrap: wrap
     .select-drop-mess
+      +md
+        width: 100% !important
       img
         width: 16px !important
     
@@ -30,6 +36,8 @@
       align-items: center
       justify-content: center
       flex-shrink: 0
+      +md
+        margin-left: 8px
   .input-wrapper
     margin-bottom: 0
     .input
@@ -37,6 +45,12 @@
     &.input-name
       width: 259% !important
       margin: 0 8px
+      +md
+        margin: 8px 0 0 0
+        width: 100%
+        order: 5
+    &.input-social
+      width: calc(100% - 60px)
     .placeholder
       margin-left: 0
     .select-drop-mess
