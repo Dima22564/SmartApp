@@ -36,7 +36,6 @@ $(document).ready(function () {
     $('.js-aside').addClass('hide')
     setTimeout(function () {
       $('.js-aside-show').addClass('active')
-
     }, 300)
   })
 
@@ -45,7 +44,6 @@ $(document).ready(function () {
     setTimeout(function () {
       $('.js-aside-hide').removeClass('open')
       $('.js-aside').removeClass('hide')
-
     }, 300)
   })
 
@@ -297,6 +295,20 @@ $(document).ready(function () {
     dots: false,
     arrows: false,
     variableWidth: true,
-    infinite: false
+    infinite: false,
+    // responsive: [
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       // slidesToShow: 1,
+    //       // slidesToScroll: 1,
+    //       // centerMode: true,
+    //       // dots: false,
+    //       // arrows: false,
+    //       // variableWidth: true,
+    //       // infinite: false,
+    //     }
+    //   },
+    // ]
   })
 });

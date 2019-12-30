@@ -251,6 +251,20 @@ $(document).ready(function () {
     dots: false,
     arrows: false,
     variableWidth: true,
-    infinite: false
+    infinite: false // responsive: [
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       // slidesToShow: 1,
+    //       // slidesToScroll: 1,
+    //       // centerMode: true,
+    //       // dots: false,
+    //       // arrows: false,
+    //       // variableWidth: true,
+    //       // infinite: false,
+    //     }
+    //   },
+    // ]
+
   });
 });

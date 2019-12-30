@@ -1077,10 +1077,6 @@ div:active {
   margin-top: 8px;
 }
 
-.main-review {
-  width: calc(100% - 310px) !important;
-}
-
 .main-review .wrapper-for-bg {
   background: url("../img/bg-review.jpg");
   background-size: cover;
@@ -1714,6 +1710,7 @@ div:active {
   height: 0;
   overflow: hidden;
   background: #f4f5f8;
+  width: 0;
 }
 
 .mobile-slider .slick-track {
@@ -9051,10 +9048,6 @@ div:active {
     height: 100%;
     z-index: 222;
   }
-
-  .main-review {
-    width: 100% !important;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -9459,6 +9452,7 @@ div:active {
   .mobile-slider {
     height: auto;
     overflow: visible;
+    width: auto;
     padding-top: 24px;
   }
 
