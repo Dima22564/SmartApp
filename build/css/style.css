@@ -398,7 +398,6 @@ div:active {
   -webkit-transition-timing-function: ease-in-out;
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-  display: none;
 }
 
 .aside.hide {
