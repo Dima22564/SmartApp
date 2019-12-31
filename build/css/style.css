@@ -9105,7 +9105,7 @@ div:active {
     top: 0;
     left: 0;
     height: 100%;
-    z-index: 222;
+    z-index: 999999999;
   }
 }
 
@@ -9146,7 +9146,7 @@ div:active {
 @media (max-width: 992px) {
   .main {
     padding-top: 72px !important;
-    z-index: 99999999999999;
+    z-index: 999999;
   }
 
   .top-menu {
@@ -9417,6 +9417,14 @@ div:active {
 }
 
 @media (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+
+  .top-menu .arrow-btn {
+    display: none;
+  }
+
   .top-menu-content .links {
     display: none;
   }

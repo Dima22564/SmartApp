@@ -267,4 +267,18 @@ $(document).ready(function () {
     // ]
 
   });
+  $(window).on('resize', function () {
+    hideMenu();
+  });
+  hideMenu();
+
+  function hideMenu() {
+    if (screen.width <= 1375) {
+      $('.js-aside-show').addClass('active');
+      $('.js-aside').addClass('hide');
+    } else {
+      $('.js-aside-show').removeClass('active');
+      $('.js-aside').removeClass('hide');
+    }
+  }
 });
