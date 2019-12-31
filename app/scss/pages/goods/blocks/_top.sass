@@ -11,10 +11,38 @@
       background-position: center center
   &-header
     padding: 63px 0 52px
+    +md
+      padding: 39px 0 26px
+    .btns-desktop
+      +lg
+        display: none !important
+    .mobile-btns
+      display: none
+      +lg
+        display: flex
+      .btn-circle
+        cursor: pointer
+        box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+        width: 40px
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        border: none
+        &:not(:last-child)
+          margin-right: 10px
+        &.white-circle
+          background: $white
+        &.blue-circle
+          background: $blue
+          box-shadow: none
     .content
       display: flex
       align-items: center
       justify-content: space-between
+      +lg
+        align-items: flex-start
       .text
         .title
           font-size: 24px
@@ -24,6 +52,9 @@
         .desc
           font-size: 12px
           line-height: 24px
+          +md
+            line-height: 14px
+            padding-right: 10px
       .btns
         display: flex
         align-items: center
@@ -42,6 +73,16 @@
         align-items: flex-start
         max-width: 345px
         width: 100%
+        &:not(:last-child)
+          margin-right: 10px
+        .subtitle
+          +lg
+            display: none
+        &-mobile
+          display: none
+          margin-right: 0 !important
+          +lg
+            display: block
         .subtitle
           font-size: 12px
           line-height: 12px
@@ -49,6 +90,8 @@
       .btns
         display: flex
         align-items: center
+        +lg
+          display: none
         button
           &:not(:last-child)
             margin-right: 16px
@@ -63,27 +106,48 @@
     display: flex
     align-items: flex-start
     margin-bottom: 30px
+    +lg
+      flex-direction: column
+      align-items: center
+    +sm
+      padding: 7px
+      border-radius: 4px
     .text
       .top
         display: flex
         align-items: center
         justify-content: space-between
         margin-bottom: 42px
+        +sm
+          flex-direction: column-reverse
+          align-items: flex-start
+          margin-bottom: 4px
         .title
           margin-right: 29px
           font-size: 18px
           line-height: 20px
           color: $black
           font-weight: 600
+          +sm
+            margin-right: 0
+            font-size: 14px
+            line-height: 14px
         .settings
+          +sm
+            margin-bottom: 26px
           span
             font-size: 16px
             cursor: pointer
+            transition: all 0.2s
             &:not(:last-child)
               margin-right: 11px
+            &:hover
+              color: $d-gray
     .img
       margin-right: 24px
       flex-shrink: 0
+      +lg
+        margin: 0 0 12px 0
       img
         max-width: 162px
         width: 100%
@@ -91,18 +155,27 @@
       margin-bottom: 38px
       font-size: 14px
       line-height: 20px
+      +sm
+        display: none
     .bottom
       display: flex
       align-items: center
       justify-content: space-between
+      +sm
+        flex-direction: column
+        align-items: flex-start
       .desc
         font-size: 14px
         line-height: 20px
+        +sm
+          margin-bottom: 15px
       .price
         span
           font-size: 24px
           line-height: 37px
           font-weight: 600
+          +sm
+            font-size: 16px
           &.old
             margin-right: 21px
             text-decoration: line-through

@@ -11,6 +11,9 @@
     background: $white
     padding: 32px
     border-radius: 24px
+    +md
+      max-width: 280px
+      padding: 20px
     .top
       display: flex
       align-items: flex-start
@@ -18,15 +21,25 @@
       margin-bottom: 10px
       img
         cursor: pointer
+        +md
+          align-self: flex-end
+          margin-bottom: 18px
+      +md
+        text-align: center
+        flex-direction: column-reverse
       .title
         color: $black
         font-size: 24px
         line-height: 24px
         font-weight: 600
+        +md
+          align-self: center
     .load
       font-size: 14px
       line-height: 20px
       color: $black
+      +md
+        text-align: center
       a
         color: $blue
         text-decoration: underline
@@ -34,6 +47,8 @@
         display: inline-flex
     .input-load
       margin-bottom: 40px
+      +md
+        display: none
       input
         display: none
       label
@@ -51,5 +66,11 @@
       display: flex
       align-items: center
       justify-content: space-between
+      +md
+        flex-direction: column
       button
         width: 48%
+        +md
+          width: 100%
+        &:not(:last-child)
+          margin-bottom: 10px

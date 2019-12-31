@@ -6,6 +6,10 @@
   max-width: 535px
   width: 100%
   overflow-y: auto
+  +md
+    padding: 22px 22px 115px 14px
+  +sm
+    max-width: calc(100% - 9px)
   .bg-pic
     display: flex
     align-items: flex-start
@@ -53,6 +57,9 @@
   .video
     width: 100%
     position: relative
+    height: 162px
+    +md
+      height: 158px
     .bg
       position: absolute
       top: 0

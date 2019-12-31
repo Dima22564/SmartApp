@@ -96,6 +96,9 @@
                         </div>
                     </div>
                 </header>
+                <section class="mobile-slider">
+                    <div class="slider-wrapper js-slider-wrapper"><a class="item" href>Создание мультиссылки</a><a class="item item_active" href>Товары</a><a class="item" href>Прием платежей</a></div>
+                </section>
                 <section class="main-goods-header">
                     <div class="container">
                         <div class="content">
@@ -103,9 +106,13 @@
                                 <p class="title">Товары:</p>
                                 <p class="desc">*Не забудьте добавить товары на свою мультиссылку</p>
                             </div>
-                            <div class="btns">
+                            <div class="btns btns-desktop">
                                 <button class="btn-white js-import-btn">Импортировать товар</button>
                                 <button class="btn-blue js-add-func">Добавить товар</button>
+                            </div>
+                            <div class="mobile-btns">
+                                <button class="btn-circle white-circle js-import-btn"><img src="./img/import.svg" alt></button>
+                                <button class="btn-circle blue-circle js-add-func"><img src="./img/plus-2.svg" alt></button>
                             </div>
                         </div>
                     </div>
@@ -114,6 +121,12 @@
                     <div class="container">
                         <div class="filter-items">
                             <div class="select"><span class="subtitle">Проект</span>
+                                <select class="js-select-menu" name>
+                                    <option value="">Проект</option>
+                                    <option value="">Проект</option>
+                                </select>
+                            </div>
+                            <div class="select select-mobile"><span class="subtitle">Розница</span>
                                 <select class="js-select-menu" name>
                                     <option value="">Розница</option>
                                     <option value="">Розница</option>
@@ -126,7 +139,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="good-item">
                                     <div class="img"><img src="./img/flower.jpg" alt></div>
                                     <div class="text">
@@ -141,7 +154,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="good-item">
                                     <div class="img"><img src="./img/flower.jpg" alt></div>
                                     <div class="text">
@@ -156,7 +169,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="good-item">
                                     <div class="img"><img src="./img/flower.jpg" alt></div>
                                     <div class="text">
@@ -215,7 +228,7 @@
                                         <option value="">Введите название категории</option>
                                     </select>
                                 </div>
-                                <div class="input-wrapper textarea"><span class="placeholder">Цена со скидкой</span>
+                                <div class="input-wrapper textarea"><span class="placeholder">Описание товара</span>
                                     <textarea class="input" name></textarea><span class="symbols">0 / 299</span>
                                 </div>
                                 <div class="photos">
@@ -246,7 +259,7 @@
                 <div class="wrapper-function js-wrapper-function-import">
                     <div class="function-body-import js-function-body">
                         <div class="function-import">
-                            <div class="top"> <span class="title">Добавление товара</span><img class="close-func-import" src="./img/close.svg" alt></div>
+                            <div class="top"> <span class="title">Импорт товаров</span><img class="close-func-import" src="./img/close.svg" alt></div>
                             <p class="load">Скачайте шаблон для загрузки товаров <a href="#">.xls .txt</a> </p>
                             <div class="input-load">
                                 <input id="load" type="file">

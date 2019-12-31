@@ -5,20 +5,37 @@ block vars
   -var title = 'Goods';
 
 block content
+  section.mobile-slider
+    .slider-wrapper.js-slider-wrapper
+      a(href="").item Создание мультиссылки
+      a(href="").item.item_active Товары
+      a(href="").item Прием платежей
+
+
   section.main-goods-header
     .container
       .content
         .text
           p.title Товары:
           p.desc *Не забудьте добавить товары на свою мультиссылку
-        .btns
+        .btns.btns-desktop
           button.btn-white.js-import-btn Импортировать товар
           button.btn-blue.js-add-func Добавить товар
+        .mobile-btns
+          button.btn-circle.white-circle.js-import-btn
+            img(src="./img/import.svg", alt="")
+          button.btn-circle.blue-circle.js-add-func
+            img(src="./img/plus-2.svg", alt="")
   section.main-goods-items
     .container
       .filter-items
         .select
           span.subtitle Проект
+          select(name="").js-select-menu
+            option(value="") Проект
+            option(value="") Проект
+        .select.select-mobile
+          span.subtitle Розница
           select(name="").js-select-menu
             option(value="") Розница
             option(value="") Розница
@@ -27,7 +44,7 @@ block content
           button.btn-white Розница
           button.btn-white Опт
       .row
-        .col-xl-6
+        .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-6
           .good-item
             .img
               img(src="./img/flower.jpg", alt="")
@@ -45,7 +62,7 @@ block content
                 .price
                   span.old 500₽
                   span.new 500₽
-        .col-xl-6
+        .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-6
           .good-item
             .img
               img(src="./img/flower.jpg", alt="")
@@ -63,7 +80,7 @@ block content
                 .price
                   span.old 500₽
                   span.new 500₽
-        .col-xl-6
+        .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-6
           .good-item
             .img
               img(src="./img/flower.jpg", alt="")

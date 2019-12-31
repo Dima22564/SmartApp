@@ -6,12 +6,18 @@
   max-width: 535px
   width: 100%
   overflow-y: auto
+  +md
+    padding: 22px 22px 115px 14px
+  +sm
+    max-width: calc(100% - 9px)
   .input-del
     margin-bottom: 8px
     display: flex
     align-items: flex-end
     &.sub
       margin-left: 32px
+      +sm
+        margin-left: 8px
     .input-wrapper
       margin-bottom: 0
     .del
@@ -25,6 +31,8 @@
       justify-content: center
       border-radius: 4px
       margin-left: 16px
+      +sm
+        margin-left: 8px
   .add
     display: inline-flex
     color: $blue
@@ -34,10 +42,18 @@
     margin: 9px 0 18px
     &.sub
       margin-left: 32px
+      +sm
+        margin-left: 0
   .btns
     display: flex
     align-items: center
     margin: 16px 0 100px 0
+    +sm
+      flex-direction: column
     button
+      +sm
+        width: 100%
       &:not(:last-child)
         margin-right: 16px
+        +sm
+          margin: 0 0 16px 0

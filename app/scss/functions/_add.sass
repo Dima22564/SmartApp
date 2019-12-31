@@ -17,6 +17,9 @@
     justify-content: flex-end
     transform: translateX(300%)
     transition: all 0.3s
+    +md
+      height: calc(100% - 60px)
+    
     .top
       display: flex
       align-items: flex-start
@@ -47,12 +50,18 @@
       max-width: 535px
       width: 100%
       overflow-y: auto
+      +md
+        padding: 22px 15px 115px 14px
+      +sm
+        max-width: calc(100% - 9px)
       .inputs
         display: flex
         flex-direction: column
         .input-wrapper
           &.textarea
             margin-top: 48px
+            +sm
+              margin-top: 0
             textarea
               min-height: 189px
               resize: none
@@ -67,16 +76,26 @@
           align-items: center
           justify-content: space-between
           margin-bottom: 16px
+          +sm
+            flex-wrap: wrap
           .input-wrapper
             margin: 0
             width: 34%
+            +sm
+              width: 49%
             .placeholder
               margin-left: 13px
             &.currency
               width: 30%
+              +sm
+                width: 100%
+                margin-top: 16px
         .photos
           display: flex
           align-items: flex-start
+          .placeholder
+            +sm
+              margin-left: 0
           .photo-big
             position: relative
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
@@ -85,6 +104,9 @@
             margin-right: 12px
             width: 166px
             height: 166px
+            +sm
+              width: 136px
+              height: 136px
             img
               width: 100%
               height: 100%
@@ -106,6 +128,10 @@
               margin: 0 12px 12px 0
               width: 77px
               height: 77px
+              +sm
+                width: 60px
+                height: 64px
+                margin: 0 7px 7px 0
               img
                 width: 100%
                 height: 100%
@@ -116,6 +142,8 @@
           align-items: flex-start
           position: relative
           margin-bottom: 72px
+          +sm
+            margin-bottom: 33px
           input
             opacity: 0
             position: absolute
@@ -126,6 +154,12 @@
           display: flex
           align-items: center
           margin-bottom: 115px
+          +sm
+            justify-content: space-between
           button
+            +sm
+              padding: 14px 13px
             &:not(:last-child)
               margin-right: 16px
+              +sm
+                margin-right: 0

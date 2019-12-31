@@ -6,12 +6,22 @@
   max-width: 535px
   width: 100%
   overflow-y: auto
+  +md
+    padding: 22px 22px 115px 14px
+  +sm
+    max-width: calc(100% - 9px)
   .input-download
     display: flex
     align-items: flex-end
     margin-bottom: 24px
+    +md
+      flex-direction: column
+      align-items: flex-start
+      margin-bottom: 32px
     .input-wrapper
       margin: 0 16px 0 0
+      +md
+        margin: 0 0 16px 0
       .placeholder
         margin-left: 0
   .img
@@ -20,6 +30,10 @@
     border-radius: 4px
     position: relative
     margin-bottom: 32px
+    +sm
+      width: 108px
+      height: 108px
+      margin-bottom: 16px
     img
       width: 100%
       border-radius: 4px
