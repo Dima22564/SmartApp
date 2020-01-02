@@ -959,6 +959,62 @@ div:active {
   color: #ffffff;
 }
 
+.bottom-menu {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999999999;
+  -webkit-box-shadow: 0 -3px 14px -1px rgba(20, 16, 41, 0.05), 0 -2px 35px rgba(20, 16, 41, 0.04);
+  box-shadow: 0 -3px 14px -1px rgba(20, 16, 41, 0.05), 0 -2px 35px rgba(20, 16, 41, 0.04);
+}
+
+.bottom-menu .bottom__link {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 64px;
+  background: #ffffff;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.bottom-menu .bottom__link:hover {
+  background: #f4f5f8;
+}
+
+.bottom-menu .bottom__link img {
+  opacity: 0.6;
+}
+
+.bottom-menu .bottom__link_active {
+  background: #f4f5f8;
+}
+
+.bottom-menu .bottom__link_active img {
+  opacity: 1;
+}
+
+.bottom-menu .bottom__link:not(:last-child)::after {
+  content: '';
+  height: 58px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  background: #f4f5f8;
+}
+
 .edit-item {
   width: 52px;
   height: 48px;
@@ -4936,7 +4992,6 @@ div:active {
   box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   border-radius: 4px;
   background: #ffffff;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9602,6 +9657,10 @@ div:active {
 }
 
 @media (max-width: 768px) {
+  .main {
+    padding-bottom: 87px;
+  }
+
   .aside {
     display: none;
   }
@@ -9621,6 +9680,15 @@ div:active {
 
   .top-menu-content .right-panel .profile .avatar {
     display: none;
+  }
+
+  .bottom-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .main-review .wrapper-for-bg {
