@@ -1,5 +1,7 @@
 .sale-sec
-  margin-top: -30px
+  margin-top: 30px
+  +lg
+    margin-top: 0
   p
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     border-radius: 4px
@@ -7,12 +9,20 @@
     padding: 16px 24px
     color: $white
 .price-block
-  margin-bottom: 30px
   .title
     font-size: 24px
     line-height: 32px
     font-weight: 600
     color: $d-gray
+    &-mobile-small
+      +sm
+        font-size: 18px
+        line-height: 22px
+  .item-wrapper-3
+    +lg
+      margin-top: 30px
+    +sm
+      margin-top: 20px
   .monthly
     border-radius: 4px
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
@@ -20,6 +30,8 @@
     padding: 32px 24px 24px 24px
     display: flex
     flex-direction: column
+    +md
+      margin-bottom: 20px
     &.blue-block
       padding: 24px
       background: $blue
@@ -62,6 +74,8 @@
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     background: $white
     margin-bottom: 30px
+    +sm
+      margin-bottom: 20px
     .desc
       font-size: 14px
       margin-top: 8px
@@ -84,6 +98,8 @@
       font-size: 14px
       line-height: 20px
       margin-top: 32px
+      +sm
+        margin-top: 5px
       li
         transition: all 0.2s
         display: flex

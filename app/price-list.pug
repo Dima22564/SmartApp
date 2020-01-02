@@ -12,7 +12,9 @@ block content
           p.title Тарифы
           p.desc Соберите свой функционал самостоятельно
         .btns
-          button.btn-white Вернуться к инструментам
+          button.btn-white.btn-back
+            i.fa.fa-long-arrow-left(aria-hidden="true")
+            span Вернуться к инструментам
       .btns
         button.btn-white Пакеты услуг
         button.btn-blue Конструктор
@@ -20,10 +22,10 @@ block content
   section.price-block
     .container
       .row
-        .col-xl-4
+        .col-xl-4.col-lg-4.col-md-6
           .price-item
             .content
-              p.title Мультиссылка
+              p.title.title-mobile-small Мультиссылка
               ul.offers
                 li.inactive Модуль "Мессенджеры"
                 li.inactive Модуль "Каталог товаров"
@@ -37,10 +39,10 @@ block content
             p.title За месяц:
             p.month-price 899 #[span.rub ₽] #[span /месяц]
             button.btn-blue Оплатить
-        .col-xl-4
+        .col-xl-4.col-lg-4.col-md-6
           .price-item
             .content
-              p.title Автопостинг
+              p.title.title-mobile-small Автопостинг
               ul.offers
                 li.inactive Посты (Безлимит)
                 li.inactive Сториз (Безлимит)
@@ -49,17 +51,17 @@ block content
             button.btn-blue.add Убрать (250 руб/мес)
           .price-item
             .content
-              p.title Генератор контента
+              p.title.title-mobile-small Генератор контента
             button.btn-blue.add Убрать (250 руб/мес)
           .monthly.blue-block
             p.title За 3 месяца:
             .content
               p.month-price 699 #[span.rub ₽] #[span /месяц]
               button.btn-blue Оплатить
-        .col-xl-4
+        .col-xl-4.col-lg-4.item-wrapper-3
           .price-item
             .content
-              p.title Диплинк
+              p.title.title-mobile-small Диплинк
               p.desc Выберите количество переходов в месяц
               .options
                 .shadow
@@ -86,7 +88,7 @@ block content
             button.btn-blue.add Добавить (250 руб/мес)
           .price-item
             .content
-              p.title Управление комментариями
+              p.title.title-mobile-small Управление комментариями
             button.btn-blue.add Убрать (250 руб/мес)
   section.sale-sec
     .container

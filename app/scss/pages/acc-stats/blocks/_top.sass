@@ -2,11 +2,18 @@
   padding-bottom: 65px
   &-header
     padding: 63px 0 32px
+    +md
+      padding: 21px 0 30px
     .content
       display: flex
       align-items: center
       justify-content: space-between
+      +md
+        flex-direction: column
+        align-items: flex-start
       .text
+        +md
+          margin-bottom: 19px
         .title
           font-size: 24px
           line-height: 24px
@@ -23,9 +30,11 @@
         .date
           display: flex
           align-items: center
-          i
+          .fa
             margin-right: 18px
             font-size: 21px
+            +sm
+              display: none
           .datepicker-here
             padding: 6px 12px
             font-size: 14px

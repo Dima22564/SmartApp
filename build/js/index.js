@@ -237,12 +237,14 @@ $(document).ready(function () {
   $('.js-avatar-drop-btn').click(function (e) {
     $('.js-avatar-drop').slideToggle();
     $(this).toggleClass('active');
+    $('.wrapper-notices').toggleClass('active');
   });
   $('.js-avatar-drop').hover(function (e) {
     $(this).show();
   }, function (e) {
     $(this).slideUp();
     $('.js-avatar-drop-btn').removeClass('active');
+    $('.wrapper-notices').removeClass('active');
   });
   $('.js-slider-wrapper').slick({
     slidesToShow: 1,
@@ -269,8 +271,11 @@ $(document).ready(function () {
   });
   $(window).on('resize', function () {
     hideMenu();
+    changeDatePosition();
+    serviceSlider();
   });
   hideMenu();
+  changeDatePosition();
 
   function hideMenu() {
     if (screen.width <= 1375) {
@@ -279,6 +284,43 @@ $(document).ready(function () {
     } else {
       $('.js-aside-show').removeClass('active');
       $('.js-aside').removeClass('hide');
+    }
+  }
+
+  function changeDatePosition() {
+    try {
+      var datepicker = $('.main-acc-stats-header .datepicker-here-2').datepicker().data('datepicker');
+
+      if (screen.width < 660) {
+        // Обновление нескольких параметров
+        datepicker.update({
+          position: "bottom right"
+        });
+      } else {
+        datepicker.update({
+          position: "left top"
+        });
+      }
+    } catch (error) {
+      console.log(1);
+    }
+
+    console.log(61256);
+  }
+
+  serviceSlider();
+
+  function serviceSlider() {
+    if (screen.width <= 1200) {
+      $('.js-service-content').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: true,
+        dots: false,
+        arrows: false
+      });
+    } else {
+      $('.js-service-content').slick('unslick');
     }
   }
 });

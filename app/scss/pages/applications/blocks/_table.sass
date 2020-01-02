@@ -5,6 +5,8 @@
     border-radius: 12px
     background: $white
     padding: 76px 0 16px
+    +lg
+      padding: 0
     &-titles
       display: flex
       align-items: center
@@ -14,6 +16,10 @@
       color: $d-gray
       margin-bottom: 8px
       font-size: 14px
+      +xl
+        padding: 0 18px 11px 
+      +lg
+        display: none
       .title
         width: 16.75%
         &.short
@@ -30,11 +36,28 @@
         display: flex
         align-items: center
         justify-content: space-between
+        +xl
+          padding: 12px 18px
+        +lg
+          padding: 16px
+          flex-direction: column
         &:hover
           background-color: rgba(20, 16, 41, 0.02)
+        .title-mobile
+          display: none
+          +lg
+            display: block
+            color: $d-gray
         .cell
           width: 16.75%
           font-size: 14px
+          +lg
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100% !important
+            &:not(:last-child)
+              margin-bottom: 4px
           &.short
             width: 10%
           &.status
@@ -52,6 +75,9 @@
       display: flex
       align-items: center
       justify-content: center
+      +lg
+        padding: 0 0 16px 0
+        margin-top: 36px
       .num
         width: 36px
         height: 36px

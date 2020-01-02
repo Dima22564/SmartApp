@@ -184,17 +184,16 @@
         display: none
         +md
           display: block
-          margin-left: 24px
           cursor: pointer
       .profile
         margin-left: 24px
         position: relative
-        +md
-          display: none
         .avatar
           display: flex
           align-items: center
           cursor: pointer
+          +md
+            display: none
           &.active
             .arrow
               transform: rotate(180deg)

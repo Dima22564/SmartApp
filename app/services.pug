@@ -11,91 +11,89 @@ block content
         .text
           p.title Тарифы
         .btns
-          button.btn-white Вернуться к инструментам
+          button.btn-white.btn-back
+            i.fa.fa-long-arrow-left(aria-hidden="true")
+            span Вернуться к инструментам
       .btns
         button.btn-white Пакеты услуг
         button.btn-blue Конструктор
   section.services-types
     .container
-      .row
-        .col-xl-3
-          .service-item
-            .content
-              .line
-              p.title Free
-              p.desc Бесплатно навсегда
-              p.month-price 0 #[span.rub ₽] #[span /месяц]
-              ul.offers
-                li Мультиссылка:
-                li.inactive Модуль "Ссылка"
-                li.inactive Модуль "Текст"
-                li Генератор UTM-меток
-                li Делегирование
-                li Автопостинг до 15 постов; до 30 сторис (в месяц)
-                li Управление комментариями (До 100 в месяц)
-                li Диплинк (До 500 переходов в месяц)
-                li Расширенная статистика аккаунта
-            button.btn-blue.add Текущий тариф
-        .col-xl-3
-          .service-item
-            .content
-              .line
-              p.title Бизнес
-              p.desc Для начинающего бизнеса
-              p.month-price 1299 #[span.rub ₽] #[span /месяц]
-              ul.offers
-                li Мультиссылка: все, что во FREE +
-                li.inactive Модуль "Мессенджеры"
-                li.inactive Модуль "Каталог товаров"
-                li.inactive Модуль "Видео"
-                li.inactive Модуль "Facebook pixel"
-                li.inactive Модуль "Онлайн-оплата"
-                li.inactive Модуль "Изображения"
-                li Автопостинг (безлимит)
-                li Генератор контент-плана
-                li Управление комментариями(Безлимит)
-                li Диплинк (До 3 500 переходов в месяц)
-                li Расширенная статистика аккаунта
-            button.btn-blue.add Оплатить
-        .col-xl-3
-          .service-item
-            .content
-              .line
-              p.title Расширенный
-              p.desc Для специалистов и агентств
-              p.month-price 2899 #[span.rub ₽] #[span /месяц]
-              ul.offers
-                li Мультиссылка: все, что во FREE +
-                li.inactive Модуль "Мессенджеры"
-                li.inactive Модуль "Каталог товаров"
-                li.inactive Модуль "Видео"
-                li.inactive Модуль "Facebook pixel"
-                li.inactive Модуль "Онлайн-оплата"
-                li.inactive Модуль "Изображения"
-                li Автопостинг (безлимит)
-                li Генератор контент-плана
-                li Управление комментариями(Безлимит)
-                li Диплинк (До 3 500 переходов в месяц)
-                li Диплинк (До 20 000 переходов в месяц)
-            button.btn-blue.add Оплатить
-        .col-xl-3
-          .service-item.blue-item
-            .content
-              .line
-              p.title Максимальный
-              p.desc Для профессионалов
-              p.month-price 2899 #[span.rub ₽] #[span /месяц]
-              ul.offers
-                li Мультиссылка: все, что во FREE +
-                li.inactive Модуль "Мессенджеры"
-                li.inactive Модуль "Каталог товаров"
-                li.inactive Модуль "Видео"
-                li.inactive Модуль "Facebook pixel"
-                li.inactive Модуль "Онлайн-оплата"
-                li.inactive Модуль "Изображения"
-                li Автопостинг (безлимит)
-                li Генератор контент-плана
-                li Управление комментариями(Безлимит)
-                li Диплинк (До 3 500 переходов в месяц)
-                li Диплинк (До 20 000 переходов в месяц)
-            button.btn-blue.add Оплатить
+      .service-content.js-service-content
+        .service-item
+          .content
+            .line
+            p.title Free
+            p.desc Бесплатно навсегда
+            p.month-price 0 #[span.rub ₽] #[span /месяц]
+            ul.offers
+              li Мультиссылка:
+              li.inactive Модуль "Ссылка"
+              li.inactive Модуль "Текст"
+              li Генератор UTM-меток
+              li Делегирование
+              li Автопостинг до 15 постов; до 30 сторис (в месяц)
+              li Управление комментариями (До 100 в месяц)
+              li Диплинк (До 500 переходов в месяц)
+              li Расширенная статистика аккаунта
+          button.btn-blue.add Текущий тариф
+        .service-item
+          .content
+            .line
+            p.title Бизнес
+            p.desc Для начинающего бизнеса
+            p.month-price 1299 #[span.rub ₽] #[span /месяц]
+            ul.offers
+              li Мультиссылка: все, что во FREE +
+              li.inactive Модуль "Мессенджеры"
+              li.inactive Модуль "Каталог товаров"
+              li.inactive Модуль "Видео"
+              li.inactive Модуль "Facebook pixel"
+              li.inactive Модуль "Онлайн-оплата"
+              li.inactive Модуль "Изображения"
+              li Автопостинг (безлимит)
+              li Генератор контент-плана
+              li Управление комментариями(Безлимит)
+              li Диплинк (До 3 500 переходов в месяц)
+              li Расширенная статистика аккаунта
+          button.btn-blue.add Оплатить
+        .service-item
+          .content
+            .line
+            p.title Расширенный
+            p.desc Для специалистов и агентств
+            p.month-price 2899 #[span.rub ₽] #[span /месяц]
+            ul.offers
+              li Мультиссылка: все, что во FREE +
+              li.inactive Модуль "Мессенджеры"
+              li.inactive Модуль "Каталог товаров"
+              li.inactive Модуль "Видео"
+              li.inactive Модуль "Facebook pixel"
+              li.inactive Модуль "Онлайн-оплата"
+              li.inactive Модуль "Изображения"
+              li Автопостинг (безлимит)
+              li Генератор контент-плана
+              li Управление комментариями(Безлимит)
+              li Диплинк (До 3 500 переходов в месяц)
+              li Диплинк (До 20 000 переходов в месяц)
+          button.btn-blue.add Оплатить
+        .service-item.blue-item
+          .content
+            .line
+            p.title Максимальный
+            p.desc Для профессионалов
+            p.month-price 2899 #[span.rub ₽] #[span /месяц]
+            ul.offers
+              li Мультиссылка: все, что во FREE +
+              li.inactive Модуль "Мессенджеры"
+              li.inactive Модуль "Каталог товаров"
+              li.inactive Модуль "Видео"
+              li.inactive Модуль "Facebook pixel"
+              li.inactive Модуль "Онлайн-оплата"
+              li.inactive Модуль "Изображения"
+              li Автопостинг (безлимит)
+              li Генератор контент-плана
+              li Управление комментариями(Безлимит)
+              li Диплинк (До 3 500 переходов в месяц)
+              li Диплинк (До 20 000 переходов в месяц)
+          button.btn-blue.add Оплатить

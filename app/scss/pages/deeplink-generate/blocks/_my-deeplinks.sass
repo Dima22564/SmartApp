@@ -5,6 +5,8 @@
       border-radius: 24px
       background: $white
       padding: 40px 0
+      +lg
+        padding: 16px 0
       .top
         display: flex
         align-items: center
@@ -17,11 +19,21 @@
         padding: 0 32px
         span
           color: $blue
+      .total
+        +md
+          display: none
       .table
+        +lg
+          overflow-x: auto
+        &-content
+          +lg
+            width: 850px
         .titles
           padding: 11px 32px
           border-bottom: 1px solid rgba(20, 16, 41, 0.12)
           display: flex
+          +lg
+            padding: 11px 16px
           span
             max-width: 21.66%
             width: 100%
@@ -33,6 +45,8 @@
           padding: 21px 32px
           display: flex
           align-items: center
+          +lg
+            padding: 21px 16px
           .cell
             max-width: 21.66%
             width: 100%

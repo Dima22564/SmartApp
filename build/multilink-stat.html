@@ -77,8 +77,8 @@
                                         </div><a class="more" href>Еще уведомления</a>
                                     </div>
                                 </div>
-                                <div class="burger"><img src="./img/burger.svg" alt></div>
                                 <div class="profile">
+                                    <div class="burger js-avatar-drop-btn"><img src="./img/burger.svg" alt></div>
                                     <div class="avatar js-avatar-drop-btn"><img class="icon" src="./img/avatar.jpg" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
                                     <div class="profile-drop js-avatar-drop">
                                         <div class="drop-btn">
@@ -104,8 +104,12 @@
                                 <p class="desc">Мультиссылка</p>
                             </div>
                             <div class="dates">
-                                <div class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i><span>2019-04-01</span></div><span class="sep">-</span>
-                                <div class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i><span>2019-04-01</span></div>
+                                <div class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    <input class="datepicker-here" type="text">
+                                </div><span class="sep">-</span>
+                                <div class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    <input class="datepicker-here datepicker-here-2" type="text" data-position="left top">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -114,7 +118,9 @@
                     <div class="container">
                         <div class="content">
                             <h2>Подписчики</h2>
-                            <div id="graph-subscribers"></div>
+                            <div class="graph-subscribers">
+                                <div id="graph-subscribers"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -123,29 +129,31 @@
                         <div class="content">
                             <h2>Популярное</h2>
                             <div class="table">
-                                <div class="titles">
-                                    <div class="title popular-post"><span>Пост</span></div>
-                                    <div class="title"><span>Просмотров</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                    <div class="title"><span>Лайков</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                    <div class="title"><span>Репостов</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                    <div class="title"><span>Комментариев</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                    <div class="title"><span>Вовлеченность</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="lines">
-                                    <div class="line">
-                                        <div class="cell popular-post"><img class="img" src="./img/post.jpg" alt>
-                                            <p class="c-text">Поздравляем милых дам с Международным женским днем!...</p>
-                                        </div><span class="cell">34 214</span><span class="cell">23 212</span><span class="cell">12 123</span><span class="cell">10 125</span><span class="cell">12,42%</span>
+                                <div class="table-content">
+                                    <div class="titles">
+                                        <div class="title popular-post"><span>Пост</span></div>
+                                        <div class="title"><span>Просмотров</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <div class="title"><span>Лайков</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <div class="title"><span>Репостов</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <div class="title"><span>Комментариев</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                        <div class="title"><span>Вовлеченность</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
                                     </div>
-                                    <div class="line">
-                                        <div class="cell popular-post"><img class="img" src="./img/post.jpg" alt>
-                                            <p class="c-text">Поздравляем милых дам с Международным женским днем!...</p>
-                                        </div><span class="cell">34 214</span><span class="cell">23 212</span><span class="cell">12 123</span><span class="cell">10 125</span><span class="cell">12,42%</span>
-                                    </div>
-                                    <div class="line">
-                                        <div class="cell popular-post"><img class="img" src="./img/post.jpg" alt>
-                                            <p class="c-text">Поздравляем милых дам с Международным женским днем!...</p>
-                                        </div><span class="cell">34 214</span><span class="cell">23 212</span><span class="cell">12 123</span><span class="cell">10 125</span><span class="cell">12,42%</span>
+                                    <div class="lines">
+                                        <div class="line">
+                                            <div class="cell popular-post"><img class="img" src="./img/post.jpg" alt>
+                                                <p class="c-text">Поздравляем милых дам с Международным женским днем!...</p>
+                                            </div><span class="cell">34 214</span><span class="cell">23 212</span><span class="cell">12 123</span><span class="cell">10 125</span><span class="cell">12,42%</span>
+                                        </div>
+                                        <div class="line">
+                                            <div class="cell popular-post"><img class="img" src="./img/post.jpg" alt>
+                                                <p class="c-text">Поздравляем милых дам с Международным женским днем!...</p>
+                                            </div><span class="cell">34 214</span><span class="cell">23 212</span><span class="cell">12 123</span><span class="cell">10 125</span><span class="cell">12,42%</span>
+                                        </div>
+                                        <div class="line">
+                                            <div class="cell popular-post"><img class="img" src="./img/post.jpg" alt>
+                                                <p class="c-text">Поздравляем милых дам с Международным женским днем!...</p>
+                                            </div><span class="cell">34 214</span><span class="cell">23 212</span><span class="cell">12 123</span><span class="cell">10 125</span><span class="cell">12,42%</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

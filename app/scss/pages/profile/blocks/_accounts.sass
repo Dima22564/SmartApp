@@ -9,10 +9,17 @@
     flex-direction: column
     justify-content: space-between
     align-items: flex-start
+    +lg
+      margin-top: 32px
+    +md
+      margin-top: 10px
+      padding: 12px
     .add
       font-size: 14px
       line-height: 20px
       padding: 14px 16px
+      +md
+        align-self: center
     .content
       width: 100%
     .title
@@ -30,6 +37,8 @@
       align-items: flex-start
       &:not(:last-child)
         margin-bottom: 16px
+        +md
+          margin-bottom: 6px
       .img
         border-radius: 4px
         width: 56px
@@ -46,14 +55,20 @@
           align-items: center
           justify-content: space-between
           width: 100%
+          +md
+            margin-bottom: 7px
       .acc
         font-size: 16px
         line-height: 24px
         font-weight: 600
         color: $d-gray
+        +md
+          font-size: 12px
       .icons
         display: flex
         align-items: center
+        +md
+          font-size: 13px
         span
           cursor: pointer
           transition: all 0.2s

@@ -4,13 +4,23 @@
     text-align: left
     margin-bottom: 32px
     padding: 0 32px
+    +sm
+      margin-bottom: 9px
   .content
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     background: $white
     border-radius: 24px
     padding: 32px 0
+    +md
+      padding: 15px 0
   .table
     margin-bottom: 23px
+    +lg
+      overflow-x: auto
+    &-content
+      +lg
+        width: 850px
+        padding-bottom: 20px
   .titles
     display: flex
     align-items: center
@@ -80,6 +90,10 @@
       &-prev
         margin-right: 20px
         transform: rotate(90deg)
+        +sm
+          margin-right: 10px
       &-next
         margin-left: 20px
         transform: rotate(-90deg)
+        +sm
+          margin-left: 10px
