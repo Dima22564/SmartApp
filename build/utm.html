@@ -99,11 +99,13 @@
                     </div>
                 </header>
                 <section>
-                    <h2>Only for demo purposes (registration)</h2>
-                    <button class="js-login-btn">login (via js-login-btn)</button>
-                    <button class="js-new-pass-btn">new password (via js-new-pass-btn)</button>
-                    <button class="js-reg-btn">registration (via js-reg-btn)</button>
-                    <button class="js-repair-btn">repair password (via js-repair-btn)</button>
+                    <div class="container">
+                        <h2>Only for demo purposes (registration)</h2>
+                        <button class="js-login-btn">login (via js-login-btn)</button>
+                        <button class="js-new-pass-btn">new password (via js-new-pass-btn)</button>
+                        <button class="js-reg-btn">registration (via js-reg-btn)</button>
+                        <button class="js-repair-btn">repair password (via js-repair-btn)</button>
+                    </div>
                 </section>
                 <section class="mobile-slider">
                     <div class="slider-wrapper js-slider-wrapper"><a class="item" href>Статистика </a><a class="item item_active" href>Генератор UTM </a><a class="item" href>Генератор диплинков</a></div>
@@ -240,7 +242,7 @@
                 </section>
                 <div class="popup-wrapper-reg js-popup-wrapper-reg js-new-pass">
                     <div class="popup-body js-popup-body">
-                        <div class="popup-form popup-new-password">
+                        <form class="popup-form popup-new-password" action>
                             <div class="top">
                                 <p class="title">Задайте новый пароль</p><img class="js-close-reg" src="./img/close.svg" alt>
                             </div>
@@ -252,12 +254,12 @@
                                 <input class="input" type="text">
                             </div>
                             <button class="btn-blue btn-add">Перейти в почту (yandex.ru)</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="popup-wrapper-reg js-popup-wrapper-reg js-repair">
                     <div class="popup-body js-popup-body">
-                        <div class="popup-form popup-repair-password">
+                        <form class="popup-form popup-repair-password" action>
                             <div class="top">
                                 <p class="title">Восстановление пароля</p><img class="js-close-reg" src="./img/close.svg" alt>
                             </div>
@@ -266,12 +268,12 @@
                             </div>
                             <p class="desc-2">Мы выслали ссылку для создания нового пароля вам на email</p>
                             <button class="btn-blue btn-add">Перейти в почту (yandex.ru)</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="popup-wrapper-reg js-popup-wrapper-reg js-reg">
                     <div class="popup-body js-popup-body">
-                        <div class="popup-form popup-registration">
+                        <form class="popup-form popup-registration" action>
                             <div class="top">
                                 <p class="title">Регистрация</p><img class="js-close-reg" src="./img/close.svg" alt>
                             </div>
@@ -289,12 +291,12 @@
                                 <label for="reg"><span>Cогласен с условиями <a href="#">политики конфиденциальности и Пользовательскому соглашению</a></span></label>
                             </div>
                             <button class="btn-blue btn-add">Войти</button><a class="hasAcc" href>Уже есть аккаунт</a>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="popup-wrapper-reg js-popup-wrapper-reg js-login">
                     <div class="popup-body js-popup-body">
-                        <div class="popup-form popup-log-in">
+                        <form class="popup-form popup-log-in" action>
                             <div class="top">
                                 <p class="title">Войти в систему </p><img class="js-close-reg" src="./img/close.svg" alt>
                             </div>
@@ -310,7 +312,7 @@
                             </div>
                             <button class="btn-blue btn-add">Войти</button>
                             <div class="bottom-links"><a class="hasAcc" href>Зарегистрироваться</a><a class="hasAcc" href>Забыли пароль?</a></div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </main>

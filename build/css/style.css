@@ -11178,4 +11178,40 @@ div:active {
   .function-edit-goods .textarea .input-del .del {
     margin-left: 8px;
   }
+
+  .popup-wrapper-reg .popup-body .shadow {
+    margin-bottom: 0;
+  }
+
+  .popup-wrapper-reg .popup-body .popup-form {
+    max-width: 280px;
+    padding: 24px;
+    margin: auto;
+  }
+
+  .popup-wrapper-reg .popup-body .popup-form .bottom-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .popup-wrapper-reg .popup-body .popup-form .hasAcc {
+    margin-bottom: 8px;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .popup-wrapper-reg .popup-body .popup-form .btn-add {
+    margin-top: 24px;
+  }
+
+  .popup-wrapper-reg .popup-body .popup-form .top .title {
+    font-size: 20px;
+  }
 }
