@@ -1,31 +1,54 @@
 .utm-site-link
   margin-bottom: 32px
+  +md
+    margin-bottom: 11px
+  .btn-add
+    +sm
+      width: 100%
+      margin: 0 0 11px 0
   .content
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     border-radius: 24px
     background: $white
     padding: 32px
+    +md
+      padding: 11px 6px 8px
     .title
       font-weight: 600
       font-size: 24px
       line-height: 28px
       color: $d-gray
       margin-bottom: 9px
+      +md
+        padding-left: 13px
+        font-size: 16px
+        line-height: 24px
     .input-wrapper
       margin-bottom: 48px
     .subtitle
       font-size: 12px
       line-height: 12px
       margin-bottom: 12px
+      &_2
+        +lg
+          margin-bottom: 34px !important
     .checkboxes
       display: flex
       justify-content: space-between
       align-items: center
       margin-bottom: 40px
+      +lg
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 26px
+        padding: 0 11px
       .shadow
         font-size: 14px
         line-height: 20px
-        margin-bottom: 36px
+        &:not(:last-child)
+          margin-bottom: 36px
+          +lg
+            margin-bottom: 20px
         input
           display: none
           &:checked ~ label::before
@@ -51,10 +74,18 @@
       align-items: flex-start
       justify-content: space-between
       margin-bottom: 44px
+      +lg
+        flex-direction: column
+      +md
+        margin-bottom: 7px
       .opt-group
         width: 48%
+        +lg
+          width: 100%
         .option
           margin-bottom: 40px
+          +lg
+            margin-bottom: 20px
         .input-wrapper
           display: flex
           margin-bottom: 8px
@@ -72,6 +103,8 @@
             max-width: 162px
             width: 100%
             background: $blue
+            +sm
+              display: none
           & + .subtitle
             margin-bottom: -21px
 

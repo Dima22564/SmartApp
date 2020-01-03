@@ -21,20 +21,24 @@ block content
           select(name="").js-select-menu
             option(value="") Все комментарии
             option(value="") Все комментарии
-        .btns
-          button.btn-blue Сначала новые
-          button.btn-white Сначала неотвеченные
+        .btns.js-comment-slider
+          .btn-wrapper
+            button.btn-blue Сначала новые
+          .btn-wrapper
+            button.btn-white Сначала неотвеченные
   section.acc-comments
     .container
       .row
         .col-xl-4
           .acc-item
             span.acc-placeholder Комментарии аккаунта
-            .item-content
-              img(src="./img/profile.jpg", alt="")
-              .text
-                span.name @dostavkacvotov
-                a(href="").link instagram.com/kim_roobin/
+            .item-content.item-content-2
+              p.title-mobile Комментарии аккаунта
+              .wrapper
+                img(src="./img/profile.jpg", alt="")
+                .text
+                  span.name @dostavkacvotov
+                  a(href="").link instagram.com/kim_roobin/fhgfhgfhgngngfngnghmgmhdgh
       .user-comment
         .comment-item
           .left

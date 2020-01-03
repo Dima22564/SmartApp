@@ -5,6 +5,17 @@ block vars
   -var title = 'Utm';
 
 block content
+  section
+    h2 Only for demo purposes (registration)
+    button.js-login-btn login (via js-login-btn)
+    button.js-new-pass-btn new password (via js-new-pass-btn)
+    button.js-reg-btn registration (via js-reg-btn)
+    button.js-repair-btn repair password (via js-repair-btn)
+  section.mobile-slider
+    .slider-wrapper.js-slider-wrapper
+      a(href="").item Статистика 
+      a(href="").item.item_active Генератор UTM 
+      a(href="").item Генератор диплинков
   section.main-utm-header
     .container
       .content
@@ -62,20 +73,20 @@ block content
               .input-wrapper
                 .name utm_campaign
                 input(type="text").value.input
-              p.subtitle { * } - автоматическая подстановка ID кампании
+              p.subtitle.subtitle_2 { * } - автоматическая подстановка ID кампании
           .opt-group
             .option
               p.subtitle Идентификатор объявления
               .input-wrapper
                 .name utm_source
                 input(type="text").value.input
-              p.subtitle { * } - автоматическая подстановка ID кампании              
+              p.subtitle.subtitle_2 { * } - автоматическая подстановка ID кампании              
             .option
               p.subtitle Ключевое слово
               .input-wrapper
                 .name utm_term
                 input(type="text").value.input
-        button.btn-blue Добавить свое значение
+        button.btn-blue.btn-add Добавить свое значение
   section.deeplink
     .container
       .content
@@ -83,21 +94,21 @@ block content
         .input-wrapper
           input(type="text", readonly="true").input
           .btns
-            button.btn-copy 
+            button.btn-copy.btn-copy_2
               span.icon-copy
             button.btn-copy 
               span.icon-del
         .input-wrapper
           input(type="text", readonly="true").input
           .btns
-            button.btn-copy 
+            button.btn-copy.btn-copy_2
               span.icon-copy
             button.btn-copy 
               span.icon-del
         .input-wrapper
           input(type="text", readonly="true").input
           .btns
-            button.btn-copy 
+            button.btn-copy.btn-copy_2
               span.icon-copy
             button.btn-copy 
               span.icon-del

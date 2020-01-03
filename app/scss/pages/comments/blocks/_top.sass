@@ -3,11 +3,18 @@
   padding: 0 0 35px
   &-header
     padding: 63px 0 52px
+    +lg
+      padding: 43px 0 24px
     .content
       display: flex
       align-items: center
       justify-content: space-between
+      +lg
+        flex-direction: column
+        align-items: flex-start
       .text
+        +lg
+          margin-bottom: 18px
         .title
           font-size: 24px
           line-height: 24px
@@ -19,6 +26,8 @@
       .search
         position: relative
         width: 44%
+        +sm
+          width: 100%
         input
           box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
           background: $white
@@ -35,12 +44,22 @@
           color: $d-gray
   &-btns
     padding-bottom: 16px
+    +md
+      padding-bottom: 40px
     .btns-wrapper
       display: flex  
       align-items: center
       justify-content: space-between
+      +lg
+        flex-direction: column-reverse
+        display: block
       .select
         width: 30%
+        +lg
+          margin: 0 auto 24px auto
+          width: 50%
+        +sm
+          width: 100%
         .ui-selectmenu-button
           font-weight: 600 !important
           color: $black
@@ -52,7 +71,14 @@
           top: 36%
           background-position: center center
       .btns
-        button
+        display: flex
+        align-items: center
+        +sm
+          display: initial
+        .slick-list
+          padding: 10px
+          margin: -10px
+        .btn-wrapper
           &:not(:last-child)
             margin-right: 16px     
         

@@ -5,16 +5,24 @@ block vars
   -var title = 'Payment';
 
 block content
+  section.mobile-slider
+    .slider-wrapper.js-slider-wrapper
+      a(href="").item Создание мультиссылки
+      a(href="").item Товары
+      a(href="").item.item_active Прием платежей
   section.main-payment-header
     .container
       .content
-        p.title Товары:
+        p.title Прием платежей
         .btns
-          button.btn-blue Добавить кошелек
+          button.btn-blue.js-add-payment Добавить кошелек
+        .mobile-btns
+          button.btn-circle.blue-circle.js-add-payment
+            img(src="./img/plus-2.svg", alt="")
   section.payment-items
     .container
       .row
-        .col-xl-6
+        .col-xl-6.col-lg-6
           .payment-item
             .payment-top
               .wallet 
@@ -26,3 +34,6 @@ block content
             .status
               span.num 41004415285218642
               span.status-emp Статус: Подключен
+
+  include ./pug/add-payment.pug
+  

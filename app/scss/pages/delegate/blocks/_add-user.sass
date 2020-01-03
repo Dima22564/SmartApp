@@ -6,6 +6,19 @@
   max-width: 535px
   width: 100%
   overflow-y: auto
+  +md
+    padding: 22px 22px 115px 14px
+  +sm
+    max-width: calc(100% - 9px)
+  .btn-add
+    +sm
+      width: 100%
+      padding: 12px 0
+  .top
+    .title
+      +sm
+        letter-spacing: -0.4px
+        font-size: 18px !important
   .links-group
     margin-bottom: 36px
     .link-wrapper
@@ -26,8 +39,11 @@
           width: 20px
           height: 20px
           margin-right: 8px
+          flex-shrink: 0
       &.left
         margin-left: 28px
+        +sm
+          margin-left: 16px
       &.emp
         font-weight: 600
         color: $d-gray

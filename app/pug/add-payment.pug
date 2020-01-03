@@ -1,0 +1,27 @@
+.wrapper-function.js-wrapper-payment
+  .function-body.js-function-add-body
+    .function-add.func-add-payment
+      .top  
+        .text
+          span.title Добавление кошелька
+        img(src="./img/close.svg", alt="").close-func
+      .inputs
+        .input-wrapper
+          span.placeholder Выберите платежную систему
+          select(name="").js-select-menu
+            option(value="") Яндекс деньги
+            option(value="") Яндекс деньги
+        .input-wrapper
+          span.placeholder Номер кошелька
+          input(type="text").input
+        .input-wrapper
+          span.placeholder Вставьте секретное слово
+          input(type="text").input
+          span.placeholder.bottom-placeholder Перейдите на страницу HTTP-уведомлений и скопируйте секретное слово для подключения кошелька
+        .input-wrapper
+          span.placeholder Персональная ссылка
+          input(type="text").input.js-copy-text
+          span.placeholder.bottom-placeholder Скопируйте данную ссылку и вставьте ее на на страницу Яндекс Денег для подключения системы оплаты
+        .bottom-bnts
+          button.btn-blue Сохранить
+          

@@ -56,6 +56,8 @@
       display: none
       +lg
         display: block
+      +sm
+        z-index: 555
     .links
       display: flex
       align-items: center
@@ -106,9 +108,23 @@
       .notices
         margin-left: 65px
         position: relative
+        +sm
+          position: initial
+        .addition-block
+          display: none
+          position: absolute
+          width: 100%
+          top: 0
+          left: 0
+          height: 100%
+          box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 12px 24px rgba(20, 16, 41, 0.06)
+          z-index: 222
+          +sm
+            display: block
         .wrapper
           position: relative
           cursor: pointer
+          z-index: 555
           span
             position: absolute
             top: -4px
@@ -134,6 +150,11 @@
           min-width: 328px
           transform: translateY(100%)
           display: none
+          +sm
+            left: 0
+            height: calc(100vh - 117px)
+            overflow-y: auto
+            border-radius: 0
           .top
             display: flex
             align-items: center
@@ -188,6 +209,8 @@
       .profile
         margin-left: 24px
         position: relative
+        +sm
+          z-index: 555
         .avatar
           display: flex
           align-items: center

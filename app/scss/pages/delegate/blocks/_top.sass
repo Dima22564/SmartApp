@@ -3,6 +3,9 @@
   &-header
     padding: 63px 0 32px
     margin-bottom: 52px
+    +md
+      margin-bottom: 0
+      padding: 23px 0 45px
     .content
       display: flex
       align-items: center
@@ -13,12 +16,16 @@
           line-height: 24px
           color: $black
           font-weight: 600
+          +sm
+            margin-bottom: 8px
         .desc
           font-size: 12px
           line-height: 24px
       .btns
         display: flex
         align-items: center
+        +md
+          display: none
         button
           &:not(:last-child)
             margin-right: 32px

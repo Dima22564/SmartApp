@@ -34,6 +34,8 @@
     background-position: center center
   &-header
     padding: 63px 0 32px
+    +md
+      padding: 39px 0 20px
     .content
       display: flex
       align-items: center
@@ -54,17 +56,25 @@
       border-radius: 24px
       background: $white
       padding: 32px
+      +md
+        padding: 11px 6px 8px
       .title
         font-weight: 600
         font-size: 24px
         line-height: 28px
         color: $d-gray
         margin-bottom: 9px
+        +md
+          padding-left: 13px
+          font-size: 16px
+          line-height: 24px
       .input-wrapper
         display: flex
         flex-direction: row
         justify-content: space-between
         width: 100%
+        +md
+          margin-bottom: 0
         &:not(:last-child)
           margin-bottom: 16px
         .btns
@@ -72,7 +82,7 @@
           margin-left: 24px
         input
           width: 92%
-        button
+        .btn-copy
           display: flex
           align-items: center
           justify-content: center
@@ -86,5 +96,17 @@
           font-size: 18px
           span
             opacity: 0.6
+          +sm
+            box-shadow: none
+            background: #f4f5f8
+            position: absolute
+            top: 1px
+            right: 0
+            padding: 0
           &:not(:last-child)
             margin-right: 16px
+            +sm
+              margin-right: 0
+        .btn-copy_2
+          +sm
+            right: 40px !important

@@ -3,6 +3,23 @@
   padding: 0 0 32px
   &-header
     padding: 63px 0 32px
+    +md
+      padding: 39px 0 20px
+    .mobile-btns
+      display: none
+      +sm
+        display: flex
+      .btn-circle
+        cursor: pointer
+        box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+        width: 40px
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        border: none
+        background: $blue
     .content
       display: flex
       align-items: center
@@ -15,3 +32,5 @@
       .btns
         display: flex
         align-items: center
+        +sm
+          display: none

@@ -59,6 +59,7 @@
                                     <div class="progress-1"><span></span></div>
                                 </div>
                                 <div class="notices">
+                                    <div class="addition-block"></div>
                                     <div class="wrapper js-notices"><img src="./img/notice.svg" alt><span>2</span></div>
                                     <div class="notices-drop js-notices-drop">
                                         <div class="top">
@@ -97,12 +98,18 @@
                         </div>
                     </div>
                 </header>
+                <section class="mobile-slider">
+                    <div class="slider-wrapper js-slider-wrapper"><a class="item" href>Создание мультиссылки</a><a class="item" href>Товары</a><a class="item item_active" href>Прием платежей</a></div>
+                </section>
                 <section class="main-payment-header">
                     <div class="container">
                         <div class="content">
-                            <p class="title">Товары:</p>
+                            <p class="title">Прием платежей</p>
                             <div class="btns">
-                                <button class="btn-blue">Добавить кошелек</button>
+                                <button class="btn-blue js-add-payment">Добавить кошелек</button>
+                            </div>
+                            <div class="mobile-btns">
+                                <button class="btn-circle blue-circle js-add-payment"><img src="./img/plus-2.svg" alt></button>
                             </div>
                         </div>
                     </div>
@@ -110,7 +117,7 @@
                 <section class="payment-items">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6">
                                 <div class="payment-item">
                                     <div class="payment-top">
                                         <div class="wallet"> <img src="./img/ya.png" alt><span class="title">Яндекс деньги</span></div>
@@ -122,6 +129,35 @@
                         </div>
                     </div>
                 </section>
+                <div class="wrapper-function js-wrapper-payment">
+                    <div class="function-body js-function-add-body">
+                        <div class="function-add func-add-payment">
+                            <div class="top">
+                                <div class="text"><span class="title">Добавление кошелька</span></div><img class="close-func" src="./img/close.svg" alt>
+                            </div>
+                            <div class="inputs">
+                                <div class="input-wrapper"><span class="placeholder">Выберите платежную систему</span>
+                                    <select class="js-select-menu" name>
+                                        <option value="">Яндекс деньги</option>
+                                        <option value="">Яндекс деньги</option>
+                                    </select>
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">Номер кошелька</span>
+                                    <input class="input" type="text">
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">Вставьте секретное слово</span>
+                                    <input class="input" type="text"><span class="placeholder bottom-placeholder">Перейдите на страницу HTTP-уведомлений и скопируйте секретное слово для подключения кошелька</span>
+                                </div>
+                                <div class="input-wrapper"><span class="placeholder">Персональная ссылка</span>
+                                    <input class="input js-copy-text" type="text"><span class="placeholder bottom-placeholder">Скопируйте данную ссылку и вставьте ее на на страницу Яндекс Денег для подключения системы оплаты</span>
+                                </div>
+                                <div class="bottom-bnts">
+                                    <button class="btn-blue">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
         <script src="./libs/js/vendor.min.js"></script>
