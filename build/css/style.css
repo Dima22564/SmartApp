@@ -9350,6 +9350,14 @@ div:active {
     display: initial;
   }
 
+  .dashboard-new .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .dashboard-new .table-c {
+    width: 850px;
+  }
+
   .wrapper-function .function-link-2 .error-text {
     right: initial;
     left: 0;
@@ -9767,6 +9775,14 @@ div:active {
 
   .acc-comments .user-comment .comment-item .right {
     max-width: 100%;
+  }
+
+  .dashboard-new .new-applies {
+    margin-bottom: 30px;
+  }
+
+  .acc-plan .acc-item {
+    max-width: 100% !important;
   }
 
   .wrapper-function {
@@ -10363,6 +10379,47 @@ div:active {
     padding-bottom: 40px;
   }
 
+  .dash-projects .table {
+    width: 750px;
+    margin-bottom: 0;
+  }
+
+  .dash-projects .table-wrapper-popular {
+    overflow-x: auto;
+    margin-bottom: 23px;
+  }
+
+  .dashboard-new .new-applies .contact:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .dashboard-new .new-applies .contact .name {
+    margin-bottom: 12px;
+  }
+
+  .dashboard-new .new-applies .contact .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .dashboard-new .new-applies .contact .tel:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .acc-plan {
+    padding-bottom: 10px;
+  }
+
+  .acc-plan .content {
+    padding: 0 !important;
+    background: transparent;
+  }
+
   .wrapper-function .function-body {
     height: calc(100% - 60px);
   }
@@ -10921,6 +10978,33 @@ div:active {
 
   .acc-comments .user-comment .preview {
     margin: 0 0 16px 0;
+  }
+
+  .main-dashboard .user-comment {
+    margin: 10px 0;
+  }
+
+  .main-dashboard-header {
+    padding: 38px 0 14px;
+  }
+
+  .dashboard-graphs .graph-content {
+    overflow-x: auto;
+    margin-bottom: 10px;
+  }
+
+  .dashboard-graphs .graph {
+    width: 850px;
+    margin-bottom: 0;
+  }
+
+  .dashboard-new .btn-manage .btn-blue {
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  .dashboard-new .new-applies {
+    margin-bottom: 1px;
   }
 
   .wrapper-function .function-body .top {

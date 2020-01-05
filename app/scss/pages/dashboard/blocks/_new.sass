@@ -1,5 +1,10 @@
 .dashboard-new
   padding-bottom: 16px
+  .btn-manage
+    .btn-blue
+      +sm
+        padding: 12px 0
+        width: 100%
   .show
     display: inline-flex
     text-decoration: underline
@@ -9,11 +14,21 @@
     line-height: 12px
     color: $blue
     width: 100%
+  .table-wrapper
+    +xl
+      overflow-x: auto
+  .table-c
+    +xl
+      width: 850px
   .new-applies
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     padding: 24px
     background: $white
     border-radius: 12px
+    +lg
+      margin-bottom: 30px
+    +sm
+      margin-bottom: 1px
     .title
       font-size: 18px
       line-height: 20px
@@ -27,6 +42,8 @@
       padding: 16px
       &:not(:last-child)
         margin-bottom: 16px
+        +md
+          margin-bottom: 10px
       .top
         display: flex
         align-items: center
@@ -45,14 +62,22 @@
         line-height: 20px
         color: $d-gray
         margin-bottom: 24px
+        +md
+          margin-bottom: 12px
       .bottom
         display: flex
         align-items: center
         justify-content: space-between
+        +md
+          flex-direction: column
+          align-items: flex-start
       .tel
         display: flex
         align-items: center
         color: $d-gray
+        &:not(:last-child)
+          +md
+            margin-bottom: 5px
         a
           margin-left: 10px
           font-size: 14px

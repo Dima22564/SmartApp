@@ -23,50 +23,54 @@ block content
   section.dashboard-graphs
     .container
       .row
-        .col-xl-6
-          .graph
-            .top
-              .left
-                i.fa.fa-eye(aria-hidden="true")
-                span 42 412
-              .right
-                span -15,11%
-                img(src="./img/grow.svg", alt="")
-            .graph-wrap
-              #graph-d-1.graph-h
-        .col-xl-6
-          .graph
-            .top
-              .left
-                i.fa.fa-heart(aria-hidden="true")
-                span 42 412
-              .right
-                span -15,11%
-                img(src="./img/grow.svg", alt="")
-            .graph-wrap
-              #graph-d-2.graph-h
-        .col-xl-6
-          .graph
-            .top
-              .left
-                i.fa.fa-users(aria-hidden="true")
-                span 42 412
-              .right
-                span -15,11%
-                img(src="./img/grow.svg", alt="")
-            .graph-wrap
-              #graph-d-3.graph-h
-        .col-xl-6
-          .graph
-            .top
-              .left
-                i.fa.fa-comment(aria-hidden="true")
-                span 42 412
-              .right
-                span -15,11%
-                img(src="./img/grow.svg", alt="")
-            .graph-wrap
-              #graph-d-4.graph-h
+        .col-xl-6.col-lg-6
+          .graph-content
+            .graph
+              .top
+                .left
+                  i.fa.fa-eye(aria-hidden="true")
+                  span 42 412
+                .right
+                  span -15,11%
+                  img(src="./img/grow.svg", alt="")
+              .graph-wrap
+                #graph-d-1.graph-h
+        .col-xl-6.col-lg-6
+          .graph-content
+            .graph
+              .top
+                .left
+                  i.fa.fa-heart(aria-hidden="true")
+                  span 42 412
+                .right
+                  span -15,11%
+                  img(src="./img/grow.svg", alt="")
+              .graph-wrap
+                #graph-d-2.graph-h
+        .col-xl-6.col-lg-6
+          .graph-content
+            .graph
+              .top
+                .left
+                  i.fa.fa-users(aria-hidden="true")
+                  span 42 412
+                .right
+                  span -15,11%
+                  img(src="./img/grow.svg", alt="")
+              .graph-wrap
+                #graph-d-3.graph-h
+        .col-xl-6.col-lg-6
+          .graph-content
+            .graph
+              .top
+                .left
+                  i.fa.fa-comment(aria-hidden="true")
+                  span 42 412
+                .right
+                  span -15,11%
+                  img(src="./img/grow.svg", alt="")
+              .graph-wrap
+                #graph-d-4.graph-h
   section.acc-comments
     .container
       .user-comment
@@ -168,7 +172,7 @@ block content
   section.dashboard-new
     .container
       .row
-        .col-xl-5
+        .col-xl-5.col-lg-6
           .new-applies
             p.title Новые заявки
             .contact
@@ -208,52 +212,53 @@ block content
                   i.fa.fa-envelope(aria-hidden="true")
                   a(href="mailto:") elena.sem@yandex.ru
             a(href="").show Посмотреть все
-        .col-xl-7
+        .col-xl-7.col-lg-6
           .new-orders
             .main-content
               p.title Новые заявки
-              .table-c
-                .titles
-                  span.title Дата
-                  span.title Товар
-                  span.title.price Цена
-                  span.title Покупатель
-                .lines
-                  .line
-                    span 12:21 12.09.2019
-                    span Доставка цветов
-                    span.price 252 руб
-                    span Мария Иванова
-                  .line
-                    span 12:21 12.09.2019
-                    span Доставка цветов
-                    span.price 252 руб
-                    span Мария Иванова
-                  .line
-                    span 12:21 12.09.2019
-                    span Доставка цветов
-                    span.price 252 руб
-                    span Мария Иванова
-                  .line
-                    span 12:21 12.09.2019
-                    span Доставка цветов
-                    span.price 252 руб
-                    span Мария Иванова
-                  .line
-                    span 12:21 12.09.2019
-                    span Доставка цветов
-                    span.price 252 руб
-                    span Мария Иванова
-                  .line
-                    span 12:21 12.09.2019
-                    span Доставка цветов
-                    span.price 252 руб
-                    span Мария Иванова
-                  .line
-                    span 12:21 12.09.2019
-                    span Доставка цветов
-                    span.price 252 руб
-                    span Мария Иванова
+              .table-wrapper
+                .table-c
+                  .titles
+                    span.title Дата
+                    span.title Товар
+                    span.title.price Цена
+                    span.title Покупатель
+                  .lines
+                    .line
+                      span 12:21 12.09.2019
+                      span Доставка цветов
+                      span.price 252 руб
+                      span Мария Иванова
+                    .line
+                      span 12:21 12.09.2019
+                      span Доставка цветов
+                      span.price 252 руб
+                      span Мария Иванова
+                    .line
+                      span 12:21 12.09.2019
+                      span Доставка цветов
+                      span.price 252 руб
+                      span Мария Иванова
+                    .line
+                      span 12:21 12.09.2019
+                      span Доставка цветов
+                      span.price 252 руб
+                      span Мария Иванова
+                    .line
+                      span 12:21 12.09.2019
+                      span Доставка цветов
+                      span.price 252 руб
+                      span Мария Иванова
+                    .line
+                      span 12:21 12.09.2019
+                      span Доставка цветов
+                      span.price 252 руб
+                      span Мария Иванова
+                    .line
+                      span 12:21 12.09.2019
+                      span Доставка цветов
+                      span.price 252 руб
+                      span Мария Иванова
             a(href="").show Посмотреть все
       .btn-manage
         button.btn-blue Управление комментариями
@@ -262,53 +267,54 @@ block content
     .container
       .content
         h2 Проекты
-        .table
-          .titles
-            .title.popular-post
-              span 
-            .title
-              span Просмотров
-              i.fa.fa-angle-down(aria-hidden="true")
-            .title
-              span Переходов
-              i.fa.fa-angle-down(aria-hidden="true")
-            .title
-              span Заказов
-              i.fa.fa-angle-down(aria-hidden="true")
-            .title
-              span Сумма заказов
-              i.fa.fa-angle-down(aria-hidden="true")
-          .lines
-            .line
-              .cell.popular-post
-                img(src="./img/post.jpg", alt="").img
-                .d-text
-                  p.c-text Доставка цветов розница
-                  p.c-text-num 15 страниц
-              span.cell 34 214
-              span.cell 23 212
-              span.cell 12 123
-              span.cell 10 125
-            .line
-              .cell.popular-post
-                img(src="./img/post.jpg", alt="").img
-                .d-text
-                  p.c-text Доставка цветов розница
-                  p.c-text-num 15 страниц
-              span.cell 34 214
-              span.cell 23 212
-              span.cell 12 123
-              span.cell 10 125
-            .line
-              .cell.popular-post
-                img(src="./img/post.jpg", alt="").img
-                .d-text
-                  p.c-text Доставка цветов розница
-                  p.c-text-num 15 страниц
-              span.cell 34 214
-              span.cell 23 212
-              span.cell 12 123
-              span.cell 10 125
+        .table-wrapper-popular
+          .table
+            .titles
+              .title.popular-post
+                span 
+              .title
+                span Просмотров
+                i.fa.fa-angle-down(aria-hidden="true")
+              .title
+                span Переходов
+                i.fa.fa-angle-down(aria-hidden="true")
+              .title
+                span Заказов
+                i.fa.fa-angle-down(aria-hidden="true")
+              .title
+                span Сумма заказов
+                i.fa.fa-angle-down(aria-hidden="true")
+            .lines
+              .line
+                .cell.popular-post
+                  img(src="./img/post.jpg", alt="").img
+                  .d-text
+                    p.c-text Доставка цветов розница
+                    p.c-text-num 15 страниц
+                span.cell 34 214
+                span.cell 23 212
+                span.cell 12 123
+                span.cell 10 125
+              .line
+                .cell.popular-post
+                  img(src="./img/post.jpg", alt="").img
+                  .d-text
+                    p.c-text Доставка цветов розница
+                    p.c-text-num 15 страниц
+                span.cell 34 214
+                span.cell 23 212
+                span.cell 12 123
+                span.cell 10 125
+              .line
+                .cell.popular-post
+                  img(src="./img/post.jpg", alt="").img
+                  .d-text
+                    p.c-text Доставка цветов розница
+                    p.c-text-num 15 страниц
+                span.cell 34 214
+                span.cell 23 212
+                span.cell 12 123
+                span.cell 10 125
         .pagination
           span.icon-arrow-d.arrow.arrow-prev
           span.num.active 1
